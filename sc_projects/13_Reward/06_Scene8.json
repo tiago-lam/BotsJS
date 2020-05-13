@@ -1,0 +1,213 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "23251",
+      "tru": "True",
+      "index": "0",
+      "posX": "-0.09162884",
+      "posY": "2.358045",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "23218": {
+      "content": "You did a great job!",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "-1",
+      "tru": "True",
+      "index": "23218",
+      "posX": "13.9051",
+      "posY": "4.782479",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23251": {
+      "choices": "23252~~{bottleCount}=3~-~23253~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23251",
+      "posX": "3.392619",
+      "posY": "3.381713",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "23252": {
+      "displayName": null,
+      "owner": "{count}",
+      "newValue": "{count}+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23254",
+      "tru": "True",
+      "index": "23252",
+      "posX": "7.083319",
+      "posY": "4.151968",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "23253": {
+      "content": "Not bad~",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "-1",
+      "tru": "True",
+      "index": "23253",
+      "posX": "8.416361",
+      "posY": "0.6571984",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23254": {
+      "choices": "23218~~{count}=2~-~23255~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23254",
+      "posX": "10.61954",
+      "posY": "6.184635",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "23255": {
+      "content": "Not bad~",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "-1",
+      "tru": "True",
+      "index": "23255",
+      "posX": "13.78449",
+      "posY": "2.380941",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 8",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 7,
+    "background": "stage_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "stage_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "baby_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "baby_4",
+        "pos": {
+          "x": -4.403566,
+          "y": -138.800323,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.03170995,
+            "y": -0.9994971,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 138.870163,
+          "sqrMagnitude": 19284.9219
+        },
+        "size": {
+          "x": 90.88309,
+          "y": 140.111435,
+          "normalized": {
+            "x": 0.5441911,
+            "y": 0.838961363,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 167.005829,
+          "sqrMagnitude": 27890.95
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 4.11855459,
+      "y": 9.457911,
+      "normalized": {
+        "x": 0.399249434,
+        "y": 0.916842341,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 10.3157434,
+      "sqrMagnitude": 106.414566
+    },
+    "scriptorScale": 0.356722653,
+    "scriptorPosition": {
+      "x": -189.255173,
+      "y": -133.235718,
+      "normalized": {
+        "x": -0.8176922,
+        "y": -0.575655639,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 231.450378,
+      "sqrMagnitude": 53569.2773
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

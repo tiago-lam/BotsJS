@@ -1,0 +1,821 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-6.26013",
+      "posY": "4.507148",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "Do you want to open card packs or buy your desired card?",
+      "owner": "lab_scientist_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "42",
+      "tru": "True",
+      "index": "3",
+      "posX": "-2.856856",
+      "posY": "4.388021",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "35~~Spend 5 units to buy card pack(enter a number between 1-100)~~False~~none~~true~-~36~~Spend 400 units to buy your desired card~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "6.606986",
+      "posY": "4.099967",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "10": {
+      "choiceType": "open_response",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "-1~~~~False~~none~~true~-~-1~~~~False~~none~~true~-~",
+      "variable": "player",
+      "inputMultiline": "False",
+      "openResponseButton": "Default",
+      "openResponseTextObject": "Text",
+      "name": null,
+      "next": "24",
+      "tru": "True",
+      "index": "10",
+      "posX": "20.62172",
+      "posY": "5.253489",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "24": {
+      "choices": "25~~{player}=47~-~26~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "24",
+      "posX": "26.35616",
+      "posY": "3.836202",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "25": {
+      "content": "YES!",
+      "owner": "lab_scientist_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "59",
+      "tru": "True",
+      "index": "25",
+      "posX": "30.97901",
+      "posY": "3.91014",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "26": {
+      "content": "Try again",
+      "owner": "lab_scientist_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "26",
+      "posX": "1.493311",
+      "posY": "-2.683805",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "35": {
+      "displayName": null,
+      "owner": "{money}",
+      "newValue": "{money}-5",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "48",
+      "tru": "True",
+      "index": "35",
+      "posX": "11.91966",
+      "posY": "7.719216",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "36": {
+      "displayName": null,
+      "owner": "{money}",
+      "newValue": "{money}-400",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "37",
+      "tru": "True",
+      "index": "36",
+      "posX": "11.08844",
+      "posY": "1.950838",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "37": {
+      "content": "You didnt want to try your luck",
+      "owner": "lab_scientist_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "75",
+      "tru": "True",
+      "index": "37",
+      "posX": "18.294",
+      "posY": "-1.845543",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "42": {
+      "content": "{money}",
+      "owner": "Text(1)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "42",
+      "posX": "0.4930533",
+      "posY": "4.420268",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "48": {
+      "content": "{money}",
+      "owner": "Text(1)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "10",
+      "tru": "True",
+      "index": "48",
+      "posX": "16.43923",
+      "posY": "7.303795",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "57": {
+      "actionTarget": "Text(1)",
+      "actionName": "ChangeTextColor",
+      "action_text-color": "#000000",
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "57",
+      "posX": "2.702764",
+      "posY": "12.57693",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "59": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "59",
+      "posX": "34.63706",
+      "posY": "4.219659",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "60": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "60",
+      "posX": "34.48699",
+      "posY": "-1.432478",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "75": {
+      "actionTarget": "money_bag_1",
+      "actionName": "MoveTo",
+      "action_x-position": "-150",
+      "action_y-position": "-180.6",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "80",
+      "tru": "True",
+      "index": "75",
+      "posX": "22.38187",
+      "posY": "-3.621496",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "80": {
+      "actionTarget": "money_bag_1(1)",
+      "actionName": "MoveTo",
+      "action_x-position": "-140",
+      "action_y-position": "-188.17",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "81",
+      "tru": "True",
+      "index": "80",
+      "posX": "26.38215",
+      "posY": "-3.798814",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "81": {
+      "actionTarget": "money_bag_1(1)(1)",
+      "actionName": "MoveTo",
+      "action_x-position": "-130",
+      "action_y-position": "-183.82",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "60",
+      "tru": "True",
+      "index": "81",
+      "posX": "30.38347",
+      "posY": "-3.854924",
+      "advance_mode": "Instantly",
+      "type": "action"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "stage_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "stage_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "Enter number here",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text",
+        "pos": {
+          "x": 117.145508,
+          "y": -28.1066265,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.97240293,
+            "y": -0.233307838,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 120.470131,
+          "sqrMagnitude": 14513.0527
+        },
+        "size": {
+          "x": 77.2032242,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.611103,
+            "y": 0.7915511,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 126.334229,
+          "sqrMagnitude": 15960.3379
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "This is your money",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(1)",
+        "pos": {
+          "x": -44.3959541,
+          "y": -26.8870354,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.8553652,
+            "y": -0.518025458,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 51.9029236,
+          "sqrMagnitude": 2693.91333
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "lab_scientist_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "lab_scientist_2",
+        "pos": {
+          "x": -190.952087,
+          "y": -96.508255,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.892489135,
+            "y": -0.451069,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 213.954529,
+          "sqrMagnitude": 45776.543
+        },
+        "size": {
+          "x": 93.11544,
+          "y": 250.220764,
+          "normalized": {
+            "x": 0.348766744,
+            "y": 0.937209547,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 266.984863,
+          "sqrMagnitude": 71280.9141
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_middle_age_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_middle_age_3",
+        "pos": {
+          "x": 211.281235,
+          "y": -105.266373,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.8950605,
+            "y": -0.4459448,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 236.052475,
+          "sqrMagnitude": 55720.77
+        },
+        "size": {
+          "x": -76.2205353,
+          "y": 241.365067,
+          "normalized": {
+            "x": -0.301131338,
+            "y": 0.9535827,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 253.113937,
+          "sqrMagnitude": 64066.6641
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "money_bag_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "money_bag_1",
+        "pos": {
+          "x": 140.652451,
+          "y": -180.59671,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.614453137,
+            "y": -0.7889533,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 228.906723,
+          "sqrMagnitude": 52398.2852
+        },
+        "size": {
+          "x": 39.43079,
+          "y": 57.2115173,
+          "normalized": {
+            "x": 0.5674849,
+            "y": 0.8233838,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 69.48341,
+          "sqrMagnitude": 4827.945
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "money_bag_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "money_bag_1(1)",
+        "pos": {
+          "x": 321.21698,
+          "y": -188.1733,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.862845957,
+            "y": -0.505466938,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 372.276154,
+          "sqrMagnitude": 138589.531
+        },
+        "size": {
+          "x": 39.43079,
+          "y": 57.2115173,
+          "normalized": {
+            "x": 0.5674849,
+            "y": 0.8233838,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 69.48341,
+          "sqrMagnitude": 4827.945
+        }
+      },
+      {
+        "uid": 7,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "money_bag_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "money_bag_1(1)(1)",
+        "pos": {
+          "x": 272.136627,
+          "y": -179.389786,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.834920168,
+            "y": -0.55037117,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 325.9433,
+          "sqrMagnitude": 106239.039
+        },
+        "size": {
+          "x": 39.43079,
+          "y": 57.2115173,
+          "normalized": {
+            "x": 0.5674849,
+            "y": 0.8233838,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 69.48341,
+          "sqrMagnitude": 4827.945
+        }
+      },
+      {
+        "uid": 8,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "Lootbox Simulator 2019",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(2)",
+        "pos": {
+          "x": 19.76123,
+          "y": 71.1435547,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.267632961,
+            "y": 0.963520944,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 73.83706,
+          "sqrMagnitude": 5451.91162
+        },
+        "size": {
+          "x": 218.677734,
+          "y": 32.27997,
+          "normalized": {
+            "x": 0.989279866,
+            "y": 0.146031886,
+            "normalized": {
+              "x": 0.9892799,
+              "y": 0.1460319,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 221.0474,
+          "sqrMagnitude": 48861.95
+        }
+      },
+      {
+        "uid": 9,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "mask_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "mask_2",
+        "pos": {
+          "x": 200.24794,
+          "y": -9.473424,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9988828,
+            "y": -0.0472556166,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.99888283,
+              "y": -0.04725562,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 200.471909,
+          "sqrMagnitude": 40188.9844
+        },
+        "size": {
+          "x": 41.6123657,
+          "y": 29.5863914,
+          "normalized": {
+            "x": 0.814998031,
+            "y": 0.5794636,
+            "normalized": {
+              "x": 0.8149981,
+              "y": 0.579463661,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 51.05824,
+          "sqrMagnitude": 2606.9436
+        }
+      },
+      {
+        "uid": 10,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "board_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "board_1",
+        "pos": {
+          "x": -376.536346,
+          "y": -132.065765,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9436409,
+            "y": -0.330971122,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 399.025055,
+          "sqrMagnitude": 159220.984
+        },
+        "size": {
+          "x": 179.18251,
+          "y": 190.730637,
+          "normalized": {
+            "x": 0.6846984,
+            "y": 0.7288265,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 261.695526,
+          "sqrMagnitude": 68484.55
+        }
+      },
+      {
+        "uid": 11,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "drug_shortage_mn_order_history_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "board_1",
+        "objectType": 0,
+        "name": "drug_shortage_mn_order_history_1",
+        "pos": {
+          "x": -0.8818512,
+          "y": 40.9865646,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.0215106364,
+            "y": 0.999768555,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.0215106383,
+              "y": 0.9997686,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 40.99605,
+          "sqrMagnitude": 1680.67615
+        },
+        "size": {
+          "x": 117.197662,
+          "y": 94.21367,
+          "normalized": {
+            "x": 0.779388845,
+            "y": 0.626540542,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 150.371231,
+          "sqrMagnitude": 22611.5078
+        }
+      }
+    ],
+    "layoutScale": 0.7314269,
+    "layoutPosition": {
+      "x": 78.8508,
+      "y": -23.9005318,
+      "normalized": {
+        "x": 0.957003,
+        "y": -0.290077984,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 82.39347,
+      "sqrMagnitude": 6788.684
+    },
+    "scriptorScale": 0.4818649,
+    "scriptorPosition": {
+      "x": -1185.8241,
+      "y": -26.5358639,
+      "normalized": {
+        "x": -0.9997497,
+        "y": -0.02237197,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 1186.121,
+      "sqrMagnitude": 1406883.0
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

@@ -1,0 +1,1293 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "47",
+      "tru": "True",
+      "index": "0",
+      "posX": "0.1005745",
+      "posY": "2.212643",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "47": {
+      "content": "Ok you can now make your choice: ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "48",
+      "tru": "True",
+      "index": "47",
+      "posX": "3.782088",
+      "posY": "2.278735",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "48": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "49~~KEEP SILENT~~False~~none~~true~-~50~~IDENTIFY your friend~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "48",
+      "posX": "7.603928",
+      "posY": "3.622127",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "49": {
+      "displayName": null,
+      "owner": "{betraytime}",
+      "newValue": "1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "51",
+      "tru": "True",
+      "index": "49",
+      "posX": "11.68439",
+      "posY": "4.168103",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "50": {
+      "displayName": null,
+      "owner": "{believetime}",
+      "newValue": "1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "51",
+      "tru": "True",
+      "index": "50",
+      "posX": "11.73467",
+      "posY": "0.1307473",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "51": {
+      "content": "Good choice, my assistant who give you this scenario will tell you what the result is. Thank you! ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "52",
+      "tru": "True",
+      "index": "51",
+      "posX": "16.08812",
+      "posY": "3.227011",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "52": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "52",
+      "posX": "19.83812",
+      "posY": "4.635057",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 2",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 1,
+    "background": "garage_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "garage_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_police_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_police_1",
+        "pos": {
+          "x": -246.298279,
+          "y": -9.59242249,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9992425,
+            "y": -0.03891686,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 246.485,
+          "sqrMagnitude": 60754.8555
+        },
+        "size": {
+          "x": 86.90354,
+          "y": 371.315155,
+          "normalized": {
+            "x": 0.227884457,
+            "y": 0.9736882,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 381.349152,
+          "sqrMagnitude": 145427.172
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "panel_basic_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "panel_basic_1",
+        "pos": {
+          "x": 37.7906265,
+          "y": 69.5671844,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.477341443,
+            "y": 0.8787179,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 79.16896,
+          "sqrMagnitude": 6267.72461
+        },
+        "size": {
+          "x": 360.0,
+          "y": 249.0,
+          "normalized": {
+            "x": 0.8224389,
+            "y": 0.568853557,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 437.7225,
+          "sqrMagnitude": 191601.0
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "You",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text",
+        "pos": {
+          "x": -81.7546844,
+          "y": 108.843758,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.600572765,
+            "y": 0.7995701,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.6005728,
+              "y": 0.799570143,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 136.127853,
+          "sqrMagnitude": 18530.793
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "Friend",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(1)",
+        "pos": {
+          "x": -42.1968765,
+          "y": 137.850021,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.2927009,
+            "y": 0.956204,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.292700917,
+              "y": 0.956204057,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 144.163818,
+          "sqrMagnitude": 20783.2051
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "KEEP SILENT",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(2)",
+        "pos": {
+          "x": -83.71876,
+          "y": 55.6265564,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.832903147,
+            "y": 0.5534188,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 100.5144,
+          "sqrMagnitude": 10103.1445
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "IDENTIFY",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(3)",
+        "pos": {
+          "x": -84.74063,
+          "y": -32.30156,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.934416533,
+            "y": -0.356182277,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 90.6882858,
+          "sqrMagnitude": 8224.365
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 7,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "KEEP SILENT",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(2)(1)",
+        "pos": {
+          "x": 30.5829659,
+          "y": 141.34198,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.211481676,
+            "y": 0.977381945,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.21148169,
+              "y": 0.977382,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 144.612839,
+          "sqrMagnitude": 20912.873
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 8,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "IDENTIFY",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(3)(1)",
+        "pos": {
+          "x": 160.354675,
+          "y": 138.520309,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.7567479,
+            "y": 0.653706849,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 211.899734,
+          "sqrMagnitude": 44901.4961
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 9,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "1",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(4)",
+        "pos": {
+          "x": 32.79375,
+          "y": 31.1343689,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.725216866,
+            "y": 0.6885205,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.7252169,
+              "y": 0.688520551,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 45.2192345,
+          "sqrMagnitude": 2044.779
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 10,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "1",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(4)(1)",
+        "pos": {
+          "x": 88.72302,
+          "y": 71.11954,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.780263,
+            "y": 0.625451446,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.780263066,
+              "y": 0.6254515,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 113.709122,
+          "sqrMagnitude": 12929.7637
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 11,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "0",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(5)",
+        "pos": {
+          "x": 32.2781258,
+          "y": -67.42502,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.431797057,
+            "y": -0.901970744,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.4317971,
+              "y": -0.9019708,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 74.753,
+          "sqrMagnitude": 5588.01025
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 12,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "10",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(5)(1)",
+        "pos": {
+          "x": 85.9663,
+          "y": -20.0351753,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9739004,
+            "y": -0.226975739,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.973900437,
+              "y": -0.226975754,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 88.27012,
+          "sqrMagnitude": 7791.61328
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 13,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "3",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(5)(1)(1)",
+        "pos": {
+          "x": 210.135239,
+          "y": -20.1851425,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.995418131,
+            "y": -0.09561774,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 211.102478,
+          "sqrMagnitude": 44564.2578
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 14,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "3",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(5)(1)(1)(1)",
+        "pos": {
+          "x": 152.043854,
+          "y": -69.69452,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.909047246,
+            "y": -0.416693,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.9090473,
+              "y": -0.416693032,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 167.256271,
+          "sqrMagnitude": 27974.66
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 15,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "0",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(4)(1)(1)",
+        "pos": {
+          "x": 210.5601,
+          "y": 71.6777344,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.946653068,
+            "y": 0.322254539,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 222.425842,
+          "sqrMagnitude": 49473.2539
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 16,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "10",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(4)(2)",
+        "pos": {
+          "x": 150.656342,
+          "y": 26.4589424,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.984925866,
+            "y": 0.1729771,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 152.962112,
+          "sqrMagnitude": 23397.4082
+        },
+        "size": {
+          "x": 100.0,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 141.421356,
+          "sqrMagnitude": 20000.0
+        }
+      },
+      {
+        "uid": 17,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1",
+        "pos": {
+          "x": 37.9487457,
+          "y": 36.0251465,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.725249052,
+            "y": 0.688486636,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 52.3251228,
+          "sqrMagnitude": 2737.91846
+        },
+        "size": {
+          "x": 357.243073,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9999475,
+            "y": 0.0102498606,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 357.261841,
+          "sqrMagnitude": 127636.023
+        }
+      },
+      {
+        "uid": 18,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(1)",
+        "pos": {
+          "x": 38.8707123,
+          "y": 124.752678,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.2974766,
+            "y": 0.95472914,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 130.668137,
+          "sqrMagnitude": 17074.1621
+        },
+        "size": {
+          "x": 357.243073,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9999475,
+            "y": 0.0102498606,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 357.261841,
+          "sqrMagnitude": 127636.023
+        }
+      },
+      {
+        "uid": 19,
+        "rotation": 269.935547,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(1)(1)",
+        "pos": {
+          "x": -28.2512646,
+          "y": 67.9704742,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.383807659,
+            "y": 0.9234131,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 73.60787,
+          "sqrMagnitude": 5418.119
+        },
+        "size": {
+          "x": 241.547745,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9998851,
+            "y": 0.0151583422,
+            "normalized": {
+              "x": 0.999885142,
+              "y": 0.0151583431,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 241.5755,
+          "sqrMagnitude": 58358.7227
+        }
+      },
+      {
+        "uid": 20,
+        "rotation": 269.935547,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(1)(1)(1)",
+        "pos": {
+          "x": 85.80536,
+          "y": 69.37897,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.7776104,
+            "y": 0.6287464,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 110.344917,
+          "sqrMagnitude": 12176.001
+        },
+        "size": {
+          "x": 241.547745,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9998851,
+            "y": 0.0151583422,
+            "normalized": {
+              "x": 0.999885142,
+              "y": 0.0151583431,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 241.5755,
+          "sqrMagnitude": 58358.7227
+        }
+      },
+      {
+        "uid": 21,
+        "rotation": 325.780426,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(2)",
+        "pos": {
+          "x": 36.5090179,
+          "y": 69.60067,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.464521348,
+            "y": 0.885561943,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 78.59492,
+          "sqrMagnitude": 6177.16162
+        },
+        "size": {
+          "x": 432.520538,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9999642,
+            "y": 0.008466079,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 432.536041,
+          "sqrMagnitude": 187087.422
+        }
+      },
+      {
+        "uid": 22,
+        "rotation": 322.6568,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(2)(1)",
+        "pos": {
+          "x": 28.9351921,
+          "y": -10.3719406,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9413503,
+            "y": -0.337430954,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 30.7379646,
+          "sqrMagnitude": 944.8225
+        },
+        "size": {
+          "x": 137.236053,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.9996442,
+            "y": 0.0266736113,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 137.2849,
+          "sqrMagnitude": 18847.1445
+        }
+      },
+      {
+        "uid": 23,
+        "rotation": 326.918732,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_inventory_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_inventory_bar_1(2)(1)(1)",
+        "pos": {
+          "x": 151.7564,
+          "y": 79.39837,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.8860548,
+            "y": 0.463580519,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 171.272018,
+          "sqrMagnitude": 29334.1035
+        },
+        "size": {
+          "x": 151.06,
+          "y": 3.661884,
+          "normalized": {
+            "x": 0.999706268,
+            "y": 0.0242341347,
+            "normalized": {
+              "x": 0.9997063,
+              "y": 0.0242341366,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 151.104385,
+          "sqrMagnitude": 22832.5332
+        }
+      }
+    ],
+    "layoutScale": 0.8773793,
+    "layoutPosition": {
+      "x": -4.5229845,
+      "y": -68.5611649,
+      "normalized": {
+        "x": -0.0658269748,
+        "y": -0.997831,
+        "normalized": {
+          "x": -0.06582698,
+          "y": -0.997831047,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.9999999
+      },
+      "magnitude": 68.7102,
+      "sqrMagnitude": 4721.091
+    },
+    "scriptorScale": 0.36706242,
+    "scriptorPosition": {
+      "x": -247.6517,
+      "y": -149.241287,
+      "normalized": {
+        "x": -0.856499135,
+        "y": -0.5161484,
+        "normalized": {
+          "x": -0.8564992,
+          "y": -0.516148448,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 289.144135,
+      "sqrMagnitude": 83604.33
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

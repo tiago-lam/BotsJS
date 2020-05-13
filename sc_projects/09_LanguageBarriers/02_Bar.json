@@ -1,0 +1,309 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "23",
+      "tru": "True",
+      "index": "0",
+      "posX": "0",
+      "posY": "0",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "23": {
+      "content": "You are so beautiful, **&&^ **$$*** ##@** *&^*.",
+      "owner": "male_9",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "24",
+      "tru": "True",
+      "index": "23",
+      "posX": "3.007739",
+      "posY": "1.197747",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "24": {
+      "content": "So you mean...",
+      "owner": "female_sitting_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "25",
+      "tru": "True",
+      "index": "24",
+      "posX": "6.161097",
+      "posY": "2.695024",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "25": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "29~~you want me to get away.~~False~~none~~true~-~29~~you want to give me something.~~False~~none~~true~-~26~~you want to buy me a drink.~~False~~none~~true~-~29~~you want me to show you my ID.~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "25",
+      "posX": "9.212365",
+      "posY": "3.511721",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "26": {
+      "content": "YES, YES! MAY I?",
+      "owner": "male_9",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "27",
+      "tru": "True",
+      "index": "26",
+      "posX": "14.14091",
+      "posY": "2.615624",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "27": {
+      "content": "I'm sorry, my boyfriend is over there, he might be upset.",
+      "owner": "female_sitting_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "28",
+      "tru": "True",
+      "index": "27",
+      "posX": "17.69695",
+      "posY": "3.727241",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "28": {
+      "content": "Ahh, I see.",
+      "owner": "male_9",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "30",
+      "tru": "True",
+      "index": "28",
+      "posX": "20.95807",
+      "posY": "3.307549",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "29": {
+      "content": "Ummmm......",
+      "owner": "male_9",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "30",
+      "tru": "True",
+      "index": "29",
+      "posX": "14.7421",
+      "posY": "5.882413",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "30": {
+      "nextScript": "Forest",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "30",
+      "posX": "25.50095",
+      "posY": "6.120618",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Bar",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 1,
+    "background": "bar_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_sitting_10",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_sitting_10",
+        "pos": {
+          "x": -186.513168,
+          "y": -25.46053,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.99081105,
+            "y": -0.135253578,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 188.24292,
+          "sqrMagnitude": 35435.4
+        },
+        "size": {
+          "x": 127.0,
+          "y": 299.0,
+          "normalized": {
+            "x": 0.390945077,
+            "y": 0.920414,
+            "normalized": {
+              "x": 0.3909451,
+              "y": 0.920414031,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 324.853821,
+          "sqrMagnitude": 105530.0
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_9",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_9",
+        "pos": {
+          "x": -75.19737,
+          "y": -77.2697,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.6974313,
+            "y": -0.7166515,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.6974314,
+              "y": -0.716651559,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 107.820465,
+          "sqrMagnitude": 11625.252
+        },
+        "size": {
+          "x": -73.6578445,
+          "y": 326.697418,
+          "normalized": {
+            "x": -0.219941124,
+            "y": 0.97551316,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 334.898,
+          "sqrMagnitude": 112156.68
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.296052635,
+      "y": 1.18421054,
+      "normalized": {
+        "x": 0.242535621,
+        "y": 0.9701425,
+        "normalized": {
+          "x": 0.242535636,
+          "y": 0.970142543,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 1.22065628,
+      "sqrMagnitude": 1.4900018
+    },
+    "scriptorScale": 0.866735458,
+    "scriptorPosition": {
+      "x": -619.2803,
+      "y": -250.911316,
+      "normalized": {
+        "x": -0.926816463,
+        "y": -0.375514537,
+        "normalized": {
+          "x": -0.9268165,
+          "y": -0.375514567,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 668.180054,
+      "sqrMagnitude": 446464.563
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

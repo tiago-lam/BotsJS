@@ -1,0 +1,339 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "23189",
+      "tru": "True",
+      "index": "0",
+      "posX": "0",
+      "posY": "0",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "23189": {
+      "choices": "23190~~true~-~23191~~true~-~",
+      "isRandom": "True",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23189",
+      "posX": "3.899206",
+      "posY": "0.9365487",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "23190": {
+      "displayName": null,
+      "owner": "{SongRelax}",
+      "newValue": "0",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23192",
+      "tru": "True",
+      "index": "23190",
+      "posX": "7.325229",
+      "posY": "2.265078",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "23191": {
+      "displayName": null,
+      "owner": "{SongTense}",
+      "newValue": "0",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23193",
+      "tru": "True",
+      "index": "23191",
+      "posX": "7.232674",
+      "posY": "-2.270269",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "23192": {
+      "action": "play_background",
+      "clipName": "Joyful",
+      "volume": "1",
+      "name": null,
+      "next": "23194",
+      "tru": "True",
+      "index": "23192",
+      "posX": "10.48182",
+      "posY": "1.734978",
+      "advance_mode": "OnClick",
+      "type": "sound"
+    },
+    "23193": {
+      "action": "play_background",
+      "clipName": "Hacer",
+      "volume": "1",
+      "name": null,
+      "next": "23194",
+      "tru": "True",
+      "index": "23193",
+      "posX": "10.20119",
+      "posY": "-2.225816",
+      "advance_mode": "OnClick",
+      "type": "sound"
+    },
+    "23194": {
+      "choiceType": "simple",
+      "content": "You found a weird creature during your walk in the forest! Do you...",
+      "owner": "Background",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "23195~~Report it to the authorities? It seems dangerous.~~False~~none~~true~-~23201~~Keep it a secret? It seems harmless.~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "23194",
+      "posX": "13.13758",
+      "posY": "-1.606149",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "23195": {
+      "content": "Hello, police? I just found a strange creature...",
+      "owner": "female_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23198",
+      "tru": "True",
+      "index": "23195",
+      "posX": "16.59502",
+      "posY": "-1.006326",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23198": {
+      "actionTarget": "alien",
+      "actionName": "MoveTo",
+      "action_x-position": "550",
+      "action_y-position": "300",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "23217",
+      "tru": "True",
+      "index": "23198",
+      "posX": "20.30797",
+      "posY": "-1.699708",
+      "advance_mode": "WhenCompleted",
+      "type": "action"
+    },
+    "23199": {
+      "nextScript": "kitchen",
+      "transitionText": "Interesting choice. Just a couple more to go.",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23199",
+      "posX": "27.12441",
+      "posY": "0.03715503",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "23201": {
+      "content": "Don't worry, I'll keep you safe",
+      "owner": "female_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23202",
+      "tru": "True",
+      "index": "23201",
+      "posX": "16.35458",
+      "posY": "-3.953204",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23202": {
+      "actionTarget": "alien",
+      "actionName": "MoveTo",
+      "action_x-position": "-250",
+      "action_y-position": "-250",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "23217",
+      "tru": "True",
+      "index": "23202",
+      "posX": "19.6146",
+      "posY": "-4.014714",
+      "advance_mode": "WhenCompleted",
+      "type": "action"
+    },
+    "23217": {
+      "action": "stop_background",
+      "clipName": "",
+      "volume": "1",
+      "name": null,
+      "next": "23199",
+      "tru": "True",
+      "index": "23217",
+      "posX": "23.52518",
+      "posY": "-0.2821632",
+      "advance_mode": "OnClick",
+      "type": "sound"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "forest",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 3,
+    "background": "forest_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "forest_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_10",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_10",
+        "pos": {
+          "x": -374.683075,
+          "y": -172.216232,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.908617437,
+            "y": -0.417629421,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 412.36615,
+          "sqrMagnitude": 170045.844
+        },
+        "size": {
+          "x": 73.0,
+          "y": 277.0,
+          "normalized": {
+            "x": 0.254836947,
+            "y": 0.966984034,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 286.457672,
+          "sqrMagnitude": 82058.0
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "rocket_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "alien",
+        "pos": {
+          "x": 150.4071,
+          "y": -64.77189,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.918454468,
+            "y": -0.395526737,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 163.7611,
+          "sqrMagnitude": 26817.6953
+        },
+        "size": {
+          "x": 115.915794,
+          "y": 197.4563,
+          "normalized": {
+            "x": 0.506257534,
+            "y": 0.862382352,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 228.966064,
+          "sqrMagnitude": 52425.46
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.327394724,
+    "scriptorPosition": {
+      "x": -439.310822,
+      "y": 71.9602356,
+      "normalized": {
+        "x": -0.9868485,
+        "y": 0.1616483,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 445.165436,
+      "sqrMagnitude": 198172.266
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

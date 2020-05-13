@@ -1,0 +1,1 @@
+{"title":"Game Theory", "description":"", "initial_scene":"Scene 1", "last_edit":"2019-11-01 13:02:44", "published":"false", "variables":[ {"name":"betraytime", "value":"0", "type":"Int", "kind":"Null", "id":"3527"}, {"name":"believetime", "value":"0", "type":"Int", "kind":"Null", "id":"3528"} ]}

@@ -1,0 +1,238 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "82",
+      "tru": "True",
+      "index": "0",
+      "posX": "-3.461114",
+      "posY": "2.376319",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "82": {
+      "content": "Since your answers of the questions have more than \"Not at all\", there is another question for you. The one will not be included in final score.",
+      "owner": "male_middle_age_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "83",
+      "tru": "True",
+      "index": "82",
+      "posX": "-0.5669159",
+      "posY": "3.552255",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "83": {
+      "choiceType": "simple",
+      "content": "So, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+      "owner": "male_middle_age_2",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "84~~Not at all~~False~~none~~true~-~85~~Somewhat difficult~~False~~none~~true~-~86~~Very difficult~~False~~none~~true~-~87~~Extremely difficult~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "83",
+      "posX": "2.392218",
+      "posY": "-0.464265",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "84": {
+      "displayName": null,
+      "owner": "{how_difficult}",
+      "newValue": "Not at all",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "88",
+      "tru": "True",
+      "index": "84",
+      "posX": "5.238054",
+      "posY": "3.895052",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "85": {
+      "displayName": null,
+      "owner": "{how_difficult}",
+      "newValue": "Somewhat difficult",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "88",
+      "tru": "True",
+      "index": "85",
+      "posX": "5.439897",
+      "posY": "1.332327",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "86": {
+      "displayName": null,
+      "owner": "{how_difficult}",
+      "newValue": "Very difficult",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "88",
+      "tru": "True",
+      "index": "86",
+      "posX": "5.628107",
+      "posY": "-0.07327062",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "87": {
+      "displayName": null,
+      "owner": "{how_difficult}",
+      "newValue": "Extremely difficult",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "88",
+      "tru": "True",
+      "index": "87",
+      "posX": "5.568492",
+      "posY": "-1.511438",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "88": {
+      "nextScript": "Scene 10",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "88",
+      "posX": "9.473158",
+      "posY": "3.110119",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 9",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 8,
+    "background": "office_3",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "office_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_middle_age_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_middle_age_2",
+        "pos": {
+          "x": 293.2625,
+          "y": -26.6938477,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9958829,
+            "y": -0.09064898,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 294.474884,
+          "sqrMagnitude": 86715.46
+        },
+        "size": {
+          "x": -112.178246,
+          "y": 403.059082,
+          "normalized": {
+            "x": -0.26812622,
+            "y": 0.9633838,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 418.3785,
+          "sqrMagnitude": 175040.578
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 6.116638,
+      "y": -4.199524,
+      "normalized": {
+        "x": 0.8243982,
+        "y": -0.5660103,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 7.419519,
+      "sqrMagnitude": 55.049263
+    },
+    "scriptorScale": 1.23817909,
+    "scriptorPosition": {
+      "x": -52.3488846,
+      "y": 888.182251,
+      "normalized": {
+        "x": -0.0588372461,
+        "y": 0.998267651,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 889.7236,
+      "sqrMagnitude": 791608.063
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

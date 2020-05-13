@@ -1,0 +1,196 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-2.968072",
+      "posY": "0.02090228",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "Hi there! Welcome to this experiment! (Click anywhere to continue)",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "3",
+      "posX": "0.7734375",
+      "posY": "0.0322094",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "content": "In this study, you will be taking control of a character.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "5",
+      "tru": "True",
+      "index": "4",
+      "posX": "4.600322",
+      "posY": "0.06715822",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "5": {
+      "content": "This character will eventually be faced with a choice.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "168",
+      "tru": "True",
+      "index": "5",
+      "posX": "7.714179",
+      "posY": "-0.03768843",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "6": {
+      "content": "Sound good? (Select one to continue)",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "7",
+      "tru": "True",
+      "index": "6",
+      "posX": "14.48824",
+      "posY": "0.09867811",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "8~~Sure!~~True~~none~~true~-~8~~Okay!~~True~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "7",
+      "posX": "17.65108",
+      "posY": "0.1336262",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "8": {
+      "content": "Alright, then, let's begin!",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "9",
+      "tru": "True",
+      "index": "8",
+      "posX": "22.29925",
+      "posY": "-1.718659",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "9": {
+      "nextScript": "Airport",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "9",
+      "posX": "25.8116",
+      "posY": "-1.543916",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "168": {
+      "content": "Simply go through the dialogue until the choice appears, and select whichever option you feel is appropriate.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "6",
+      "tru": "True",
+      "index": "168",
+      "posX": "11.20564",
+      "posY": "0.1163324",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Briefing",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "airport_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "airport_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.484890133,
+    "scriptorPosition": {
+      "x": -257.9668,
+      "y": -46.51236,
+      "normalized": {
+        "x": -0.984131157,
+        "y": -0.177442461,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 262.126434,
+      "sqrMagnitude": 68710.2656
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

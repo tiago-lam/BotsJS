@@ -1,0 +1,204 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "97",
+      "tru": "True",
+      "index": "0",
+      "posX": "-2.787644",
+      "posY": "2.739262",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "62": {
+      "choiceType": "simple",
+      "content": "What would you gonna do with the doll",
+      "owner": "Background",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "74~~Throw it away~~False~~none~~true~-~83~~Keep it~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "62",
+      "posX": "3.626436",
+      "posY": "2.427203",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "74": {
+      "nextScript": "",
+      "transitionText": "Thank you for participating",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "74",
+      "posX": "7.333333",
+      "posY": "3.5",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "83": {
+      "nextScript": "",
+      "transitionText": "Thank you for participating",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "83",
+      "posX": "7.298851",
+      "posY": "-1.159004",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "97": {
+      "content": "It reminds you that you have gotten a same doll in your home, and you find the doll when you back home",
+      "owner": "Background",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "62",
+      "tru": "True",
+      "index": "97",
+      "posX": "0.7220726",
+      "posY": "2.218267",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Target 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 6,
+    "background": "borna_bedroom_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "borna_bedroom_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "doll_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "doll_1",
+        "pos": {
+          "x": 150.15799,
+          "y": -186.042877,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.628065169,
+            "y": -0.7781607,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.6280652,
+              "y": -0.778160751,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 239.080276,
+          "sqrMagnitude": 57159.375
+        },
+        "size": {
+          "x": 79.87908,
+          "y": 96.64422,
+          "normalized": {
+            "x": 0.6370831,
+            "y": 0.770795047,
+            "normalized": {
+              "x": 0.6370832,
+              "y": 0.7707951,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 125.382507,
+          "sqrMagnitude": 15720.7725
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.5676829,
+    "scriptorPosition": {
+      "x": -171.693115,
+      "y": -87.22125,
+      "normalized": {
+        "x": -0.8915536,
+        "y": -0.4529152,
+        "normalized": {
+          "x": -0.89155364,
+          "y": -0.452915221,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 192.577454,
+      "sqrMagnitude": 37086.0742
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

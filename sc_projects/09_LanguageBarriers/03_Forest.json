@@ -1,0 +1,590 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "35",
+      "tru": "True",
+      "index": "0",
+      "posX": "0",
+      "posY": "0",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "35": {
+      "content": "****####**نيرانك!",
+      "owner": "male_military_4(3)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "37",
+      "tru": "True",
+      "index": "35",
+      "posX": "3.217585",
+      "posY": "1.016258",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "37": {
+      "actionTarget": "male_military_4(3)",
+      "actionName": "Flip",
+      "action_horizontal": "True",
+      "action_vertical": "False",
+      "name": null,
+      "next": "39",
+      "tru": "True",
+      "index": "37",
+      "posX": "7.316419",
+      "posY": "2.492723",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "39": {
+      "content": "We have something to tell you, **  ** $$## ***, don't **** *&%@@*** ***. ",
+      "owner": "male_military_4(3)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "41",
+      "tru": "True",
+      "index": "39",
+      "posX": "10.96472",
+      "posY": "4.101333",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "41": {
+      "content": "(They are wearing our enemy's uniform...)",
+      "owner": "male_military_3(1)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "44",
+      "tru": "True",
+      "index": "41",
+      "posX": "14.06658",
+      "posY": "4.609159",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "44": {
+      "actionTarget": "male_military_3(1)",
+      "actionName": "Flip",
+      "action_horizontal": "True",
+      "action_vertical": "False",
+      "name": null,
+      "next": "45",
+      "tru": "True",
+      "index": "44",
+      "posX": "17.36059",
+      "posY": "4.053295",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "45": {
+      "content": "(What should I say...)",
+      "owner": "male_military_3(1)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "47",
+      "tru": "True",
+      "index": "45",
+      "posX": "20.2703",
+      "posY": "4.513085",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "47": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "51~~FIRE!!! They are our enemies!~~False~~none~~true~-~65~~Hold your fire, they have already surrendered.~~False~~none~~true~-~64~~Hold your fire, they are friendly.~~False~~none~~true~-~51~~He wants us to surrender, but we are not cowards!!\nFIRE!! ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "47",
+      "posX": "23.5506",
+      "posY": "2.660203",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "51": {
+      "actionTarget": "male_military_4(3)",
+      "actionName": "Flip",
+      "action_horizontal": "True",
+      "action_vertical": "False",
+      "name": null,
+      "next": "63",
+      "tru": "True",
+      "index": "51",
+      "posX": "27.27739",
+      "posY": "6.206141",
+      "advance_mode": "WhenCompleted",
+      "type": "action"
+    },
+    "56": {
+      "actionTarget": "male_military_4(3)",
+      "actionName": "Flip",
+      "action_horizontal": "True",
+      "action_vertical": "False",
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "56",
+      "posX": "27.38962",
+      "posY": "-5.361683",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "63": {
+      "content": "TAKE COVER!!!",
+      "owner": "male_military_4(3)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "66",
+      "tru": "True",
+      "index": "63",
+      "posX": "30.29827",
+      "posY": "6.222174",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "64": {
+      "content": "مرحبا! Good to see you my friend!",
+      "owner": "male_military_4(3)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "66",
+      "tru": "True",
+      "index": "64",
+      "posX": "27.3564",
+      "posY": "0.2554117",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "65": {
+      "content": "Ummm...That's not what I mean.",
+      "owner": "male_military_4(3)",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "66",
+      "tru": "True",
+      "index": "65",
+      "posX": "27.28628",
+      "posY": "3.13254",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "66": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "66",
+      "posX": "34.15092",
+      "posY": "3.54587",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Forest",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 2,
+    "background": "forest_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "forest_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_3",
+        "pos": {
+          "x": -250.164459,
+          "y": -42.0394745,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9861722,
+            "y": -0.165723637,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.986172259,
+              "y": -0.165723652,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 253.67218,
+          "sqrMagnitude": 64349.5742
+        },
+        "size": {
+          "x": 66.40788,
+          "y": 280.0,
+          "normalized": {
+            "x": 0.230769411,
+            "y": 0.9730085,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 287.767273,
+          "sqrMagnitude": 82810.01
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.556253731,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_3(1)",
+        "pos": {
+          "x": -173.486832,
+          "y": -48.5526276,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.962998152,
+            "y": -0.269508,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 180.152817,
+          "sqrMagnitude": 32455.04
+        },
+        "size": {
+          "x": 67.0,
+          "y": 280.0,
+          "normalized": {
+            "x": 0.232716054,
+            "y": 0.97254467,
+            "normalized": {
+              "x": 0.232716069,
+              "y": 0.9725447,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 287.9045,
+          "sqrMagnitude": 82889.0
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_3(2)",
+        "pos": {
+          "x": -341.0526,
+          "y": -35.5263138,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9946184,
+            "y": -0.103606082,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 342.897949,
+          "sqrMagnitude": 117579.0
+        },
+        "size": {
+          "x": 67.0,
+          "y": 280.0,
+          "normalized": {
+            "x": 0.232716054,
+            "y": 0.97254467,
+            "normalized": {
+              "x": 0.232716069,
+              "y": 0.9725447,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 287.9045,
+          "sqrMagnitude": 82889.0
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_4",
+        "pos": {
+          "x": 239.506577,
+          "y": -42.63158,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9845252,
+            "y": -0.175243065,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 243.271149,
+          "sqrMagnitude": 59180.85
+        },
+        "size": {
+          "x": -67.960556,
+          "y": 279.0,
+          "normalized": {
+            "x": -0.236666188,
+            "y": 0.971591,
+            "normalized": {
+              "x": -0.2366662,
+              "y": 0.971591055,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 287.157867,
+          "sqrMagnitude": 82459.64
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_4(1)",
+        "pos": {
+          "x": 373.9145,
+          "y": -44.4078941,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9930212,
+            "y": -0.117936008,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 376.5423,
+          "sqrMagnitude": 141784.109
+        },
+        "size": {
+          "x": -64.40793,
+          "y": 279.0,
+          "normalized": {
+            "x": -0.2249368,
+            "y": 0.974373341,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 286.3379,
+          "sqrMagnitude": 81989.38
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_4(2)",
+        "pos": {
+          "x": 303.453979,
+          "y": -36.11842,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.992991,
+            "y": -0.118190125,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.99299103,
+              "y": -0.118190132,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 305.595917,
+          "sqrMagnitude": 93388.86
+        },
+        "size": {
+          "x": -64.40793,
+          "y": 279.0,
+          "normalized": {
+            "x": -0.2249368,
+            "y": 0.974373341,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 286.3379,
+          "sqrMagnitude": 81989.38
+        }
+      },
+      {
+        "uid": 7,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_military_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_military_4(3)",
+        "pos": {
+          "x": 145.954025,
+          "y": -35.5263176,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.971630931,
+            "y": -0.236502349,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 150.2155,
+          "sqrMagnitude": 22564.6973
+        },
+        "size": {
+          "x": 70.5920639,
+          "y": 279.0,
+          "normalized": {
+            "x": 0.245288461,
+            "y": 0.969450057,
+            "normalized": {
+              "x": 0.245288491,
+              "y": 0.9694502,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.9999999,
+            "sqrMagnitude": 0.9999998
+          },
+          "magnitude": 287.792023,
+          "sqrMagnitude": 82824.24
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.72765094,
+    "scriptorPosition": {
+      "x": -1639.82788,
+      "y": 39.47847,
+      "normalized": {
+        "x": -0.9997104,
+        "y": 0.0240677912,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 1640.303,
+      "sqrMagnitude": 2690594.0
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

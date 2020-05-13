@@ -1,0 +1,1 @@
+{"title":"Reward", "description":"", "initial_scene":"2", "last_edit":"2019-10-28 15:12:59", "published":"false", "variables":[ {"name":"count", "value":"0", "type":"Int", "kind":"Dependent", "id":"3554"}, {"name":"bottleCount", "value":"0", "type":"Int", "kind":"Dependent", "id":"3555"}, {"name":"ClickTime", "value":"0", "type":"Int", "kind":"Dependent", "id":"3556"} ]}

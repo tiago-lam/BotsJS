@@ -1,0 +1,245 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "0.9244555",
+      "posY": "2.966197",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "Mom, I want \rthat #$&%* off, it's too bling bling.",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "3",
+      "posX": "4.380244",
+      "posY": "3.954099",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "choiceType": "simple",
+      "content": "So you want me to...",
+      "owner": "female_20",
+      "speaking": "True",
+      "prompted": "True",
+      "choices": "17~~Turn off the lamp.~~False~~none~~true~-~18~~Close the door.~~False~~none~~true~-~18~~Close the window.~~False~~none~~true~-~18~~Pass you some grapes.~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "8.24254",
+      "posY": "1.214762",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "17": {
+      "content": "YES, YES! That's what I want!!",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "19",
+      "tru": "True",
+      "index": "17",
+      "posX": "11.72413",
+      "posY": "3.571437",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "18": {
+      "content": "Ummmm......",
+      "owner": "baby_4",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "19",
+      "tru": "True",
+      "index": "18",
+      "posX": "12.45627",
+      "posY": "-1.156537",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "19": {
+      "nextScript": "Bar",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "19",
+      "posX": "16.77693",
+      "posY": "1.885453",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Home",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "dining_room_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "dining_room_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 357.878021,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "baby_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "baby_4",
+        "pos": {
+          "x": 258.8422,
+          "y": 37.7659073,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9895231,
+            "y": 0.144374609,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 261.582764,
+          "sqrMagnitude": 68425.55
+        },
+        "size": {
+          "x": -61.2926521,
+          "y": 86.28292,
+          "normalized": {
+            "x": -0.57912153,
+            "y": 0.8152412,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 105.837288,
+          "sqrMagnitude": 11201.5313
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_20",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_20",
+        "pos": {
+          "x": 14.8026428,
+          "y": -4.14473724,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.962964058,
+            "y": -0.269629747,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 15.3719578,
+          "sqrMagnitude": 236.297089
+        },
+        "size": {
+          "x": 79.0,
+          "y": 282.0,
+          "normalized": {
+            "x": 0.2697566,
+            "y": 0.962928534,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 292.856628,
+          "sqrMagnitude": 85765.0
+        }
+      }
+    ],
+    "layoutScale": 0.4980785,
+    "layoutPosition": {
+      "x": 95.84737,
+      "y": -2.94914246,
+      "normalized": {
+        "x": 0.999527,
+        "y": -0.0307546016,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 95.89272,
+      "sqrMagnitude": 9195.415
+    },
+    "scriptorScale": 0.9137223,
+    "scriptorPosition": {
+      "x": -581.770264,
+      "y": -412.1222,
+      "normalized": {
+        "x": -0.8160014,
+        "y": -0.57805,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 712.9525,
+      "sqrMagnitude": 508301.3
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

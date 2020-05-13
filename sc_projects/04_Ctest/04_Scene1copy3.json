@@ -1,0 +1,500 @@
+{
+  "dictNodes": {
+    "32": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "207",
+      "tru": "True",
+      "index": "32",
+      "posX": "-37.12879",
+      "posY": "1.300835",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "33": {
+      "content": "Hello child, I got lost here, but I know I live around Woodbury, can you show me which direction I should go?",
+      "owner": "male_elderly_3",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "198",
+      "tru": "True",
+      "index": "33",
+      "posX": "-28.32191",
+      "posY": "0.422822",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "34": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "34",
+      "posX": "12.27865",
+      "posY": "0.5988733",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "36": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "37~~Ask him to find another people for help.~~False~~none~~true~-~39~~Help him finding another people to help~~False~~none~~true~-~40~~Check for the address and point him the direction.~~False~~none~~true~-~41~~Check for the address and guide him home.~~False~~none~~true~-~42~~Just go.~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "36",
+      "posX": "-11.44183",
+      "posY": "0.2045846",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "37": {
+      "displayName": null,
+      "owner": "{Willingness}",
+      "newValue": "2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "43",
+      "tru": "True",
+      "index": "37",
+      "posX": "-5.141443",
+      "posY": "3.233409",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "39": {
+      "displayName": null,
+      "owner": "{Willingness}",
+      "newValue": "3",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "43",
+      "tru": "True",
+      "index": "39",
+      "posX": "-5.13314",
+      "posY": "0.2674631",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "40": {
+      "displayName": null,
+      "owner": "{Willingness}",
+      "newValue": "4",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "43",
+      "tru": "True",
+      "index": "40",
+      "posX": "-4.874517",
+      "posY": "-2.261273",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "41": {
+      "displayName": null,
+      "owner": "{Willingness}",
+      "newValue": "5",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "43",
+      "tru": "True",
+      "index": "41",
+      "posX": "-3.753829",
+      "posY": "-4.746906",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "42": {
+      "displayName": null,
+      "owner": "{Willingness}",
+      "newValue": "1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "43",
+      "tru": "True",
+      "index": "42",
+      "posX": "-4.544059",
+      "posY": "-7.419319",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "43": {
+      "content": "Thank you",
+      "owner": "male_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "164",
+      "tru": "True",
+      "index": "43",
+      "posX": "1.566289",
+      "posY": "-0.3344048",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "158": {
+      "actionTarget": "jeopardy_question_bar_1",
+      "actionName": "MoveBy",
+      "action_x-difference": "400",
+      "action_y-difference": "0",
+      "action_time": "400",
+      "action_easing": "linear",
+      "name": null,
+      "next": "36",
+      "tru": "True",
+      "index": "158",
+      "posX": "-16.69729",
+      "posY": "-0.1600142",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "164": {
+      "displayName": null,
+      "owner": "{Time}",
+      "newValue": "{jeopardy_question_bar_1.posx}+1000",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "183",
+      "tru": "True",
+      "index": "164",
+      "posX": "5.487403",
+      "posY": "-0.6830844",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "174": {
+      "actionTarget": "jeopardy_question_bar_1",
+      "actionName": "MoveTo",
+      "action_x-position": "-1000",
+      "action_y-position": "0",
+      "action_time": "0",
+      "action_easing": "linear",
+      "name": null,
+      "next": "158",
+      "tru": "True",
+      "index": "174",
+      "posX": "-21.54519",
+      "posY": "0.08286381",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "183": {
+      "content": "K:{Willingness},    T:{Time}",
+      "owner": "None",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "34",
+      "tru": "True",
+      "index": "183",
+      "posX": "9.110522",
+      "posY": "0.09592509",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "198": {
+      "content": "If you don't know the location either, what will you do?",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "174",
+      "tru": "True",
+      "index": "198",
+      "posX": "-24.70833",
+      "posY": "0.6718812",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "207": {
+      "content": "You were on your way home, and saw a elder man looks like he needs some help.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "33",
+      "tru": "True",
+      "index": "207",
+      "posX": "-32.85837",
+      "posY": "1.028107",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1 copy 3",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 3,
+    "background": "wall_inside_9",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "wall_inside_9",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 358.948334,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_question_bar_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "jeopardy_question_bar_1",
+        "pos": {
+          "x": -472.303345,
+          "y": 263.6894,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.873136163,
+            "y": 0.4874764,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 540.9275,
+          "sqrMagnitude": 292602.563
+        },
+        "size": {
+          "x": 7.002986,
+          "y": 7.1457715,
+          "normalized": {
+            "x": 0.6999352,
+            "y": 0.714206338,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 10.0051918,
+          "sqrMagnitude": 100.103867
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "car_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "car_2",
+        "pos": {
+          "x": 299.905457,
+          "y": -32.61793,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9941375,
+            "y": -0.108123109,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 301.674,
+          "sqrMagnitude": 91007.21
+        },
+        "size": {
+          "x": 493.739929,
+          "y": 213.9447,
+          "normalized": {
+            "x": 0.9175619,
+            "y": 0.397592932,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 538.099854,
+          "sqrMagnitude": 289551.469
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "house_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "house_1",
+        "pos": {
+          "x": -616.4774,
+          "y": 104.55365,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.985921144,
+            "y": 0.167210758,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.9859212,
+              "y": 0.167210773,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 625.28064,
+          "sqrMagnitude": 390975.875
+        },
+        "size": {
+          "x": 571.2,
+          "y": 488.2,
+          "normalized": {
+            "x": 0.7601764,
+            "y": 0.6497166,
+            "normalized": {
+              "x": 0.7601765,
+              "y": 0.6497167,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 751.404541,
+          "sqrMagnitude": 564608.75
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_elderly_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_elderly_3",
+        "pos": {
+          "x": -251.596863,
+          "y": 7.42964363,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9995643,
+            "y": 0.0295170881,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 251.706528,
+          "sqrMagnitude": 63356.18
+        },
+        "size": {
+          "x": 86.0,
+          "y": 293.0,
+          "normalized": {
+            "x": 0.2816344,
+            "y": 0.9595218,
+            "normalized": {
+              "x": 0.28163442,
+              "y": 0.95952183,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 305.360443,
+          "sqrMagnitude": 93245.0
+        }
+      }
+    ],
+    "layoutScale": 0.965738535,
+    "layoutPosition": {
+      "x": 371.700256,
+      "y": -97.82811,
+      "normalized": {
+        "x": 0.967066646,
+        "y": -0.2545231,
+        "normalized": {
+          "x": 0.9670667,
+          "y": -0.254523128,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 384.358459,
+      "sqrMagnitude": 147731.422
+    },
+    "scriptorScale": 0.572749555,
+    "scriptorPosition": {
+      "x": 263.735229,
+      "y": -44.3770447,
+      "normalized": {
+        "x": 0.9861374,
+        "y": -0.165931046,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 267.4427,
+      "sqrMagnitude": 71525.59
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

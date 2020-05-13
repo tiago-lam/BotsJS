@@ -1,0 +1,171 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "13",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "13": {
+            "actionTarget": "female_12",
+            "actionName": "MoveTo",
+            "action_x-position": "10",
+            "action_y-position": "-100",
+            "action_time": "2",
+            "action_easing": null,
+            "name": null,
+            "next": "14",
+            "tru": "True",
+            "index": "13",
+            "posX": "3.961686",
+            "posY": "0.6862065",
+            "advance_mode": "WhenCompleted",
+            "type": "action"
+        },
+        "14": {
+            "content": "Hello, I am Lily, your new history teacher, Today, I will teach you some of US History.\nHope we will have a great trip.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "19",
+            "tru": "True",
+            "index": "14",
+            "posX": "7.639847",
+            "posY": "-0.1183909",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "19": {
+            "nextScript": "Scene 2",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "19",
+            "posX": "11.11111",
+            "posY": "-0.4057473",
+            "advance_mode": "OnClick",
+            "type": "end"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 1",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "classroom_2",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "classroom_2",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -357.600037,
+                    "y": -73.20001,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9796856,
+                        "y": -0.200539678,
+                        "z": 0,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 365.0151,
+                    "sqrMagnitude": 133236.031
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.58,
+        "scriptorPosition": {
+            "x": -365.6,
+            "y": -87.80014,
+            "normalized": {
+                "x": -0.9723534,
+                "y": -0.233514115,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 375.995,
+            "sqrMagnitude": 141372.234
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

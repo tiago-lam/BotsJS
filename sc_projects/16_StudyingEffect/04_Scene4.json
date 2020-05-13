@@ -1,0 +1,181 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "76",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "76": {
+            "content": "Independence Day\nIndependence is a condition of a nation, country, or state in which its residents and population, or some portion thereof, exercise self-government, and usually sovereignty, over the territory. The opposite of independence is the status of a dependent territory.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "77",
+            "tru": "True",
+            "index": "76",
+            "posX": "4.364761",
+            "posY": "1.525896",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "77": {
+            "content": "Whether the attainment of independence is different from revolution has long been contested, and has often been debated over the question of violence as legitimate means to achieving sovereignty.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "180",
+            "tru": "True",
+            "index": "77",
+            "posX": "7.554351",
+            "posY": "1.819058",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "78": {
+            "nextScript": "Scene 2",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "78",
+            "posX": "14.74203",
+            "posY": "2.342423",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "180": {
+            "content": " While some revolutions seek and achieve national independence, others aim only to redistribute power with or without an element of emancipation, such as in democratization within a state, which as such may remain unaltered. ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "78",
+            "tru": "True",
+            "index": "180",
+            "posX": "11.53708",
+            "posY": "2.855697",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 4",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "museum_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "museum_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -345.882233,
+                    "y": -37.64705,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.994128644,
+                        "y": -0.108204491,
+                        "z": 0,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 347.925018,
+                    "sqrMagnitude": 121051.82
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.5303172,
+        "scriptorPosition": {
+            "x": -335.842468,
+            "y": -152.498428,
+            "normalized": {
+                "x": -0.910527,
+                "y": -0.413449615,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 368.844055,
+            "sqrMagnitude": 136045.938
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

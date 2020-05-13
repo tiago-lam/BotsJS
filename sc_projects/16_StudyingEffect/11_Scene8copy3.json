@@ -1,0 +1,265 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "114",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "114": {
+            "choiceType": "simple",
+            "content": "How many passengers are in Mayflower",
+            "owner": "female_12",
+            "speaking": "False",
+            "prompted": "True",
+            "choices": "115~~24~~False~~none~~true~-~116~~85~~False~~none~~true~-~118~~91~~False~~none~~true~-~119~~102~~False~~none~~true~-~",
+            "variable": null,
+            "name": null,
+            "next": "-1",
+            "tru": "True",
+            "index": "114",
+            "posX": "3.036696",
+            "posY": "1.933107",
+            "advance_mode": "OnClick",
+            "type": "choice"
+        },
+        "115": {
+            "displayName": null,
+            "owner": "{a4}",
+            "newValue": "1",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "122",
+            "tru": "True",
+            "index": "115",
+            "posX": "7.303991",
+            "posY": "-0.6134593",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "116": {
+            "displayName": null,
+            "owner": "{a4}",
+            "newValue": "2",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "136",
+            "tru": "True",
+            "index": "116",
+            "posX": "8.91205",
+            "posY": "-3.740246",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "118": {
+            "displayName": null,
+            "owner": "{a4}",
+            "newValue": "3",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "137",
+            "tru": "True",
+            "index": "118",
+            "posX": "8.15621",
+            "posY": "-7.170918",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "119": {
+            "displayName": null,
+            "owner": "{a4}",
+            "newValue": "4",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "138",
+            "tru": "True",
+            "index": "119",
+            "posX": "6.823923",
+            "posY": "-10.78451",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "122": {
+            "nextScript": "Scene 12",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "122",
+            "posX": "14.79216",
+            "posY": "-1.30872",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "136": {
+            "nextScript": "Scene 12",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "136",
+            "posX": "13.87942",
+            "posY": "-4.380749",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "137": {
+            "nextScript": "Scene 12",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "137",
+            "posX": "14.37588",
+            "posY": "-8.180597",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "138": {
+            "nextScript": "Scene 12",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "138",
+            "posX": "14.37588",
+            "posY": "-11.6692",
+            "advance_mode": "OnClick",
+            "type": "end"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 8 copy 3",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "office_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "office_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -241.200012,
+                    "y": -60.00002,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9704258,
+                        "y": -0.241399512,
+                        "z": 0,
+                        "normalized": {
+                            "x": -0.970425844,
+                            "y": -0.241399527,
+                            "z": 0,
+                            "magnitude": 1,
+                            "sqrMagnitude": 1
+                        },
+                        "magnitude": 0.99999994,
+                        "sqrMagnitude": 0.99999994
+                    },
+                    "magnitude": 248.5507,
+                    "sqrMagnitude": 61777.45
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.4659698,
+        "scriptorPosition": {
+            "x": -251.685272,
+            "y": -35.8777466,
+            "normalized": {
+                "x": -0.989992,
+                "y": -0.1411234,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 254.2296,
+            "sqrMagnitude": 64632.6875
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

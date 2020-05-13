@@ -1,0 +1,235 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "38",
+      "tru": "True",
+      "index": "0",
+      "posX": "-2.507546",
+      "posY": "1.62143",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "38": {
+      "choiceType": "simple",
+      "content": "Over the last 2 weeks, how often have you been bothered by feeling afraid as if something awful might happen?",
+      "owner": "male_sitting_11",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "77~~Not at all~~False~~none~~true~-~74~~Several days~~False~~none~~true~-~75~~More than half the days~~False~~none~~true~-~76~~Nearly every day~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "38",
+      "posX": "0.2928969",
+      "posY": "0.192338",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "74": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "77",
+      "tru": "True",
+      "index": "74",
+      "posX": "3.193277",
+      "posY": "2.990536",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "75": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "77",
+      "tru": "True",
+      "index": "75",
+      "posX": "3.306351",
+      "posY": "0.4635762",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "76": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+3",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "77",
+      "tru": "True",
+      "index": "76",
+      "posX": "3.375909",
+      "posY": "-1.45598",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "77": {
+      "choices": "80~~{points}=0~-~78~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "77",
+      "posX": "6.655514",
+      "posY": "1.830329",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "78": {
+      "nextScript": "Scene 9",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "78",
+      "posX": "10.74523",
+      "posY": "-1.505569",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "80": {
+      "nextScript": "Scene 10",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "80",
+      "posX": "9.806765",
+      "posY": "2.011934",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 8",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 7,
+    "background": "classroom_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "classroom_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_sitting_11",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_sitting_11",
+        "pos": {
+          "x": -357.626434,
+          "y": -72.6322,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.979993045,
+            "y": -0.19903186,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 364.927521,
+          "sqrMagnitude": 133172.1
+        },
+        "size": {
+          "x": 150.490067,
+          "y": 322.30954,
+          "normalized": {
+            "x": 0.4230677,
+            "y": 0.906098068,
+            "normalized": {
+              "x": 0.423067719,
+              "y": 0.9060981,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 355.711548,
+          "sqrMagnitude": 126530.695
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.4367831,
+    "scriptorPosition": {
+      "x": -56.4208221,
+      "y": 68.18977,
+      "normalized": {
+        "x": -0.6374866,
+        "y": 0.77046144,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 88.50511,
+      "sqrMagnitude": 7833.1543
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

@@ -1,0 +1,303 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "50",
+      "tru": "True",
+      "index": "0",
+      "posX": "-5.234743",
+      "posY": "2.739616",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "Hi, this is a test to see your severity of anxiety. The test has only 7 questions, please choose the one that best explains your situation.",
+      "owner": "male_doctor_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "127",
+      "tru": "True",
+      "index": "3",
+      "posX": "2.344949",
+      "posY": "3.045328",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "choiceType": "simple",
+      "content": "Okay! Now let start!",
+      "owner": "male_doctor_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "6~~Yes! ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "9.705122",
+      "posY": "3.373865",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "6": {
+      "nextScript": "Scene 2",
+      "transitionText": "Start!",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "6",
+      "posX": "14.63542",
+      "posY": "2.727705",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "50": {
+      "actionTarget": "male_doctor_1",
+      "actionName": "MoveTo",
+      "action_x-position": "-240",
+      "action_y-position": "-47.16",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "50",
+      "posX": "-1.312056",
+      "posY": "2.864481",
+      "advance_mode": "WhenCompleted",
+      "type": "action"
+    },
+    "127": {
+      "choiceType": "open_response",
+      "content": "Before we start the test, please answer me a question. First, please tell me how many hours did you study over the past 2 weeks? Please enter the number on the whiteboard on right",
+      "owner": "male_doctor_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "128~~Female~~False~~none~~true~-~129~~Male~~False~~none~~true~-~131~~Other~~False~~none~~true~-~",
+      "variable": "game_hour",
+      "inputMultiline": "False",
+      "openResponseButton": "",
+      "openResponseTextObject": "button_blank_1",
+      "name": null,
+      "next": "4",
+      "tru": "True",
+      "index": "127",
+      "posX": "6.205769",
+      "posY": "2.335454",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "airport_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "airport_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_doctor_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_doctor_1",
+        "pos": {
+          "x": -586.4933,
+          "y": -47.1647034,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9967821,
+            "y": -0.0801593661,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 588.386658,
+          "sqrMagnitude": 346198.875
+        },
+        "size": {
+          "x": 111.514282,
+          "y": 363.888763,
+          "normalized": {
+            "x": 0.29300198,
+            "y": 0.956111848,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 380.592255,
+          "sqrMagnitude": 144850.469
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "board_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "board_1",
+        "pos": {
+          "x": 319.451477,
+          "y": -112.39151,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9433198,
+            "y": -0.33188495,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.9433199,
+              "y": -0.33188498,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.9999999,
+            "sqrMagnitude": 0.9999998
+          },
+          "magnitude": 338.646,
+          "sqrMagnitude": 114681.1
+        },
+        "size": {
+          "x": 269.9033,
+          "y": 287.298157,
+          "normalized": {
+            "x": 0.6846986,
+            "y": 0.728826344,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 394.192871,
+          "sqrMagnitude": 155388.031
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "button_blank_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 1,
+        "name": "button_blank_1",
+        "pos": {
+          "x": 318.344635,
+          "y": -51.08106,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.987369955,
+            "y": -0.158431768,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 322.416779,
+          "sqrMagnitude": 103952.578
+        },
+        "size": {
+          "x": 251.418915,
+          "y": 147.432419,
+          "normalized": {
+            "x": 0.862624764,
+            "y": 0.5058444,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 291.458038,
+          "sqrMagnitude": 84947.79
+        }
+      }
+    ],
+    "layoutScale": 0.30401966,
+    "layoutPosition": {
+      "x": -5.38323975,
+      "y": 55.6623,
+      "normalized": {
+        "x": -0.09626335,
+        "y": 0.9953559,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 55.92201,
+      "sqrMagnitude": 3127.271
+    },
+    "scriptorScale": 0.483928829,
+    "scriptorPosition": {
+      "x": -287.8772,
+      "y": -21.3654251,
+      "normalized": {
+        "x": -0.997257233,
+        "y": -0.07401359,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 288.668945,
+      "sqrMagnitude": 83329.7656
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

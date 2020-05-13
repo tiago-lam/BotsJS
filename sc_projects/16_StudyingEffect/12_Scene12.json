@@ -1,0 +1,416 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "143",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "143": {
+            "content": "Thank you for finishing this trip ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "144",
+            "tru": "True",
+            "index": "143",
+            "posX": "4.740366",
+            "posY": "0.8484784",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "144": {
+            "content": "The first question:",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "145",
+            "tru": "True",
+            "index": "144",
+            "posX": "9.80007",
+            "posY": "0.3751799",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "145": {
+            "choices": "146~~{a1} = 4~-~147~~true~-~",
+            "isRandom": "False",
+            "name": "If Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "145",
+            "posX": "12.77176",
+            "posY": "0.2984354",
+            "advance_mode": "OnClick",
+            "type": "if"
+        },
+        "146": {
+            "content": "Nice Work! ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "150",
+            "tru": "True",
+            "index": "146",
+            "posX": "16.68167",
+            "posY": "-0.2719326",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "147": {
+            "content": "I am sorry, you are wrong",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "150",
+            "tru": "True",
+            "index": "147",
+            "posX": "16.76752",
+            "posY": "-3.183228",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "150": {
+            "content": "Let's see: Congress proclaimed the Fourth of July a national holiday in 1870, and in 1938 it was established as a paid holiday for federal employees.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "154",
+            "tru": "True",
+            "index": "150",
+            "posX": "22.43322",
+            "posY": "-1.685591",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "154": {
+            "content": "The 2nd question:",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "155",
+            "tru": "True",
+            "index": "154",
+            "posX": "27.33728",
+            "posY": "-2.949459",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "155": {
+            "choices": "156~~{a2} = 1~-~157~~true~-~",
+            "isRandom": "False",
+            "name": "If Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "155",
+            "posX": "30.3941",
+            "posY": "1.320736",
+            "advance_mode": "OnClick",
+            "type": "if"
+        },
+        "156": {
+            "content": "Nice Work",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "158",
+            "tru": "True",
+            "index": "156",
+            "posX": "35.52117",
+            "posY": "1.970124",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "157": {
+            "content": "I am sorry, you are wrong",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "158",
+            "tru": "True",
+            "index": "157",
+            "posX": "36.05262",
+            "posY": "-2.14312",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "158": {
+            "content": " Let's see: John Adams took up residence in the White House on November 1, 1800. In the first few days of his residency, he wrote a letter to his wife, Abigail, containing this prayer:",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "159",
+            "tru": "True",
+            "index": "158",
+            "posX": "40.12857",
+            "posY": "2.968903",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "159": {
+            "content": "The 3rd question:",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "161",
+            "tru": "True",
+            "index": "159",
+            "posX": "24.93107",
+            "posY": "-10.39403",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "160": {
+            "content": "The 4th question:",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "162",
+            "tru": "True",
+            "index": "160",
+            "posX": "38.43104",
+            "posY": "-10.62556",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "161": {
+            "choices": "163~~{a3} = 2~-~164~~true~-~",
+            "isRandom": "False",
+            "name": "If Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "161",
+            "posX": "28.35058",
+            "posY": "-8.84456",
+            "advance_mode": "OnClick",
+            "type": "if"
+        },
+        "162": {
+            "choices": "165~~{a4} = 4~-~166~~true~-~",
+            "isRandom": "False",
+            "name": "If Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "162",
+            "posX": "42.13551",
+            "posY": "-9.271999",
+            "advance_mode": "OnClick",
+            "type": "if"
+        },
+        "163": {
+            "content": "Nice Work. You should work for the Library of Congress! ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "168",
+            "tru": "True",
+            "index": "163",
+            "posX": "31.80572",
+            "posY": "-8.577412",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "164": {
+            "content": "I am sorry, you are wrong",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "168",
+            "tru": "True",
+            "index": "164",
+            "posX": "32.16192",
+            "posY": "-11.96131",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "165": {
+            "content": "Nice Work",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "167",
+            "tru": "True",
+            "index": "165",
+            "posX": "46.14263",
+            "posY": "-8.75551",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "166": {
+            "content": "I am sorry, you are wrong",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "167",
+            "tru": "True",
+            "index": "166",
+            "posX": "46.58787",
+            "posY": "-12.42437",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "167": {
+            "content": "Let's see: There were 102 passengers, and the crew is estimated to have been about 30, but the exact number is unknown.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "-1",
+            "tru": "True",
+            "index": "167",
+            "posX": "51.50343",
+            "posY": "-9.984401",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "168": {
+            "content": "Let's see: The full symbolism of the flag colors is as follows: red symbolizes hardiness and valor; white symbolizes purity and innocence; and blue represents vigilance, perseverance and justice.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "160",
+            "tru": "True",
+            "index": "168",
+            "posX": "35.34919",
+            "posY": "-9.396671",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 12",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "stage_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "stage_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -348.4283,
+                    "y": -62.4423523,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9843184,
+                        "y": -0.176401153,
+                        "z": 0,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 353.979279,
+                    "sqrMagnitude": 125301.336
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.45716992,
+        "layoutPosition": {
+            "x": 60.04355,
+            "y": -15.2393646,
+            "normalized": {
+                "x": 0.969268441,
+                "y": -0.246005371,
+                "normalized": {
+                    "x": 0.9692685,
+                    "y": -0.246005386,
+                    "magnitude": 1,
+                    "sqrMagnitude": 1.00000012
+                },
+                "magnitude": 0.99999994,
+                "sqrMagnitude": 0.99999994
+            },
+            "magnitude": 61.9472847,
+            "sqrMagnitude": 3837.466
+        },
+        "scriptorScale": 0.405376464,
+        "scriptorPosition": {
+            "x": -1259.82739,
+            "y": 123.109512,
+            "normalized": {
+                "x": -0.995259345,
+                "y": 0.0972560942,
+                "normalized": {
+                    "x": -0.9952594,
+                    "y": 0.0972561,
+                    "magnitude": 1,
+                    "sqrMagnitude": 1
+                },
+                "magnitude": 0.99999994,
+                "sqrMagnitude": 0.99999994
+            },
+            "magnitude": 1265.82825,
+            "sqrMagnitude": 1602321
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

@@ -1,0 +1,290 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-6.172089",
+      "posY": "2.064056",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "actionTarget": "Background",
+      "actionName": "",
+      "name": null,
+      "next": "5",
+      "tru": "True",
+      "index": "3",
+      "posX": "-3.4723",
+      "posY": "2.85468",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "5": {
+      "content": "Do you select your courses for next semester yet?",
+      "owner": "female_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "7",
+      "tru": "True",
+      "index": "5",
+      "posX": "-0.5915987",
+      "posY": "2.734502",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "content": "Nope, I can't decide what to do, they have so many professor for the courses I select",
+      "owner": "female_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "13",
+      "tru": "True",
+      "index": "7",
+      "posX": "2.302845",
+      "posY": "2.737528",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "10": {
+      "displayName": null,
+      "owner": "{SC_Y}",
+      "newValue": "Yes",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "10",
+      "posX": "-6.334135",
+      "posY": "0.8370198",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "11": {
+      "displayName": null,
+      "owner": "{SC_N}",
+      "newValue": "No",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "11",
+      "posX": "-6.28223",
+      "posY": "-2.467538",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "13": {
+      "content": "You should do it now. Not much time left",
+      "owner": "female_10",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "14",
+      "tru": "True",
+      "index": "13",
+      "posX": "5.147919",
+      "posY": "2.761497",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "14": {
+      "content": "I will do it now@",
+      "owner": "female_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "15",
+      "tru": "True",
+      "index": "14",
+      "posX": "8.066137",
+      "posY": "2.825777",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "15": {
+      "nextScript": "Scene 2",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "15",
+      "posX": "11.24418",
+      "posY": "2.805139",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "bus_stop_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "bus_stop_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_10",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_10",
+        "pos": {
+          "x": -295.540527,
+          "y": -27.364872,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.995740652,
+            "y": -0.09219824,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.9957407,
+              "y": -0.0921982452,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 296.804718,
+          "sqrMagnitude": 88093.04
+        },
+        "size": {
+          "x": 73.0,
+          "y": 277.0,
+          "normalized": {
+            "x": 0.254836947,
+            "y": 0.966984034,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 286.457672,
+          "sqrMagnitude": 82058.0
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 180.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_1",
+        "pos": {
+          "x": 127.702705,
+          "y": -29.18919,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9748585,
+            "y": -0.222824812,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 130.99614,
+          "sqrMagnitude": 17159.99
+        },
+        "size": {
+          "x": 87.0,
+          "y": -288.0,
+          "normalized": {
+            "x": 0.289177,
+            "y": -0.9572756,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 300.8538,
+          "sqrMagnitude": 90513.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.625257254,
+    "scriptorPosition": {
+      "x": -230.677124,
+      "y": -204.874634,
+      "normalized": {
+        "x": -0.747685552,
+        "y": -0.664052844,
+        "normalized": {
+          "x": -0.7476856,
+          "y": -0.6640529,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.9999999
+      },
+      "magnitude": 308.521576,
+      "sqrMagnitude": 95185.5547
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

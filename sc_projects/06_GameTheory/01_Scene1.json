@@ -1,0 +1,321 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "54",
+      "tru": "True",
+      "index": "0",
+      "posX": "-7.428018",
+      "posY": "5.331328",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "3": {
+      "content": "Sorry, after investigation, you and your friend are suspected to commit a crime together.",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "5",
+      "tru": "True",
+      "index": "3",
+      "posX": "-1.167176",
+      "posY": "4.921719",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "5": {
+      "content": "You might have not seen each other for months. But I have some good news for you: ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "6",
+      "tru": "True",
+      "index": "5",
+      "posX": "2.81226",
+      "posY": "4.706896",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "6": {
+      "content": "Although we did thorough investigation, we did not find enough evidence that can confirm your conviction. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "7",
+      "tru": "True",
+      "index": "6",
+      "posX": "6.859763",
+      "posY": "4.650526",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "content": "Fortunately, you two are given a chance to be free of sentence, but it depends on you guys' choices. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "8",
+      "tru": "True",
+      "index": "7",
+      "posX": "11.84711",
+      "posY": "4.811544",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "8": {
+      "content": "You will be led to seperate rooms, where, still, you cannot talk to each other. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "9",
+      "tru": "True",
+      "index": "8",
+      "posX": "16.02119",
+      "posY": "4.729653",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "9": {
+      "content": "In the room, you will have to make a choice before leaving: to KEEP SILENT or IDENTIFY.",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "10",
+      "tru": "True",
+      "index": "9",
+      "posX": "20.49063",
+      "posY": "4.639297",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "10": {
+      "content": "KEEP SILENT means you deny that either of you committed the crime. \nIDENTIFY means you identify your friend committed the crime. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "11",
+      "tru": "True",
+      "index": "10",
+      "posX": "-1.172478",
+      "posY": "1.067964",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "11": {
+      "content": "If both of you KEEP SILENT, both of you will only be sentenced 1 year of prison.",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "12",
+      "tru": "True",
+      "index": "11",
+      "posX": "2.877804",
+      "posY": "1.157198",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "12": {
+      "content": "If either of you IDENTIFY and the other KEEP SILENT, the one who KEEP SILENT will be sentenced 10 years of prison, and the one who IDENTIFY will be released immediately. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "13",
+      "tru": "True",
+      "index": "12",
+      "posX": "8.140707",
+      "posY": "1.144628",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "13": {
+      "content": "If both of you IDENTIFY each other, you will both be sentenced 3 years of prison. ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "42",
+      "tru": "True",
+      "index": "13",
+      "posX": "13.17743",
+      "posY": "0.7431407",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "30": {
+      "nextScript": "Scene 2",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "30",
+      "posX": "33.06121",
+      "posY": "-0.2617366",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "42": {
+      "choiceType": "simple",
+      "content": "Is it clear? Do you want me to repeat the conditions again?",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "prompted": "True",
+      "choices": "8~~Yes, please introduce once again.~~False~~none~~true~-~45~~No, I am ready to make a choice. ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "42",
+      "posX": "20.57523",
+      "posY": "-1.403499",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "45": {
+      "content": "Awesome, come with me ",
+      "owner": "male_police_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "30",
+      "tru": "True",
+      "index": "45",
+      "posX": "27.27139",
+      "posY": "-0.299673",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "54": {
+      "content": "\"Sheriff wants to talk to you. \" The police officer who brought you here told you. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "3",
+      "tru": "True",
+      "index": "54",
+      "posX": "-4.347008",
+      "posY": "4.601788",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "police_station_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "police_station_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_police_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_police_1",
+        "pos": {
+          "x": -210.546432,
+          "y": -21.63005,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9947644,
+            "y": -0.102195054,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 211.654572,
+          "sqrMagnitude": 44797.66
+        },
+        "size": {
+          "x": 93.9071655,
+          "y": 401.2398,
+          "normalized": {
+            "x": 0.227884427,
+            "y": 0.973688245,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 412.082428,
+          "sqrMagnitude": 169811.938
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 7.62939453E-06,
+      "y": -0.1499939,
+      "normalized": {
+        "x": 5.08647E-05,
+        "y": -1.0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 0.1499939,
+      "sqrMagnitude": 0.02249817
+    },
+    "scriptorScale": 0.347362965,
+    "scriptorPosition": {
+      "x": -630.05,
+      "y": 6.10507,
+      "normalized": {
+        "x": -0.9999531,
+        "y": 0.009689365,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 630.0795,
+      "sqrMagnitude": 397000.25
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

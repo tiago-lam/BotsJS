@@ -1,0 +1,265 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "114",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "114": {
+            "choiceType": "simple",
+            "content": "Independence Day was first established as a holiday by Congress in what year?",
+            "owner": "female_12",
+            "speaking": "False",
+            "prompted": "True",
+            "choices": "115~~1853~~False~~none~~true~-~116~~1776~~False~~none~~true~-~118~~1938~~False~~none~~true~-~119~~1870~~False~~none~~true~-~",
+            "variable": null,
+            "name": null,
+            "next": "-1",
+            "tru": "True",
+            "index": "114",
+            "posX": "3.036696",
+            "posY": "1.933107",
+            "advance_mode": "OnClick",
+            "type": "choice"
+        },
+        "115": {
+            "displayName": null,
+            "owner": "{a1}",
+            "newValue": "1",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "122",
+            "tru": "True",
+            "index": "115",
+            "posX": "7.303991",
+            "posY": "-0.6134593",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "116": {
+            "displayName": null,
+            "owner": "{a1}",
+            "newValue": "2",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "124",
+            "tru": "True",
+            "index": "116",
+            "posX": "8.91205",
+            "posY": "-3.740246",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "118": {
+            "displayName": null,
+            "owner": "{a1}",
+            "newValue": "3",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "125",
+            "tru": "True",
+            "index": "118",
+            "posX": "8.203928",
+            "posY": "-7.689975",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "119": {
+            "displayName": null,
+            "owner": "{a1}",
+            "newValue": "4",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "126",
+            "tru": "True",
+            "index": "119",
+            "posX": "10.10249",
+            "posY": "-12.15379",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "122": {
+            "nextScript": "Scene 8 copy 1",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "122",
+            "posX": "14.79216",
+            "posY": "-1.30872",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "124": {
+            "nextScript": "Scene 8 copy 1",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "124",
+            "posX": "14.51764",
+            "posY": "-4.865081",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "125": {
+            "nextScript": "Scene 8 copy 1",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "125",
+            "posX": "15.96171",
+            "posY": "-8.932861",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "126": {
+            "nextScript": "Scene 8 copy 1",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "126",
+            "posX": "15.33469",
+            "posY": "-12.48867",
+            "advance_mode": "OnClick",
+            "type": "end"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 8",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "office_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "office_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -241.200012,
+                    "y": -60.00002,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9704258,
+                        "y": -0.241399512,
+                        "z": 0,
+                        "normalized": {
+                            "x": -0.970425844,
+                            "y": -0.241399527,
+                            "z": 0,
+                            "magnitude": 1,
+                            "sqrMagnitude": 1
+                        },
+                        "magnitude": 0.99999994,
+                        "sqrMagnitude": 0.99999994
+                    },
+                    "magnitude": 248.5507,
+                    "sqrMagnitude": 61777.45
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.447787762,
+        "scriptorPosition": {
+            "x": -109.898643,
+            "y": -19.93112,
+            "normalized": {
+                "x": -0.9839493,
+                "y": -0.17844817,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 111.691368,
+            "sqrMagnitude": 12474.9609
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

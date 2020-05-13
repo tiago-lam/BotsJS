@@ -1,0 +1,416 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-3.229879",
+      "posY": "3.504542",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "actionTarget": "button_blank_1",
+      "actionName": "TypeText",
+      "action_text": "Professor A\nMale\nGrading: Loose\nAge: 35\nAvg.GPA: B+ to A\nStyle: Energetic and funny\nKnowledge Lvl: Mid-level\n\nYou will basically teach yourself the course\n",
+      "action_type-speed": "500",
+      "name": null,
+      "next": "4",
+      "tru": "True",
+      "index": "3",
+      "posX": "-0.2637713",
+      "posY": "3.486697",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "4": {
+      "actionTarget": "button_blank_1(1)",
+      "actionName": "TypeText",
+      "action_text": "Professor B\nMale \nGrading: Hard\nAge: 55\nAvg.GPA: C to B+\nStyle: Detailed and Thorough\nKnowledge Lvl: Award winning\n\nYou will better understand the course ",
+      "action_type-speed": "500",
+      "name": null,
+      "next": "74",
+      "tru": "True",
+      "index": "4",
+      "posX": "2.812652",
+      "posY": "3.471341",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "74": {
+      "choiceType": "simple",
+      "content": "Think carefully",
+      "owner": "jeopardy_mouse_1",
+      "speaking": "True",
+      "prompted": "True",
+      "choices": "77~~Professor A~~False~~none~~true~-~77~~Professor B~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "74",
+      "posX": "5.743467",
+      "posY": "3.617372",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "77": {
+      "choiceType": "simple",
+      "content": "Why?",
+      "owner": "cat_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "81~~Grading~~False~~none~~true~-~81~~GPA~~False~~none~~true~-~81~~Style~~False~~none~~true~-~81~~Knowlege Level~~False~~none~~true~-~80~~New Info~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "77",
+      "posX": "8.506906",
+      "posY": "6.239257",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "80": {
+      "choiceType": "simple",
+      "content": "What new info change your mind?",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "81~~The new description~~False~~none~~true~-~81~~The appearance of professor~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "80",
+      "posX": "14.04642",
+      "posY": "2.185133",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "81": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "81",
+      "posX": "17.56485",
+      "posY": "-0.7114595",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 3",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "park_4",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "park_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "lab_scientist_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "lab_scientist_1",
+        "pos": {
+          "x": -419.594543,
+          "y": -74.79729,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9844804,
+            "y": -0.175494328,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.984480441,
+              "y": -0.175494343,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 426.209137,
+          "sqrMagnitude": 181654.219
+        },
+        "size": {
+          "x": 123.810028,
+          "y": 374.139984,
+          "normalized": {
+            "x": 0.3141641,
+            "y": 0.949368656,
+            "normalized": {
+              "x": 0.314164132,
+              "y": 0.9493687,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 394.093475,
+          "sqrMagnitude": 155309.656
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_middle_age_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_middle_age_1",
+        "pos": {
+          "x": 410.472961,
+          "y": -74.79729,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9837999,
+            "y": -0.179270178,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 417.232178,
+          "sqrMagnitude": 174082.688
+        },
+        "size": {
+          "x": -73.0,
+          "y": 338.0,
+          "normalized": {
+            "x": -0.211108774,
+            "y": 0.97746253,
+            "normalized": {
+              "x": -0.211108789,
+              "y": 0.9774626,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 345.7933,
+          "sqrMagnitude": 119573.0
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "button_blank_1",
+        "value": 0.0,
+        "text": "Professor A",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 1,
+        "name": "button_blank_1",
+        "pos": {
+          "x": -191.554047,
+          "y": 16.4189167,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.996346653,
+            "y": 0.08540113,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 192.256424,
+          "sqrMagnitude": 36962.5352
+        },
+        "size": {
+          "x": 275.135132,
+          "y": 275.135132,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 389.099854,
+          "sqrMagnitude": 151398.688
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "button_blank_1",
+        "value": 0.0,
+        "text": "Professor B",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 1,
+        "name": "button_blank_1(1)",
+        "pos": {
+          "x": 191.554047,
+          "y": 10.9459457,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.998371363,
+            "y": 0.0570497923,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 191.866531,
+          "sqrMagnitude": 36812.7656
+        },
+        "size": {
+          "x": 275.135132,
+          "y": 275.135132,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 389.099854,
+          "sqrMagnitude": 151398.688
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "jeopardy_mouse_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "jeopardy_mouse_1",
+        "pos": {
+          "x": 341.411255,
+          "y": 245.660812,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.811709344,
+            "y": 0.584061563,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 420.607758,
+          "sqrMagnitude": 176910.875
+        },
+        "size": {
+          "x": 61.74435,
+          "y": 50.4826965,
+          "normalized": {
+            "x": 0.774174869,
+            "y": 0.6329718,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 79.75504,
+          "sqrMagnitude": 6360.867
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.568571568,
+    "scriptorPosition": {
+      "x": -546.383545,
+      "y": -114.078278,
+      "normalized": {
+        "x": -0.9788915,
+        "y": -0.2043807,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 558.1656,
+      "sqrMagnitude": 311548.8
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

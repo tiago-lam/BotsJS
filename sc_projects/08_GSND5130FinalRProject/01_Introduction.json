@@ -1,0 +1,370 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "14",
+      "tru": "True",
+      "index": "0",
+      "posX": "-9.185925",
+      "posY": "7.04483",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "4": {
+      "nextScript": "Scene_1_E1",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "9.630671",
+      "posY": "7.045302",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "14": {
+      "choiceType": "simple",
+      "content": "This Study Crafter project was built to study the correlation between the decisions an individual makes  in games and their MBTI personality type.",
+      "owner": "None",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "28~~Next~~True~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "14",
+      "posX": "-6.08266",
+      "posY": "6.237991",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "28": {
+      "choiceType": "simple",
+      "content": "The participant will be presented with ten basic scenarios in which they choose the answer closest to their true reaction.",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "37~~Next~~True~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "28",
+      "posX": "-3.249929",
+      "posY": "6.329866",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "32": {
+      "displayName": null,
+      "owner": "{[energy_intuitive]}",
+      "newValue": null,
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "32",
+      "posX": "-8.100283",
+      "posY": "0.9837685",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "33": {
+      "displayName": null,
+      "owner": "{[energy_observant]}",
+      "newValue": null,
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "33",
+      "posX": "-8.119287",
+      "posY": "-0.4971746",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "34": {
+      "displayName": null,
+      "owner": "{[tactics_judging]}",
+      "newValue": null,
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "34",
+      "posX": "-8.080206",
+      "posY": "-1.900481",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "35": {
+      "displayName": null,
+      "owner": "{[tactics_prospective]}",
+      "newValue": null,
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "35",
+      "posX": "-8.134683",
+      "posY": "-2.926018",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "37": {
+      "choiceType": "simple",
+      "content": "To verify our results, we will ask you to take an online personality test, then fill out an online survey.",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "43~~Next~~True~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "37",
+      "posX": "-0.401182",
+      "posY": "6.254059",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "43": {
+      "choiceType": "simple",
+      "content": "The experiment will now begin.",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "4~~Begin~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "43",
+      "posX": "5.683937",
+      "posY": "6.760804",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Introduction",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "airport_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "airport_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "panel_basic_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 3,
+        "name": "panel_basic_1",
+        "pos": {
+          "x": 16.3408051,
+          "y": -113.233765,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.142830759,
+            "y": -0.989747167,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 114.406761,
+          "sqrMagnitude": 13088.9072
+        },
+        "size": {
+          "x": 438.145325,
+          "y": 112.875458,
+          "normalized": {
+            "x": 0.9683811,
+            "y": 0.24947536,
+            "normalized": {
+              "x": 0.968381166,
+              "y": 0.249475375,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 452.451324,
+          "sqrMagnitude": 204712.2
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "GSND 5130 Final Research Project\nFall 2018\nJin H. Kim",
+        "fontSize": 20,
+        "parentName": "panel_basic_1",
+        "objectType": 2,
+        "name": "Text",
+        "pos": {
+          "x": 9.390461,
+          "y": 0.2627411,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9996089,
+            "y": 0.0279686283,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 9.394135,
+          "sqrMagnitude": 88.24979
+        },
+        "size": {
+          "x": 329.224426,
+          "y": 100.0,
+          "normalized": {
+            "x": 0.9568346,
+            "y": 0.290632933,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 344.07663,
+          "sqrMagnitude": 118388.727
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF00",
+        "textcolor": "000000",
+        "image": "Text",
+        "value": 0.0,
+        "text": "PLAYER DECISIONS",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 2,
+        "name": "Text(1)",
+        "pos": {
+          "x": 105.496674,
+          "y": 166.163742,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.5359933,
+            "y": 0.8442223,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 196.824631,
+          "sqrMagnitude": 38739.9375
+        },
+        "size": {
+          "x": 369.020966,
+          "y": 76.78361,
+          "normalized": {
+            "x": 0.979031146,
+            "y": 0.203710765,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 376.924652,
+          "sqrMagnitude": 142072.188
+        }
+      }
+    ],
+    "layoutScale": 0.258518636,
+    "layoutPosition": {
+      "x": -34.8401566,
+      "y": 10.2956047,
+      "normalized": {
+        "x": -0.9590033,
+        "y": 0.283394784,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 36.3295479,
+      "sqrMagnitude": 1319.836
+    },
+    "scriptorScale": 0.435762316,
+    "scriptorPosition": {
+      "x": -182.654892,
+      "y": -193.5105,
+      "normalized": {
+        "x": -0.686414838,
+        "y": -0.7272101,
+        "normalized": {
+          "x": -0.6864149,
+          "y": -0.727210164,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.9999999
+      },
+      "magnitude": 266.099854,
+      "sqrMagnitude": 70809.125
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

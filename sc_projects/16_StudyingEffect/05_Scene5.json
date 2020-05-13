@@ -1,0 +1,207 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "84",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "84": {
+            "content": "American Flag\n\"American Flag\" and \"Flag of the USA\" redirect here. For other uses, see American Flag (disambiguation). For the flag of the Union of South Africa, see Flag of South Africa (1928\u20131994).",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "85",
+            "tru": "True",
+            "index": "84",
+            "posX": "2.859426",
+            "posY": "2.093321",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "85": {
+            "content": "The flag of the United States of America, often referred to as the American flag, is the national flag of the United States. It consists of thirteen equal horizontal stripes of red (top and bottom) alternating with white, with a blue rectangle in the canton (referred to specifically as the \"union\") ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "86",
+            "tru": "True",
+            "index": "85",
+            "posX": "5.969356",
+            "posY": "2.364112",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "86": {
+            "content": " bearing fifty small, white, five-pointed stars arranged in nine offset horizontal rows, where rows of six stars (top and bottom) alternate with rows of five stars. The 50 stars on the flag represent the 50 states of the United States of America, ",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "183",
+            "tru": "True",
+            "index": "86",
+            "posX": "9.494431",
+            "posY": "1.865343",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "87": {
+            "nextScript": "Scene 2",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "87",
+            "posX": "14.82599",
+            "posY": "1.244591",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "183": {
+            "content": "and the 13 stripes represent the thirteen British colonies that declared independence from the Kingdom of Great Britain, and became the first states in the U.S. Nicknames for the flag include the Stars and Stripes, Old Glory, and the Star-Spangled Banner.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "87",
+            "tru": "True",
+            "index": "183",
+            "posX": "12.13834",
+            "posY": "2.60909",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 5",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "represent_start_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "represent_start_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -348.23526,
+                    "y": -76.47064,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9767274,
+                        "y": -0.214484245,
+                        "z": 0,
+                        "normalized": {
+                            "x": -0.9767275,
+                            "y": -0.214484259,
+                            "z": 0,
+                            "magnitude": 1,
+                            "sqrMagnitude": 1.00000012
+                        },
+                        "magnitude": 0.99999994,
+                        "sqrMagnitude": 0.99999994
+                    },
+                    "magnitude": 356.532684,
+                    "sqrMagnitude": 127115.555
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.568571746,
+        "scriptorPosition": {
+            "x": -220.084839,
+            "y": -192.6821,
+            "normalized": {
+                "x": -0.7523939,
+                "y": -0.6587134,
+                "normalized": {
+                    "x": -0.752393961,
+                    "y": -0.65871346,
+                    "magnitude": 1,
+                    "sqrMagnitude": 1.00000012
+                },
+                "magnitude": 0.99999994,
+                "sqrMagnitude": 0.99999994
+            },
+            "magnitude": 292.5128,
+            "sqrMagnitude": 85563.73
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

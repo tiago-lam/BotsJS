@@ -1,0 +1,216 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "36",
+      "tru": "True",
+      "index": "0",
+      "posX": "0",
+      "posY": "0",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "36": {
+      "choiceType": "simple",
+      "content": "Over the last 2 weeks, how often have you been bothered by becoming easily annoyed or irritable?",
+      "owner": "female_elderly_4",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "114~~Not at all~~False~~none~~true~-~111~~Several days~~False~~none~~true~-~112~~More than half the days~~False~~none~~true~-~113~~Nearly every day~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "36",
+      "posX": "2.844272",
+      "posY": "1.271239",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "111": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "114",
+      "tru": "True",
+      "index": "111",
+      "posX": "6.833183",
+      "posY": "2.645636",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "112": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "114",
+      "tru": "True",
+      "index": "112",
+      "posX": "7.413227",
+      "posY": "-0.488414",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "113": {
+      "displayName": null,
+      "owner": "{points}",
+      "newValue": "{points}+3",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "114",
+      "tru": "True",
+      "index": "113",
+      "posX": "8.045151",
+      "posY": "-0.9077675",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "114": {
+      "nextScript": "Scene 8",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "114",
+      "posX": "10.12934",
+      "posY": "4.15461",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 7",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 6,
+    "background": "pavement_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "pavement_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_elderly_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_elderly_4",
+        "pos": {
+          "x": 283.073364,
+          "y": -59.2947235,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.978758156,
+            "y": -0.2050182,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 289.216858,
+          "sqrMagnitude": 83646.4
+        },
+        "size": {
+          "x": -123.267166,
+          "y": 378.8844,
+          "normalized": {
+            "x": -0.309380561,
+            "y": 0.9509383,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 398.432159,
+          "sqrMagnitude": 158748.188
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 7.17956543,
+      "y": 15.369873,
+      "normalized": {
+        "x": 0.4232222,
+        "y": 0.9060258,
+        "normalized": {
+          "x": 0.423222274,
+          "y": 0.906025946,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.9999999,
+        "sqrMagnitude": 0.9999998
+      },
+      "magnitude": 16.964056,
+      "sqrMagnitude": 287.779175
+    },
+    "scriptorScale": 0.58,
+    "scriptorPosition": {
+      "x": -161.608032,
+      "y": 13.5270462,
+      "normalized": {
+        "x": -0.9965152,
+        "y": 0.08341112,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 162.173172,
+      "sqrMagnitude": 26300.1367
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

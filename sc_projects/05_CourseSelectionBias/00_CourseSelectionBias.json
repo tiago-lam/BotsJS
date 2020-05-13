@@ -1,0 +1,1 @@
+{"title":"CourseSelectionBias", "description":"", "initial_scene":"Scene 1", "last_edit":"2019-10-24 17:44:05", "published":"false", "variables":[ {"name":"GPA", "value":"", "type":"None", "kind":"Dependent", "id":"3531"}, {"name":"Style", "value":"0", "type":"Int", "kind":"Null", "id":"3532"} ]}

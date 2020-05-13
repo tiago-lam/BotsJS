@@ -1,0 +1,368 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": "baby_4",
+      "actionName": "None",
+      "name": null,
+      "next": "23084",
+      "tru": "True",
+      "index": "0",
+      "posX": "2.523613",
+      "posY": "3.070805",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "23077": {
+      "nextScript": "3-non",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23077",
+      "posX": "11.58177",
+      "posY": "4.334929",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "23084": {
+      "choiceType": "object",
+      "content": "Which one do you choose?",
+      "owner": "baby_4",
+      "speaking": "True",
+      "prompted": "True",
+      "choices": "23077~~Duck?~~False~~duck_rubber_1~~true~-~23139~~Teddy Bear?~~False~~teady_bear_2~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "23084",
+      "posX": "6.353528",
+      "posY": "2.342983",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "23086": {
+      "nextScript": "3-reward",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23086",
+      "posX": "14.57561",
+      "posY": "-0.7033757",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "23139": {
+      "content": "Wow, it seems that u gonna win some rewards if you nail it in the game!",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23086",
+      "tru": "True",
+      "index": "23139",
+      "posX": "10.45145",
+      "posY": "-1.071877",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "2",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 1,
+    "background": "csc_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "csc_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "baby_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "baby_4",
+        "pos": {
+          "x": -21.5877171,
+          "y": -122.743881,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.1732175,
+            "y": -0.9848836,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 124.627808,
+          "sqrMagnitude": 15532.09
+        },
+        "size": {
+          "x": -120.293037,
+          "y": 178.921555,
+          "normalized": {
+            "x": -0.5579456,
+            "y": 0.829877555,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 215.599945,
+          "sqrMagnitude": 46483.3359
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "bed_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "bed_3",
+        "pos": {
+          "x": -279.919,
+          "y": -22.3941383,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.996815145,
+            "y": -0.07974741,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 280.813354,
+          "sqrMagnitude": 78856.15
+        },
+        "size": {
+          "x": 302.0851,
+          "y": 229.884,
+          "normalized": {
+            "x": 0.7957822,
+            "y": 0.605582952,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 379.6078,
+          "sqrMagnitude": 144102.078
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "door4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "door4",
+        "pos": {
+          "x": 265.4754,
+          "y": 184.032425,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.8218418,
+            "y": 0.5697158,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 323.024963,
+          "sqrMagnitude": 104345.125
+        },
+        "size": {
+          "x": 281.0,
+          "y": 548.0,
+          "normalized": {
+            "x": 0.456283659,
+            "y": 0.889834344,
+            "normalized": {
+              "x": 0.4562837,
+              "y": 0.8898344,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 615.845,
+          "sqrMagnitude": 379265.0
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "duck_rubber_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "duck_rubber_1",
+        "pos": {
+          "x": -221.389343,
+          "y": -118.608528,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.881468236,
+            "y": -0.472243369,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 251.15976,
+          "sqrMagnitude": 63081.2227
+        },
+        "size": {
+          "x": 97.67598,
+          "y": 102.885391,
+          "normalized": {
+            "x": 0.6885081,
+            "y": 0.725228667,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 141.866135,
+          "sqrMagnitude": 20126.0
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "teady_bear_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "teady_bear_2",
+        "pos": {
+          "x": 125.012108,
+          "y": -116.943748,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.7302803,
+            "y": -0.68314755,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.73028034,
+              "y": -0.6831476,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 171.183731,
+          "sqrMagnitude": 29303.8672
+        },
+        "size": {
+          "x": 135.0,
+          "y": 171.0,
+          "normalized": {
+            "x": 0.6196443,
+            "y": 0.7848828,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 217.866928,
+          "sqrMagnitude": 47466.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.426446259,
+    "scriptorPosition": {
+      "x": -492.219879,
+      "y": -96.95347,
+      "normalized": {
+        "x": -0.9811478,
+        "y": -0.193258524,
+        "normalized": {
+          "x": -0.9811479,
+          "y": -0.193258539,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 501.677582,
+      "sqrMagnitude": 251680.391
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

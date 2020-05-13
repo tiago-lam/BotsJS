@@ -1,0 +1,168 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "5",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "5": {
+            "content": "White House\nThe White House is the official residence and workplace of the President of the United States. It is located at 1600 Pennsylvania Avenue NW in Washington, D.C. and has been the residence of every U.S. President since John Adams in 1800. The term, \"White House\", is often used as a metonym for the president and his advisers.\r",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "8",
+            "tru": "True",
+            "index": "5",
+            "posX": "3.141226",
+            "posY": "0.6212642",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "8": {
+            "content": "The residence was designed by Irish-born architect James Hoban in the neoclassical style. Hoban modelled the building on Leinster House in Dublin, a building which today houses the Oireachtas, the Irish legislature. Construction took place between 1792 and 1800 using Aquia Creek sandstone painted white.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "9",
+            "tru": "True",
+            "index": "8",
+            "posX": "6.216629",
+            "posY": "0.623678",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "9": {
+            "nextScript": "Scene 2",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "9",
+            "posX": "9.873528",
+            "posY": "-0.2005749",
+            "advance_mode": "OnClick",
+            "type": "end"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 3",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "desert_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "desert_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -243.599991,
+                    "y": -46.8000145,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.982040942,
+                        "y": -0.188668028,
+                        "z": 0,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 248.054825,
+                    "sqrMagnitude": 61531.1953
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.574257433,
+        "scriptorPosition": {
+            "x": -114.126747,
+            "y": -115.344543,
+            "normalized": {
+                "x": -0.7033443,
+                "y": -0.7108494,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 162.262985,
+            "sqrMagnitude": 26329.2773
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

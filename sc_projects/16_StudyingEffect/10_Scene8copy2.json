@@ -1,0 +1,265 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "114",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "114": {
+            "choiceType": "simple",
+            "content": "What do the colors of the American flag symbolize?",
+            "owner": "female_12",
+            "speaking": "False",
+            "prompted": "True",
+            "choices": "115~~Nothing, the Founding Fathers simply found them aesthetically pleasing~~False~~none~~true~-~116~~Red: hardiness, White: purity, Blue: perseverance~~False~~none~~true~-~118~~Red: compassion, White: peace and unity, Blue: remembrance~~False~~none~~true~-~119~~Red: revolution, White: stability, Blue: integrity~~False~~none~~true~-~",
+            "variable": null,
+            "name": null,
+            "next": "-1",
+            "tru": "True",
+            "index": "114",
+            "posX": "3.036696",
+            "posY": "1.933107",
+            "advance_mode": "OnClick",
+            "type": "choice"
+        },
+        "115": {
+            "displayName": null,
+            "owner": "{a3}",
+            "newValue": "1",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "122",
+            "tru": "True",
+            "index": "115",
+            "posX": "7.303991",
+            "posY": "-0.6134593",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "116": {
+            "displayName": null,
+            "owner": "{a3}",
+            "newValue": "2",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "132",
+            "tru": "True",
+            "index": "116",
+            "posX": "8.91205",
+            "posY": "-3.740246",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "118": {
+            "displayName": null,
+            "owner": "{a3}",
+            "newValue": "3",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "133",
+            "tru": "True",
+            "index": "118",
+            "posX": "8.022548",
+            "posY": "-7.113635",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "119": {
+            "displayName": null,
+            "owner": "{a3}",
+            "newValue": "4",
+            "fromVariable": "False",
+            "get": "True",
+            "name": "Variable Sticker",
+            "next": "134",
+            "tru": "True",
+            "index": "119",
+            "posX": "6.823923",
+            "posY": "-10.78451",
+            "advance_mode": "OnClick",
+            "type": "variable"
+        },
+        "122": {
+            "nextScript": "Scene 8 copy 3",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "122",
+            "posX": "14.83035",
+            "posY": "-1.442384",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "132": {
+            "nextScript": "Scene 8 copy 3",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "132",
+            "posX": "14.79596",
+            "posY": "-4.399843",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "133": {
+            "nextScript": "Scene 8 copy 3",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "133",
+            "posX": "13.00106",
+            "posY": "-7.836892",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "134": {
+            "nextScript": "Scene 8 copy 3",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "134",
+            "posX": "14.35678",
+            "posY": "-10.88632",
+            "advance_mode": "OnClick",
+            "type": "end"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 8 copy 2",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "office_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "office_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -241.200012,
+                    "y": -60.00002,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.9704258,
+                        "y": -0.241399512,
+                        "z": 0,
+                        "normalized": {
+                            "x": -0.970425844,
+                            "y": -0.241399527,
+                            "z": 0,
+                            "magnitude": 1,
+                            "sqrMagnitude": 1
+                        },
+                        "magnitude": 0.99999994,
+                        "sqrMagnitude": 0.99999994
+                    },
+                    "magnitude": 248.5507,
+                    "sqrMagnitude": 61777.45
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.5,
+        "layoutPosition": {
+            "x": 0,
+            "y": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "scriptorScale": 0.413524568,
+        "scriptorPosition": {
+            "x": -236.4216,
+            "y": 18.3215275,
+            "normalized": {
+                "x": -0.9970107,
+                "y": 0.0772635,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 237.130447,
+            "sqrMagnitude": 56230.85
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}

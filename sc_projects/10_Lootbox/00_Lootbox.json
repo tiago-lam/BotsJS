@@ -1,0 +1,1 @@
+{"title":"Lootbox", "description":"", "initial_scene":"Scene 1", "last_edit":"2019-10-24 17:43:44", "published":"false", "variables":[ {"name":"random", "value":"47", "type":"Int", "kind":"Null", "id":"4637"}, {"name":"player", "value":"0", "type":"Int", "kind":"Null", "id":"4638"}, {"name":"money", "value":"500", "type":"Int", "kind":"Null", "id":"4639"} ]}

@@ -1,0 +1,415 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-9.544599",
+      "posY": "9.963942",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "It's finally the weekend! After such a long week of hard work and stress, you're feeling exhausted and run down.",
+      "owner": "None",
+      "speaking": "False",
+      "name": "Dialogue State",
+      "next": "23083",
+      "tru": "True",
+      "index": "3",
+      "posX": "-6.273371",
+      "posY": "10.06522",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "5~~Go to the dinner - getting together with friends always lifts my spirits~~False~~none~~true~-~7~~Go to the dinner to say 'hi' to old friends, but leave before it gets too late~~False~~none~~true~-~14~~Big groups make me more tired. I'll ask Sam to hang out one on one~~False~~none~~true~-~15~~I need some time to myself today. I'll ask Sam to meet up another time~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "2.57584",
+      "posY": "6.879559",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "5": {
+      "displayName": null,
+      "owner": "{extra}",
+      "newValue": "+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23084",
+      "tru": "True",
+      "index": "5",
+      "posX": "9.725206",
+      "posY": "12.70993",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "6": {
+      "content": "Hey, Sam! I don't think I'm up for a group hang out tonight. Want to grab coffee this afternoon, just us?",
+      "owner": "female_5",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23090",
+      "tru": "True",
+      "index": "6",
+      "posX": "13.92448",
+      "posY": "4.751886",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "displayName": null,
+      "owner": "{extra}",
+      "newValue": "+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23085",
+      "tru": "True",
+      "index": "7",
+      "posX": "7.913208",
+      "posY": "7.725559",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "10": {
+      "content": "Hey, girl! I'm trying to get the old group together while I'm still here in the city. I know it's last minute, but can you make it to dinner with the gang tonight?",
+      "owner": "cellphone_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "10",
+      "posX": "-0.5607424",
+      "posY": "10.49265",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "14": {
+      "displayName": null,
+      "owner": "{intro}",
+      "newValue": "+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "6",
+      "tru": "True",
+      "index": "14",
+      "posX": "7.954777",
+      "posY": "3.329459",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "15": {
+      "displayName": null,
+      "owner": "{intro}",
+      "newValue": "+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23091",
+      "tru": "True",
+      "index": "15",
+      "posX": "8.117041",
+      "posY": "-1.551865",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "18": {
+      "nextScript": "Scene 2",
+      "transitionText": "You say 'bye' to your friend and get ready for your day.",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "18",
+      "posX": "24.89792",
+      "posY": "5.168605",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "23083": {
+      "content": "That morning, your cellphone rings. It's your friend Samantha, who is in town for the weekend.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "10",
+      "tru": "True",
+      "index": "23083",
+      "posX": "-3.362638",
+      "posY": "10.71897",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23084": {
+      "content": "Hey, Sam! I'd love to come. Hanging out with friends sounds like just the thing I needed today.",
+      "owner": "female_5",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23088",
+      "tru": "True",
+      "index": "23084",
+      "posX": "13.64958",
+      "posY": "12.8367",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23085": {
+      "content": "Hey, Sam! I'd love to come, but I'm kind of tired so I have to leave early.",
+      "owner": "female_5",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23089",
+      "tru": "True",
+      "index": "23085",
+      "posX": "13.90068",
+      "posY": "8.039379",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23088": {
+      "content": "That's great to hear! Okay, I'll see you tonight!",
+      "owner": "cellphone_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23088",
+      "posX": "18.20267",
+      "posY": "12.86544",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23089": {
+      "content": "No worries, I totally get it. Excited to see you later!",
+      "owner": "cellphone_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23089",
+      "posX": "18.5325",
+      "posY": "8.226571",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23090": {
+      "content": "No worries, I totally get it. Coffee sounds great, I'll text you later!",
+      "owner": "cellphone_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23090",
+      "posX": "18.3965",
+      "posY": "4.819019",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23091": {
+      "content": "Hey, Sam! I really need some time to myself tonight. Is there any other time this weekend when we can see each other?",
+      "owner": "female_5",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23092",
+      "tru": "True",
+      "index": "23091",
+      "posX": "14.3232",
+      "posY": "-0.7238674",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23092": {
+      "content": "No worries, I totally get it. I also have some time Sunday if you're free. Let's talk about it later!",
+      "owner": "cellphone_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23092",
+      "posX": "18.23798",
+      "posY": "-0.1469795",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "bedroom_day_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "bedroom_day_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_5",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_5",
+        "pos": {
+          "x": -280.4992,
+          "y": -238.37027,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.762011766,
+            "y": -0.647563159,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 368.103516,
+          "sqrMagnitude": 135500.188
+        },
+        "size": {
+          "x": 157.565231,
+          "y": 551.4781,
+          "normalized": {
+            "x": 0.274721235,
+            "y": 0.9615239,
+            "normalized": {
+              "x": 0.274721265,
+              "y": 0.96152395,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 573.5459,
+          "sqrMagnitude": 328954.9
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "cellphone_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "cellphone_2",
+        "pos": {
+          "x": 183.114548,
+          "y": -139.31897,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.795844,
+            "y": -0.6055017,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 230.088486,
+          "sqrMagnitude": 52940.71
+        },
+        "size": {
+          "x": 125.867661,
+          "y": 221.307877,
+          "normalized": {
+            "x": 0.4943792,
+            "y": 0.869246364,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 254.597412,
+          "sqrMagnitude": 64819.8438
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 18.8811188,
+      "y": -45.8541451,
+      "normalized": {
+        "x": 0.380749822,
+        "y": -0.9246781,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 49.5893059,
+      "sqrMagnitude": 2459.099
+    },
+    "scriptorScale": 1.02310991,
+    "scriptorPosition": {
+      "x": -1988.48438,
+      "y": -702.134155,
+      "normalized": {
+        "x": -0.9429433,
+        "y": -0.332953423,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 2108.806,
+      "sqrMagnitude": 4447062.5
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

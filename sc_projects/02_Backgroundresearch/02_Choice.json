@@ -1,0 +1,393 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "347",
+      "tru": "True",
+      "index": "0",
+      "posX": "-0.5172415",
+      "posY": "2.988506",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "347": {
+      "content": "You are waiting for a bus to come.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "358",
+      "tru": "True",
+      "index": "347",
+      "posX": "2.764368",
+      "posY": "3.672413",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "348": {
+      "actionTarget": "male_elderly_4",
+      "actionName": "MoveTo",
+      "action_x-position": "-400",
+      "action_y-position": "-63",
+      "action_time": "10",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "373",
+      "tru": "True",
+      "index": "348",
+      "posX": "9.828545",
+      "posY": "1.936782",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "358": {
+      "content": "an elder man is coming...",
+      "owner": "None",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "348",
+      "tru": "True",
+      "index": "358",
+      "posX": "6.138118",
+      "posY": "3.682601",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "366": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "371~~Give your sit to the elder man.~~False~~none~~true~-~369~~Bus is 10 minutes away, I want to sit. ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "366",
+      "posX": "16.07521",
+      "posY": "1.327516",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "369": {
+      "content": "Thanks for completing my research project.",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "-1",
+      "tru": "True",
+      "index": "369",
+      "posX": "21.79773",
+      "posY": "-0.3593745",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "371": {
+      "content": "The elder man appreciated your help!",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "369",
+      "tru": "True",
+      "index": "371",
+      "posX": "19.35721",
+      "posY": "1.364149",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "373": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "366",
+      "tru": "True",
+      "index": "373",
+      "posX": "13.12752",
+      "posY": "1.366314",
+      "advance_mode": "AfterTime_7",
+      "type": "action"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Choice",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 7,
+    "background": "bus_stop_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "bus_stop_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "reporter_sitting_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "reporter_sitting_1",
+        "pos": {
+          "x": -156.0,
+          "y": -66.0,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9209672,
+            "y": -0.38964,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 169.387131,
+          "sqrMagnitude": 28692.0
+        },
+        "size": {
+          "x": 101.37999,
+          "y": 209.661011,
+          "normalized": {
+            "x": 0.435321242,
+            "y": 0.9002752,
+            "normalized": {
+              "x": 0.435321271,
+              "y": 0.90027523,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 232.885468,
+          "sqrMagnitude": 54235.64
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_sitting_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_sitting_2",
+        "pos": {
+          "x": 17.5298653,
+          "y": -46.208107,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.354701132,
+            "y": -0.9349797,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.354701161,
+              "y": -0.934979737,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 49.42151,
+          "sqrMagnitude": 2442.48535
+        },
+        "size": {
+          "x": 100.404945,
+          "y": 236.386429,
+          "normalized": {
+            "x": 0.3909451,
+            "y": 0.920414,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 256.8262,
+          "sqrMagnitude": 65959.6953
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.681017,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_sitting_7",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_sitting_7",
+        "pos": {
+          "x": -61.2664337,
+          "y": -42.6441345,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.820754468,
+            "y": -0.5712812,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 74.6464844,
+          "sqrMagnitude": 5572.098
+        },
+        "size": {
+          "x": 108.626289,
+          "y": 255.7422,
+          "normalized": {
+            "x": 0.390945077,
+            "y": 0.920414,
+            "normalized": {
+              "x": 0.3909451,
+              "y": 0.920414031,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 277.855621,
+          "sqrMagnitude": 77203.74
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_elderly_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_elderly_4",
+        "pos": {
+          "x": -529.0,
+          "y": -63.0,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.992983,
+            "y": -0.118256956,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.992983043,
+              "y": -0.118256964,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 532.7382,
+          "sqrMagnitude": 283810.0
+        },
+        "size": {
+          "x": 86.0,
+          "y": 293.0,
+          "normalized": {
+            "x": 0.2816344,
+            "y": 0.9595218,
+            "normalized": {
+              "x": 0.28163442,
+              "y": 0.95952183,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 305.360443,
+          "sqrMagnitude": 93245.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 66.5,
+      "y": 0.5,
+      "normalized": {
+        "x": 0.9999718,
+        "y": 0.007518585,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 66.50188,
+      "sqrMagnitude": 4422.5
+    },
+    "scriptorScale": 0.636007249,
+    "scriptorPosition": {
+      "x": -694.2372,
+      "y": -115.692047,
+      "normalized": {
+        "x": -0.986397147,
+        "y": -0.164379418,
+        "normalized": {
+          "x": -0.9863972,
+          "y": -0.164379433,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.0
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.9999999
+      },
+      "magnitude": 703.811035,
+      "sqrMagnitude": 495349.938
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

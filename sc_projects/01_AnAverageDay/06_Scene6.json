@@ -1,0 +1,652 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-0.8275862",
+      "posY": "1.965517",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "After the walk through the park, it's time for a little lunch. People are out now, and everywhere is busy ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "3",
+      "posX": "2.938697",
+      "posY": "2.988506",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "content": "Jane goes to her favorite place, the Good Burger, where she is a regular on Saturdays ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "5",
+      "tru": "True",
+      "index": "4",
+      "posX": "6.892721",
+      "posY": "3",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "5": {
+      "content": "\"Hey Jane, already have it ready for you!\" ",
+      "owner": "female_5",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "6",
+      "tru": "True",
+      "index": "5",
+      "posX": "10.84674",
+      "posY": "3.000001",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "6": {
+      "content": "\"oh thank you!\" ",
+      "owner": "female_19",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "7",
+      "tru": "True",
+      "index": "6",
+      "posX": "14.37548",
+      "posY": "3.045977",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "content": "At that moment, there is a spilled drink by a few kids, and the attendant leaves to clean up the mess",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "8",
+      "tru": "True",
+      "index": "7",
+      "posX": "18.39847",
+      "posY": "4.206897",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "8": {
+      "actionTarget": "female_5",
+      "actionName": "MoveTo",
+      "action_x-position": "550",
+      "action_y-position": "-29.84",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "9",
+      "tru": "True",
+      "index": "8",
+      "posX": "22.50192",
+      "posY": "4.4023",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "9": {
+      "content": "There is a bit of line that had developed between her and the attendants. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "10",
+      "tru": "True",
+      "index": "9",
+      "posX": "26.9962",
+      "posY": "4.942531",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "10": {
+      "content": "The burger is right there for the taking, and the view of her by any employess is blocked by the other customers. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "11",
+      "tru": "True",
+      "index": "10",
+      "posX": "30.52494",
+      "posY": "4.620692",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "11": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "12~~Stand around and wait ~~False~~none~~true~-~13~~Just take the burger  ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "11",
+      "posX": "34.47195",
+      "posY": "5.756688",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "12": {
+      "content": "Jane continued to wait and eventually was able to pay for her food. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "14",
+      "tru": "True",
+      "index": "12",
+      "posX": "38.99622",
+      "posY": "7.344831",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "13": {
+      "content": "Jane grabbed the burger and went on with her day ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "14",
+      "tru": "True",
+      "index": "13",
+      "posX": "39.55944",
+      "posY": "4.505752",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "14": {
+      "nextScript": "Scene 8 copy 1",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "14",
+      "posX": "44.75486",
+      "posY": "7.632192",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 6",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 5,
+    "background": "restaurant_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "restaurant_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_5",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_5",
+        "pos": {
+          "x": -186.045319,
+          "y": -29.841507,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.987379134,
+            "y": -0.158374757,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 188.423386,
+          "sqrMagnitude": 35503.375
+        },
+        "size": {
+          "x": 106.090546,
+          "y": 371.316956,
+          "normalized": {
+            "x": 0.274721116,
+            "y": 0.961524,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 386.175446,
+          "sqrMagnitude": 149131.484
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_sitting_5",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_sitting_5",
+        "pos": {
+          "x": 201.72168,
+          "y": -54.7871552,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.965039968,
+            "y": -0.2621027,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.96504,
+              "y": -0.262102723,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 209.029358,
+          "sqrMagnitude": 43693.27
+        },
+        "size": {
+          "x": 136.843231,
+          "y": 322.174255,
+          "normalized": {
+            "x": 0.390945047,
+            "y": 0.920414031,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 350.0319,
+          "sqrMagnitude": 122522.32
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_athlete_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_athlete_3",
+        "pos": {
+          "x": -419.0599,
+          "y": -68.687706,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.986831665,
+            "y": -0.16175063,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 424.651855,
+          "sqrMagnitude": 180329.2
+        },
+        "size": {
+          "x": 96.3196945,
+          "y": 343.824615,
+          "normalized": {
+            "x": 0.269756675,
+            "y": 0.962928534,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 357.0614,
+          "sqrMagnitude": 127492.852
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_sitting_12",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_sitting_12",
+        "pos": {
+          "x": 374.400024,
+          "y": -73.2000046,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9814184,
+            "y": -0.191879869,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.981418431,
+              "y": -0.191879883,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 381.4887,
+          "sqrMagnitude": 145533.625
+        },
+        "size": {
+          "x": -127.0,
+          "y": 275.0,
+          "normalized": {
+            "x": -0.4192675,
+            "y": 0.9078627,
+            "normalized": {
+              "x": -0.419267535,
+              "y": 0.9078628,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 302.909241,
+          "sqrMagnitude": 91754.0
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "steward_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "steward_1",
+        "pos": {
+          "x": 122.754654,
+          "y": -44.4037781,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.940368533,
+            "y": -0.340157479,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 130.538879,
+          "sqrMagnitude": 17040.4
+        },
+        "size": {
+          "x": -81.82075,
+          "y": 342.922455,
+          "normalized": {
+            "x": -0.232083663,
+            "y": 0.9726958,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 352.5485,
+          "sqrMagnitude": 124290.445
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "food_tray_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "food_tray_1(1)",
+        "pos": {
+          "x": 290.4,
+          "y": -62.4,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.977684,
+            "y": -0.210080877,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 297.028473,
+          "sqrMagnitude": 88225.9141
+        },
+        "size": {
+          "x": 87.0,
+          "y": 45.0,
+          "normalized": {
+            "x": 0.8882176,
+            "y": 0.459422916,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 97.94897,
+          "sqrMagnitude": 9594.0
+        }
+      },
+      {
+        "uid": 7,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "cashier_machine_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "cashier_machine_3",
+        "pos": {
+          "x": -126.600044,
+          "y": -91.2,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.8113886,
+            "y": -0.584507167,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 156.02887,
+          "sqrMagnitude": 24345.01
+        },
+        "size": {
+          "x": 457.999969,
+          "y": 281.2,
+          "normalized": {
+            "x": 0.8521945,
+            "y": 0.5232251,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 537.436,
+          "sqrMagnitude": 288837.4
+        }
+      },
+      {
+        "uid": 8,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_19",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_19",
+        "pos": {
+          "x": -5.61518764,
+          "y": -45.15993,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.12338987,
+            "y": -0.9923583,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 45.5076866,
+          "sqrMagnitude": 2070.94971
+        },
+        "size": {
+          "x": -101.230347,
+          "y": 369.880157,
+          "normalized": {
+            "x": -0.263976365,
+            "y": 0.964529157,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 383.4826,
+          "sqrMagnitude": 147058.9
+        }
+      },
+      {
+        "uid": 9,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "food_tray_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "food_tray_1",
+        "pos": {
+          "x": -197.3327,
+          "y": -27.7992249,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.990222454,
+            "y": -0.139497489,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 199.281189,
+          "sqrMagnitude": 39712.9922
+        },
+        "size": {
+          "x": 136.065414,
+          "y": 51.80156,
+          "normalized": {
+            "x": 0.934562862,
+            "y": 0.3557981,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 145.592575,
+          "sqrMagnitude": 21197.2
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 8.400001,
+      "normalized": {
+        "x": 0.0,
+        "y": 1.0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 8.400001,
+      "sqrMagnitude": 70.56001
+    },
+    "scriptorScale": 0.3601342,
+    "scriptorPosition": {
+      "x": -1285.44055,
+      "y": -118.271584,
+      "normalized": {
+        "x": -0.9957939,
+        "y": -0.0916216,
+        "normalized": {
+          "x": -0.995793939,
+          "y": -0.09162161,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 1290.87012,
+      "sqrMagnitude": 1666345.63
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

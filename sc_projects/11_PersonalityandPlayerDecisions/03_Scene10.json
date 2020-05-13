@@ -1,0 +1,434 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "3",
+      "tru": "True",
+      "index": "0",
+      "posX": "-9.544599",
+      "posY": "9.963942",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "3": {
+      "content": "I'm so excited about the networking event this weekend.",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23083",
+      "tru": "True",
+      "index": "3",
+      "posX": "-6.851589",
+      "posY": "12.65723",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "4": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "5~~I have to go to the wedding. You (ideally) only have one wedding!~~False~~none~~true~-~7~~I'll go to the wedding ceremony but leave before the reception so I can go to the event.~~False~~none~~true~-~14~~This work event is really important. I can try to make the wedding reception.~~False~~none~~true~-~15~~I'll go to the work event. Opportunities like this don't happen often!~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "4",
+      "posX": "2.2967",
+      "posY": "7.12879",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "5": {
+      "displayName": null,
+      "owner": "{feel}",
+      "newValue": "+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23084",
+      "tru": "True",
+      "index": "5",
+      "posX": "8.110184",
+      "posY": "12.04199",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "6": {
+      "content": "Sure, I'll take the ticket. I have to leave early though to go to a wedding that day.",
+      "owner": "male_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23090",
+      "tru": "True",
+      "index": "6",
+      "posX": "13.92448",
+      "posY": "4.751886",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "7": {
+      "displayName": null,
+      "owner": "{feel}",
+      "newValue": "+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23085",
+      "tru": "True",
+      "index": "7",
+      "posX": "7.913208",
+      "posY": "7.725559",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "10": {
+      "content": "Actually, I have an extra ticket since my partner can't make it anymore. Do you want it?",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23413",
+      "tru": "True",
+      "index": "10",
+      "posX": "-3.701064",
+      "posY": "12.5862",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "14": {
+      "displayName": null,
+      "owner": "{think}",
+      "newValue": "+1",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "6",
+      "tru": "True",
+      "index": "14",
+      "posX": "7.954777",
+      "posY": "3.329459",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "15": {
+      "displayName": null,
+      "owner": "{think}",
+      "newValue": "+2",
+      "fromVariable": "False",
+      "get": "True",
+      "name": "Variable Sticker",
+      "next": "23091",
+      "tru": "True",
+      "index": "15",
+      "posX": "8.117041",
+      "posY": "-1.551865",
+      "advance_mode": "OnClick",
+      "type": "variable"
+    },
+    "18": {
+      "nextScript": "",
+      "transitionText": "You run for a while longer and then part ways.",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "18",
+      "posX": "25.70342",
+      "posY": "6.439504",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "23083": {
+      "content": "Yeah, it stinks that I wasn't able to get a ticket before they sold out.",
+      "owner": "male_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "10",
+      "tru": "True",
+      "index": "23083",
+      "posX": "-5.994527",
+      "posY": "8.814839",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23084": {
+      "content": "Sorry, I have to go to a wedding this weekend. I'll come to the next networking event.",
+      "owner": "male_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23088",
+      "tru": "True",
+      "index": "23084",
+      "posX": "13.64958",
+      "posY": "12.8367",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23085": {
+      "content": "Sure, I'll take the ticket, but I'll probably get to the event late. I'm going to a wedding that day.",
+      "owner": "male_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23089",
+      "tru": "True",
+      "index": "23085",
+      "posX": "13.90068",
+      "posY": "8.039379",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23088": {
+      "content": "Okay, have fun this weekend!",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23088",
+      "posX": "18.20267",
+      "posY": "12.86544",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23089": {
+      "content": "Okay, don't stress too much about coming on time. See you there!",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23089",
+      "posX": "18.5325",
+      "posY": "8.226571",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23090": {
+      "content": "Okay, I'm sure that won't be a problem! See you there!",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23090",
+      "posX": "18.3965",
+      "posY": "4.819019",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23091": {
+      "content": "Sure, I'll take the ticket. I'm looking forward to making some new connections!",
+      "owner": "male_2",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23092",
+      "tru": "True",
+      "index": "23091",
+      "posX": "13.60541",
+      "posY": "-0.6142053",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23092": {
+      "content": "Yeah, me too! It's going to be a good time!",
+      "owner": "female_6",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "18",
+      "tru": "True",
+      "index": "23092",
+      "posX": "18.2677",
+      "posY": "-0.2064167",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23413": {
+      "content": "Wait - Paula's wedding is this weekend! I already RSVP'd since I wasn't going to this event. But this could be a big step in my career.",
+      "owner": "male_2",
+      "speaking": "False",
+      "name": "Dialogue State",
+      "next": "4",
+      "tru": "True",
+      "index": "23413",
+      "posX": "-0.846235",
+      "posY": "10.13829",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 10",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 9,
+    "background": "rooftop_3",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "rooftop_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_6",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_6",
+        "pos": {
+          "x": -169.762192,
+          "y": -73.89168,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.916907966,
+            "y": -0.3990987,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 185.146378,
+          "sqrMagnitude": 34279.1836
+        },
+        "size": {
+          "x": 73.0,
+          "y": 276.0,
+          "normalized": {
+            "x": 0.2557,
+            "y": 0.966756165,
+            "normalized": {
+              "x": 0.255700022,
+              "y": 0.9667562,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 285.4908,
+          "sqrMagnitude": 81505.0
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_2",
+        "pos": {
+          "x": 131.437775,
+          "y": -78.6916656,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.857985,
+            "y": -0.5136748,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 153.193558,
+          "sqrMagnitude": 23468.2676
+        },
+        "size": {
+          "x": -72.0,
+          "y": 275.0,
+          "normalized": {
+            "x": -0.253281027,
+            "y": 0.9673928,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 284.269226,
+          "sqrMagnitude": 80809.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 60.281105,
+      "y": 17.7458324,
+      "normalized": {
+        "x": 0.959296167,
+        "y": 0.282402068,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 62.83889,
+      "sqrMagnitude": 3948.726
+    },
+    "scriptorScale": 0.564653158,
+    "scriptorPosition": {
+      "x": -235.101761,
+      "y": -467.307251,
+      "normalized": {
+        "x": -0.44942686,
+        "y": -0.8933171,
+        "normalized": {
+          "x": -0.4494269,
+          "y": -0.893317163,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 523.1146,
+      "sqrMagnitude": 273648.9
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

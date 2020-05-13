@@ -1,0 +1,255 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "90",
+      "tru": "True",
+      "index": "0",
+      "posX": "-2.444616",
+      "posY": "2.032681",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "90": {
+      "content": "Your anxiety point is {points}. ",
+      "owner": "darpa_scientist_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "92",
+      "tru": "True",
+      "index": "90",
+      "posX": "1.030064",
+      "posY": "0.7108412",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "92": {
+      "choices": "93~~{points} < 5~-~94~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "92",
+      "posX": "3.658416",
+      "posY": "0.4514651",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "93": {
+      "content": "You have no anxiety disorder. ",
+      "owner": "darpa_scientist_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "118",
+      "tru": "True",
+      "index": "93",
+      "posX": "5.538177",
+      "posY": "5.138959",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "94": {
+      "choices": "95~~{points} < 10~-~96~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "94",
+      "posX": "5.794579",
+      "posY": "1.121477",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "95": {
+      "content": "You have mild anxiety disorder. ",
+      "owner": "darpa_scientist_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "118",
+      "tru": "True",
+      "index": "95",
+      "posX": "8.599407",
+      "posY": "3.023407",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "96": {
+      "choices": "97~~{points}<15~-~98~~true~-~",
+      "isRandom": "False",
+      "name": "If Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "96",
+      "posX": "7.526031",
+      "posY": "-0.5941898",
+      "advance_mode": "OnClick",
+      "type": "if"
+    },
+    "97": {
+      "content": "You have moderate anxiety disorder. ",
+      "owner": "darpa_scientist_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "118",
+      "tru": "True",
+      "index": "97",
+      "posX": "10.58195",
+      "posY": "0.4519998",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "98": {
+      "content": "You have severe anxiety disorder. ",
+      "owner": "darpa_scientist_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "118",
+      "tru": "True",
+      "index": "98",
+      "posX": "10.46609",
+      "posY": "-2.449064",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "118": {
+      "nextScript": "Scene 11",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "118",
+      "posX": "14.06741",
+      "posY": "0.7946037",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 10",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 9,
+    "background": "phono_call_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "phono_call_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "darpa_scientist_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "darpa_scientist_1",
+        "pos": {
+          "x": -299.858826,
+          "y": -13.4689484,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.998992741,
+            "y": -0.04487239,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 300.161163,
+          "sqrMagnitude": 90096.73
+        },
+        "size": {
+          "x": 88.04846,
+          "y": 389.96994,
+          "normalized": {
+            "x": 0.22023882,
+            "y": 0.975446045,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 399.7863,
+          "sqrMagnitude": 159829.078
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 13.3016968,
+      "y": -7.267456,
+      "normalized": {
+        "x": 0.87756294,
+        "y": -0.4794614,
+        "normalized": {
+          "x": 0.877563,
+          "y": -0.479461432,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 15.1575413,
+      "sqrMagnitude": 229.751053
+    },
+    "scriptorScale": 0.5293414,
+    "scriptorPosition": {
+      "x": -128.00415,
+      "y": -79.6400757,
+      "normalized": {
+        "x": -0.8490773,
+        "y": -0.528268635,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 150.756775,
+      "sqrMagnitude": 22727.6035
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

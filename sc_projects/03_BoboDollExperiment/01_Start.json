@@ -1,0 +1,131 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "91",
+      "tru": "True",
+      "index": "0",
+      "posX": "-1.590039",
+      "posY": "2.116859",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "91": {
+      "choiceType": "simple",
+      "content": "Choose a group you want to participate",
+      "owner": "Background",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "92~~1~~False~~none~~true~-~93~~2~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "91",
+      "posX": "2.957398",
+      "posY": "1.647416",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "92": {
+      "nextScript": "Group1",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "92",
+      "posX": "7.373109",
+      "posY": "3.103356",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "93": {
+      "nextScript": "Group2",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "93",
+      "posX": "7.593416",
+      "posY": "0.2776841",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Start",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "living_room_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "living_room_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.579999745,
+    "scriptorPosition": {
+      "x": -218.576111,
+      "y": -115.295105,
+      "normalized": {
+        "x": -0.8844925,
+        "y": -0.466554463,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 247.120361,
+      "sqrMagnitude": 61068.4766
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

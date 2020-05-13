@@ -1,0 +1,792 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "23124",
+      "tru": "True",
+      "index": "0",
+      "posX": "-0.7241377",
+      "posY": "1.321839",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "23124": {
+      "content": "After a burger, Jane heads out to the crowded streets to go home for the day. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23125",
+      "tru": "True",
+      "index": "23124",
+      "posX": "2.674329",
+      "posY": "2.655172",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23125": {
+      "content": "Along the way a man stops Jane and asks for directions to Good Burger. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23126",
+      "tru": "True",
+      "index": "23125",
+      "posX": "5.915709",
+      "posY": "2.367816",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23126": {
+      "content": "\"Oh thank you sir!\"  ",
+      "owner": "male_business_1",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23127",
+      "tru": "True",
+      "index": "23126",
+      "posX": "9.352491",
+      "posY": "3.793104",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23127": {
+      "actionTarget": "male_business_1",
+      "actionName": "Visibility",
+      "action_hidden": "True",
+      "name": null,
+      "next": "23128",
+      "tru": "True",
+      "index": "23127",
+      "posX": "13.03065",
+      "posY": "4.448277",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "23128": {
+      "content": "The man runs off, but left some money on the ground when he did. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23129",
+      "tru": "True",
+      "index": "23128",
+      "posX": "16.80798",
+      "posY": "5.258205",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23129": {
+      "content": "Many people are walking about and watch as Jane takes the money. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23130",
+      "tru": "True",
+      "index": "23129",
+      "posX": "20.20402",
+      "posY": "6.334488",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23130": {
+      "content": "No one knows the cash is not hers it seems, but Jane does know where the man is going. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23131",
+      "tru": "True",
+      "index": "23130",
+      "posX": "23.97623",
+      "posY": "6.480779",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23131": {
+      "content": "The police officer is walking the  opposite direction, and Good Burger is not on her way home. A little cash gone missing was a fair benefit to Jane. ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23132",
+      "tru": "True",
+      "index": "23131",
+      "posX": "27.42451",
+      "posY": "7.786945",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23132": {
+      "choiceType": "simple",
+      "content": "",
+      "owner": "",
+      "speaking": "False",
+      "prompted": "False",
+      "choices": "23133~~Keep the money and just go home. IT's already been a long day~~False~~none~~true~-~23134~~Take the extra walk to Good Burger ~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "23132",
+      "posX": "31.3221",
+      "posY": "8.100424",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "23133": {
+      "content": "No harm done, as Jane heads home to end the day ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23135",
+      "tru": "True",
+      "index": "23133",
+      "posX": "35.8404",
+      "posY": "9.918606",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23134": {
+      "content": "It'll take a little longer, but Jane decides to be a nice lady and heads to good buger ",
+      "owner": null,
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23135",
+      "tru": "True",
+      "index": "23134",
+      "posX": "35.81741",
+      "posY": "6.792169",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23135": {
+      "nextScript": "",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "23135",
+      "posX": "40.645",
+      "posY": "8.757686",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 8 copy 1",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 8,
+    "background": "crossing_section_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "crossing_section_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_athlete_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_athlete_2",
+        "pos": {
+          "x": -399.395233,
+          "y": -138.291473,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9449574,
+            "y": -0.327193558,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 422.659515,
+          "sqrMagnitude": 178641.078
+        },
+        "size": {
+          "x": 53.8981171,
+          "y": 195.993073,
+          "normalized": {
+            "x": 0.2651566,
+            "y": 0.9642054,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 203.269012,
+          "sqrMagnitude": 41318.293
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_2",
+        "pos": {
+          "x": -369.1341,
+          "y": 9.745129,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9996517,
+            "y": 0.0263907723,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.99965173,
+              "y": 0.0263907742,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 369.262726,
+          "sqrMagnitude": 136354.953
+        },
+        "size": {
+          "x": -27.2682037,
+          "y": 97.29025,
+          "normalized": {
+            "x": -0.2698771,
+            "y": 0.9628948,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 101.039337,
+          "sqrMagnitude": 10208.9482
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_9",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_9",
+        "pos": {
+          "x": -415.789825,
+          "y": 8.899711,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.999771,
+            "y": 0.0213994477,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 415.885071,
+          "sqrMagnitude": 172960.391
+        },
+        "size": {
+          "x": 24.1795769,
+          "y": 97.3994141,
+          "normalized": {
+            "x": 0.240938365,
+            "y": 0.9705404,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 100.355858,
+          "sqrMagnitude": 10071.2979
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_construction_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_construction_2",
+        "pos": {
+          "x": 381.965454,
+          "y": 25.5149727,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9977763,
+            "y": 0.06665062,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.9977764,
+              "y": 0.06665063,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 382.8167,
+          "sqrMagnitude": 146548.625
+        },
+        "size": {
+          "x": 33.6691933,
+          "y": 121.629929,
+          "normalized": {
+            "x": 0.266783834,
+            "y": 0.9637564,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 126.204018,
+          "sqrMagnitude": 15927.4541
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_construction_3",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "female_construction_2",
+        "objectType": 0,
+        "name": "male_construction_3",
+        "pos": {
+          "x": 46.9069824,
+          "y": -4.862438,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9946701,
+            "y": -0.103108779,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 47.1583328,
+          "sqrMagnitude": 2223.9082
+        },
+        "size": {
+          "x": -30.4549751,
+          "y": 114.305038,
+          "normalized": {
+            "x": -0.257454544,
+            "y": 0.9662904,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 118.292633,
+          "sqrMagnitude": 13993.1475
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_10",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_10",
+        "pos": {
+          "x": -187.959076,
+          "y": -128.25943,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.8260115,
+            "y": -0.56365335,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 227.5502,
+          "sqrMagnitude": 51779.0938
+        },
+        "size": {
+          "x": 48.931385,
+          "y": 188.833847,
+          "normalized": {
+            "x": 0.250839472,
+            "y": 0.968028665,
+            "normalized": {
+              "x": 0.2508395,
+              "y": 0.9680287,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 195.070511,
+          "sqrMagnitude": 38052.5039
+        }
+      },
+      {
+        "uid": 7,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_11",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_11",
+        "pos": {
+          "x": 88.1934357,
+          "y": -100.050095,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.661258757,
+            "y": -0.750157833,
+            "z": 0.0,
+            "normalized": {
+              "x": 0.6612588,
+              "y": -0.7501579,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 133.372055,
+          "sqrMagnitude": 17788.1035
+        },
+        "size": {
+          "x": -42.013134,
+          "y": 159.299835,
+          "normalized": {
+            "x": -0.255016237,
+            "y": 0.966936767,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 164.7469,
+          "sqrMagnitude": 27141.541
+        }
+      },
+      {
+        "uid": 8,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_business_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_business_1",
+        "pos": {
+          "x": 430.641479,
+          "y": -115.781715,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.965705931,
+            "y": -0.259638458,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 445.9344,
+          "sqrMagnitude": 198857.484
+        },
+        "size": {
+          "x": -45.71697,
+          "y": 184.232422,
+          "normalized": {
+            "x": -0.240843818,
+            "y": 0.970563948,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 189.819977,
+          "sqrMagnitude": 36031.625
+        }
+      },
+      {
+        "uid": 9,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_elderly_4",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_elderly_4",
+        "pos": {
+          "x": -333.8882,
+          "y": -36.3856277,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9941146,
+            "y": -0.108334109,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 335.864929,
+          "sqrMagnitude": 112805.25
+        },
+        "size": {
+          "x": 38.57634,
+          "y": 131.428711,
+          "normalized": {
+            "x": 0.281634331,
+            "y": 0.9595218,
+            "normalized": {
+              "x": 0.281634361,
+              "y": 0.95952183,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 136.973145,
+          "sqrMagnitude": 18761.64
+        }
+      },
+      {
+        "uid": 10,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_16",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_16",
+        "pos": {
+          "x": 269.018982,
+          "y": -114.867157,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.91967237,
+            "y": -0.3926866,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 292.5161,
+          "sqrMagnitude": 85565.68
+        },
+        "size": {
+          "x": -46.7619438,
+          "y": 171.665558,
+          "normalized": {
+            "x": -0.262824774,
+            "y": 0.9648436,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 177.920609,
+          "sqrMagnitude": 31655.7422
+        }
+      },
+      {
+        "uid": 11,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_police_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_police_1",
+        "pos": {
+          "x": -28.9130783,
+          "y": -110.898842,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.25228256,
+            "y": -0.9676536,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.2522826,
+              "y": -0.967653632,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 114.605934,
+          "sqrMagnitude": 13134.52
+        },
+        "size": {
+          "x": -43.62608,
+          "y": 186.402374,
+          "normalized": {
+            "x": -0.227884442,
+            "y": 0.973688245,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 191.439484,
+          "sqrMagnitude": 36649.08
+        }
+      },
+      {
+        "uid": 12,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "female_19",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "female_19",
+        "pos": {
+          "x": 356.140625,
+          "y": -117.298378,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9498095,
+            "y": -0.312829,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 374.960052,
+          "sqrMagnitude": 140595.047
+        },
+        "size": {
+          "x": 54.5188,
+          "y": 199.203262,
+          "normalized": {
+            "x": 0.263976455,
+            "y": 0.964529157,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 206.529022,
+          "sqrMagnitude": 42654.24
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": -15.000001,
+      "y": 55.2,
+      "normalized": {
+        "x": -0.26222977,
+        "y": 0.9650055,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 57.2017479,
+      "sqrMagnitude": 3272.04
+    },
+    "scriptorScale": 0.397389054,
+    "scriptorPosition": {
+      "x": 21.40812,
+      "y": -179.860382,
+      "normalized": {
+        "x": 0.118192032,
+        "y": -0.992990732,
+        "normalized": {
+          "x": 0.118192039,
+          "y": -0.9929908,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 181.129974,
+      "sqrMagnitude": 32808.0664
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

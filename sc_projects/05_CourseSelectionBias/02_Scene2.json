@@ -1,0 +1,514 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "17",
+      "tru": "True",
+      "index": "0",
+      "posX": "-7.410339",
+      "posY": "5.492202",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "17": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "18",
+      "tru": "True",
+      "index": "17",
+      "posX": "-4.776399",
+      "posY": "5.485444",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "18": {
+      "content": "Now you have open the course selection website. ",
+      "owner": "Background",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "19",
+      "tru": "True",
+      "index": "18",
+      "posX": "-2.123486",
+      "posY": "5.4501",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "19": {
+      "content": "Professor A and Professor B are the choices you want to make between, ",
+      "owner": "Background",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "24",
+      "tru": "True",
+      "index": "19",
+      "posX": "0.7083685",
+      "posY": "5.41515",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "24": {
+      "actionTarget": "Profile A",
+      "actionName": "TypeText",
+      "action_text": "Professor A\nMale\nGrading: Loose\nAge: 35\nAvg.GPA: B+ to A\nStyle: Energetic and funny\nKnowledge Lvl: Mid-level\n",
+      "action_type-speed": "100",
+      "name": null,
+      "next": "29",
+      "tru": "True",
+      "index": "24",
+      "posX": "3.555729",
+      "posY": "5.361434",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "29": {
+      "actionTarget": "button_blank_1(1)",
+      "actionName": "TypeText",
+      "action_text": "Professor B\nMale \nGrading: Hard\nAge: 55\nAvg.GPA: C to B+\nStyle: Detailed and Thorough\nKnowledge Lvl: Award winning",
+      "action_type-speed": "100",
+      "name": null,
+      "next": "32",
+      "tru": "True",
+      "index": "29",
+      "posX": "6.263463",
+      "posY": "5.325402",
+      "advance_mode": "Instantly",
+      "type": "action"
+    },
+    "32": {
+      "choiceType": "simple",
+      "content": "My child, who do you prefer?",
+      "owner": "cat_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "35~~Professor A~~False~~none~~true~-~36~~Professor B~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "32",
+      "posX": "9.033369",
+      "posY": "5.282087",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "35": {
+      "choiceType": "simple",
+      "content": "Why?",
+      "owner": "cat_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "67~~Grading~~False~~none~~true~-~67~~GPA~~False~~none~~true~-~67~~Style~~False~~none~~true~-~67~~Knowlege Level~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "35",
+      "posX": "12.59958",
+      "posY": "5.810779",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "36": {
+      "choiceType": "simple",
+      "content": "Why?",
+      "owner": "cat_1",
+      "speaking": "False",
+      "prompted": "True",
+      "choices": "67~~Grading~~False~~none~~true~-~67~~GPA~~False~~none~~true~-~67~~Style~~False~~none~~true~-~67~~Knowledge Level~~False~~none~~true~-~",
+      "variable": null,
+      "name": null,
+      "next": "-1",
+      "tru": "True",
+      "index": "36",
+      "posX": "15.39426",
+      "posY": "5.752437",
+      "advance_mode": "OnClick",
+      "type": "choice"
+    },
+    "67": {
+      "nextScript": "Scene 3",
+      "transitionText": "What if we tell you a bit more!",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "67",
+      "posX": "24.22172",
+      "posY": "-3.650418",
+      "advance_mode": "OnClick",
+      "type": "end"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Scene 2",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 0,
+    "background": "library_1",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "library_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "cat_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "cat_1",
+        "pos": {
+          "x": 241.587616,
+          "y": -193.068436,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.781186759,
+            "y": -0.6242974,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 309.257172,
+          "sqrMagnitude": 95640.0
+        },
+        "size": {
+          "x": 139.151,
+          "y": 99.50001,
+          "normalized": {
+            "x": 0.813439,
+            "y": 0.5816501,
+            "normalized": {
+              "x": 0.8134391,
+              "y": 0.581650138,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 171.065063,
+          "sqrMagnitude": 29263.2539
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "camera_bag_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "camera_bag_1",
+        "pos": {
+          "x": 113.80645,
+          "y": 36.0,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.95343554,
+            "y": 0.30159694,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 119.3646,
+          "sqrMagnitude": 14247.9082
+        },
+        "size": {
+          "x": 114.000008,
+          "y": 66.0,
+          "normalized": {
+            "x": 0.865426242,
+            "y": 0.5010362,
+            "normalized": {
+              "x": 0.8654263,
+              "y": 0.5010363,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 131.727,
+          "sqrMagnitude": 17352.002
+        }
+      },
+      {
+        "uid": 3,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "speaker_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "speaker_1",
+        "pos": {
+          "x": -414.170776,
+          "y": -174.989044,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9211563,
+            "y": -0.38919276,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.921156347,
+              "y": -0.3891928,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 449.6205,
+          "sqrMagnitude": 202158.609
+        },
+        "size": {
+          "x": 60.62217,
+          "y": 84.8149261,
+          "normalized": {
+            "x": 0.5814927,
+            "y": 0.8135516,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 104.25267,
+          "sqrMagnitude": 10868.6191
+        }
+      },
+      {
+        "uid": 4,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "speaker_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "speaker_1(1)",
+        "pos": {
+          "x": -345.669617,
+          "y": -174.312073,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.8928956,
+            "y": -0.4502637,
+            "z": 0.0,
+            "normalized": {
+              "x": -0.892895639,
+              "y": -0.450263739,
+              "z": 0.0,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.0
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.9999999
+          },
+          "magnitude": 387.1333,
+          "sqrMagnitude": 149872.188
+        },
+        "size": {
+          "x": 58.269783,
+          "y": 81.52378,
+          "normalized": {
+            "x": 0.581492662,
+            "y": 0.8135517,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 100.207253,
+          "sqrMagnitude": 10041.4941
+        }
+      },
+      {
+        "uid": 5,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "button_blank_1",
+        "value": 0.0,
+        "text": "Profile A",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 1,
+        "name": "Profile A",
+        "pos": {
+          "x": -331.5709,
+          "y": 90.76013,
+          "z": 0.0,
+          "normalized": {
+            "x": -0.9645185,
+            "y": 0.2640154,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 343.7683,
+          "sqrMagnitude": 118176.656
+        },
+        "size": {
+          "x": 257.804047,
+          "y": 257.804047,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 364.59,
+          "sqrMagnitude": 132925.859
+        }
+      },
+      {
+        "uid": 6,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "button_blank_1",
+        "value": 0.0,
+        "text": "Profile B",
+        "fontSize": 20,
+        "parentName": "",
+        "objectType": 1,
+        "name": "button_blank_1(1)",
+        "pos": {
+          "x": 334.3074,
+          "y": 92.584465,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.963724852,
+            "y": 0.266897917,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.00000012
+          },
+          "magnitude": 346.89093,
+          "sqrMagnitude": 120333.32
+        },
+        "size": {
+          "x": 250.506729,
+          "y": 250.506729,
+          "normalized": {
+            "x": 0.707106769,
+            "y": 0.707106769,
+            "normalized": {
+              "x": 0.7071068,
+              "y": 0.7071068,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 354.27002,
+          "sqrMagnitude": 125507.242
+        }
+      }
+    ],
+    "layoutScale": 0.4950495,
+    "layoutPosition": {
+      "x": 6.79223633,
+      "y": 3.1975708,
+      "normalized": {
+        "x": 0.904755831,
+        "y": 0.42593053,
+        "normalized": {
+          "x": 0.9047559,
+          "y": 0.42593056,
+          "magnitude": 1.0,
+          "sqrMagnitude": 1.00000012
+        },
+        "magnitude": 0.99999994,
+        "sqrMagnitude": 0.99999994
+      },
+      "magnitude": 7.507259,
+      "sqrMagnitude": 56.3589325
+    },
+    "scriptorScale": 0.479402632,
+    "scriptorPosition": {
+      "x": -34.48456,
+      "y": -199.735626,
+      "normalized": {
+        "x": -0.170133933,
+        "y": -0.985421,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.00000012
+      },
+      "magnitude": 202.690659,
+      "sqrMagnitude": 41083.5039
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

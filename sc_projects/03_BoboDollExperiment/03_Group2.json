@@ -1,0 +1,286 @@
+{
+  "dictNodes": {
+    "0": {
+      "actionTarget": null,
+      "actionName": "",
+      "name": null,
+      "next": "11",
+      "tru": "True",
+      "index": "0",
+      "posX": "-2.37548",
+      "posY": "3.477011",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "7": {
+      "nextScript": "Target 1",
+      "transitionText": "None",
+      "variablePairs": "",
+      "name": "End Sticker",
+      "next": "-1",
+      "tru": "True",
+      "index": "7",
+      "posX": "24.76557",
+      "posY": "3.239388",
+      "advance_mode": "OnClick",
+      "type": "end"
+    },
+    "11": {
+      "actionTarget": "male_20",
+      "actionName": "MoveBy",
+      "action_x-difference": "-200",
+      "action_y-difference": "50",
+      "action_time": "3",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "19",
+      "tru": "True",
+      "index": "11",
+      "posX": "0.6187738",
+      "posY": "2.216475",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "19": {
+      "content": "What is that?",
+      "owner": "male_20",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "23",
+      "tru": "True",
+      "index": "19",
+      "posX": "4.386354",
+      "posY": "2.532422",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "23": {
+      "actionTarget": "doll_1",
+      "actionName": "MoveBy",
+      "action_x-difference": "20",
+      "action_y-difference": "100",
+      "action_time": "2",
+      "action_easing": "ease_in_out_quad",
+      "name": null,
+      "next": "26",
+      "tru": "True",
+      "index": "23",
+      "posX": "7.605693",
+      "posY": "3.456377",
+      "advance_mode": "OnClick",
+      "type": "action"
+    },
+    "26": {
+      "content": "Oh! It'a the doll I used to play with. ",
+      "owner": "male_20",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "85",
+      "tru": "True",
+      "index": "26",
+      "posX": "11.31214",
+      "posY": "3.151742",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "49": {
+      "content": "Wow! It reminds me of the good time we've spend together at the old time",
+      "owner": "male_20",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "87",
+      "tru": "True",
+      "index": "49",
+      "posX": "17.11671",
+      "posY": "2.803422",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "85": {
+      "content": "Alough it seems old but it's still so cute!!!",
+      "owner": "male_20",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "49",
+      "tru": "True",
+      "index": "85",
+      "posX": "14.21674",
+      "posY": "2.965817",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    },
+    "87": {
+      "content": "I will keep this doll, it's my memory!",
+      "owner": "male_20",
+      "speaking": "True",
+      "name": "Dialogue State",
+      "next": "7",
+      "tru": "True",
+      "index": "87",
+      "posX": "21.35042",
+      "posY": "3.241196",
+      "advance_mode": "OnClick",
+      "type": "dialogue"
+    }
+  },
+  "scene": {
+    "name": "Scene 1",
+    "title": "Group2",
+    "pos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "uid": 6,
+    "background": "borna_bedroom_2",
+    "furniture": [
+      {
+        "uid": 0,
+        "rotation": 0.0,
+        "visible": true,
+        "locked": true,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "borna_bedroom_2",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "Background",
+        "pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "magnitude": 0.0,
+          "sqrMagnitude": 0.0
+        },
+        "size": {
+          "x": 960.0,
+          "y": 540.0,
+          "normalized": {
+            "x": 0.871575534,
+            "y": 0.490261227,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 1101.45361,
+          "sqrMagnitude": 1213200.0
+        }
+      },
+      {
+        "uid": 1,
+        "rotation": 359.411774,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "male_20",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "male_20",
+        "pos": {
+          "x": 375.0,
+          "y": -116.0,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.9553373,
+            "y": -0.295517653,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 392.531525,
+          "sqrMagnitude": 154081.0
+        },
+        "size": {
+          "x": -76.0,
+          "y": 282.0,
+          "normalized": {
+            "x": -0.260219038,
+            "y": 0.9655496,
+            "normalized": {
+              "x": -0.260219067,
+              "y": 0.965549648,
+              "magnitude": 1.0,
+              "sqrMagnitude": 1.00000012
+            },
+            "magnitude": 0.99999994,
+            "sqrMagnitude": 0.99999994
+          },
+          "magnitude": 292.061646,
+          "sqrMagnitude": 85300.0
+        }
+      },
+      {
+        "uid": 2,
+        "rotation": 354.219757,
+        "visible": true,
+        "locked": false,
+        "color": "FFFFFF",
+        "textcolor": "000000",
+        "image": "doll_1",
+        "value": 0.0,
+        "text": "",
+        "fontSize": 0,
+        "parentName": "",
+        "objectType": 0,
+        "name": "doll_1",
+        "pos": {
+          "x": 109.300919,
+          "y": -179.684967,
+          "z": 0.0,
+          "normalized": {
+            "x": 0.5196953,
+            "y": -0.8543517,
+            "z": 0.0,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 210.317322,
+          "sqrMagnitude": 44233.38
+        },
+        "size": {
+          "x": 65.59324,
+          "y": 79.36005,
+          "normalized": {
+            "x": 0.6370831,
+            "y": 0.7707951,
+            "magnitude": 1.0,
+            "sqrMagnitude": 1.0
+          },
+          "magnitude": 102.958679,
+          "sqrMagnitude": 10600.49
+        }
+      }
+    ],
+    "layoutScale": 0.5,
+    "layoutPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "magnitude": 0.0,
+      "sqrMagnitude": 0.0
+    },
+    "scriptorScale": 0.5160746,
+    "scriptorPosition": {
+      "x": -830.959839,
+      "y": -172.070862,
+      "normalized": {
+        "x": -0.979225755,
+        "y": -0.202773,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1.0
+      },
+      "magnitude": 848.5886,
+      "sqrMagnitude": 720102.6
+    },
+    "layoutParamSet": true,
+    "scriptorParamSet": true
+  },
+  "started": false
+}

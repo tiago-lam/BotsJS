@@ -1,0 +1,194 @@
+{
+    "dictNodes": {
+        "0": {
+            "actionTarget": null,
+            "actionName": "",
+            "name": null,
+            "next": "89",
+            "tru": "True",
+            "index": "0",
+            "posX": "0",
+            "posY": "0",
+            "advance_mode": "OnClick",
+            "type": "action"
+        },
+        "89": {
+            "content": "Mayflower\nThe Mayflower was an English ship that transported the first English Puritans, known today as the Pilgrims, from Plymouth, England, to the New World in 1620. There were 102 passengers, and the crew is estimated to have been about 30, but the exact number is unknown.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "90",
+            "tru": "True",
+            "index": "89",
+            "posX": "3.895198",
+            "posY": "2.674037",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "90": {
+            "content": "The ship has become a cultural icon in the history of the United States. The Pilgrims signed the Mayflower Compact prior to leaving the ship and establishing Plymouth Colony, a document which established a rudimentary form of democracy with each member contributing to the welfare of the community.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "186",
+            "tru": "True",
+            "index": "90",
+            "posX": "6.915256",
+            "posY": "2.662766",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        },
+        "91": {
+            "nextScript": "Scene 2",
+            "transitionText": "None",
+            "variablePairs": "",
+            "name": "End Sticker",
+            "next": "-1",
+            "tru": "True",
+            "index": "91",
+            "posX": "13.52745",
+            "posY": "1.929565",
+            "advance_mode": "OnClick",
+            "type": "end"
+        },
+        "186": {
+            "content": "There was a second ship named Mayflower, which made the London to Plymouth, Massachusetts, voyage several times.",
+            "owner": "female_12",
+            "speaking": "True",
+            "name": "Dialogue State",
+            "next": "91",
+            "tru": "True",
+            "index": "186",
+            "posX": "9.631054",
+            "posY": "2.200736",
+            "advance_mode": "OnClick",
+            "type": "dialogue"
+        }
+    },
+    "scene": {
+        "name": "Scene 1",
+        "title": "Scene 6",
+        "pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "magnitude": 0,
+            "sqrMagnitude": 0
+        },
+        "uid": 0,
+        "background": "fountain_1",
+        "furniture": [
+            {
+                "uid": 0,
+                "rotation": 0,
+                "visible": true,
+                "locked": true,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "fountain_1",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "Background",
+                "pos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "magnitude": 0,
+                    "sqrMagnitude": 0
+                },
+                "size": {
+                    "x": 960,
+                    "y": 540,
+                    "normalized": {
+                        "x": 0.871575534,
+                        "y": 0.490261227,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1
+                    },
+                    "magnitude": 1101.45361,
+                    "sqrMagnitude": 1213200
+                }
+            },
+            {
+                "uid": 1,
+                "rotation": 0,
+                "visible": true,
+                "locked": false,
+                "color": "FFFFFF",
+                "textcolor": "000000",
+                "image": "female_12",
+                "value": 0,
+                "text": "",
+                "fontSize": 0,
+                "parentName": "",
+                "objectType": 0,
+                "name": "female_12",
+                "pos": {
+                    "x": -302.352936,
+                    "y": -83.52941,
+                    "z": 0,
+                    "normalized": {
+                        "x": -0.963893056,
+                        "y": -0.266289532,
+                        "z": 0,
+                        "normalized": {
+                            "x": -0.9638931,
+                            "y": -0.266289562,
+                            "z": 0,
+                            "magnitude": 1,
+                            "sqrMagnitude": 1.00000012
+                        },
+                        "magnitude": 0.99999994,
+                        "sqrMagnitude": 0.99999994
+                    },
+                    "magnitude": 313.678925,
+                    "sqrMagnitude": 98394.46
+                },
+                "size": {
+                    "x": 77,
+                    "y": 286,
+                    "normalized": {
+                        "x": 0.2599735,
+                        "y": 0.9656158,
+                        "magnitude": 1,
+                        "sqrMagnitude": 1.00000012
+                    },
+                    "magnitude": 296.184052,
+                    "sqrMagnitude": 87725
+                }
+            }
+        ],
+        "layoutScale": 0.490148038,
+        "layoutPosition": {
+            "x": 0.951610565,
+            "y": 0.174203873,
+            "normalized": {
+                "x": 0.983653843,
+                "y": 0.180069789,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 0.9674242,
+            "sqrMagnitude": 0.9359096
+        },
+        "scriptorScale": 0.5463863,
+        "scriptorPosition": {
+            "x": -221.2196,
+            "y": -185.9537,
+            "normalized": {
+                "x": -0.7654846,
+                "y": -0.643454254,
+                "magnitude": 1,
+                "sqrMagnitude": 1
+            },
+            "magnitude": 288.9929,
+            "sqrMagnitude": 83516.89
+        },
+        "layoutParamSet": true,
+        "scriptorParamSet": true
+    },
+    "started": false
+}
