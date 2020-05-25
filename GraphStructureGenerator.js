@@ -34,7 +34,7 @@ function getArrayNodeFrom(sceneNode)
 
 function getChoiceAtrributes(choice)
 {
-	var arr = "334~~Average Joe ~~False~~male_5~~true~-~335~~Average Jane~~False~~female_19~~true~-~"
+	var arr = choice
 	arr = arr.split("~-~")
 	for(var i = 0; i < arr.length; i++) 
     	if(arr[i].includes("~~")) 
@@ -57,10 +57,11 @@ function connectLinks(vertices)
 	Object.entries(vertices).forEach(([k,v]) => {
 		if(v["type"] == "choice" || v["type"] == "if")
     		{
-    			att = getChoiceAtrributes();
+    			att = getChoiceAtrributes(v["choices"]);
     			nextNodes = getNextNodesFromChoiceAttributes(att);
     			for(var i = 0; i < nextNodes.length; i++)
     				sceneLinks.push({"source": v["idx"], "target": nextNodes[i]})
+    			nextNodes = []
     				//console.log(v["index"] + " : " + nextNodes[i])
     		}
     	else

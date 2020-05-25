@@ -64,6 +64,7 @@ function botStepsKeyboard()
 			choices = getChoiceAtrributes(tempNode.choices)
 			//for(var i = 0; i < choices.length; i++)
 				stack.push(nodes[parseInt(mapIndexes[choices[0][0]])])
+				botChoiceReport(choices[0])
 		}
 		else
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
@@ -71,4 +72,7 @@ function botStepsKeyboard()
 		return;
 	}
 	console.log("stack empty")
+	file = produceReport()
+	//s2ab(file)
+	saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
 }
