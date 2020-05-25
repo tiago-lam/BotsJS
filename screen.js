@@ -113,7 +113,3 @@ document.addEventListener('keydown', (event) => {
 	botStepsKeyboard();
 
 }, false);
-
-    
-
-//botSteps()

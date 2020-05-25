@@ -1,0 +1,10 @@
+
+group nodes (scenes)
+https://bl.ocks.org/XavierGimenez/a8e8c5e9aed71ba96bd52332682c0399
+
+Fade in/out scenes
+custom
+http://coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/
+
+zoom
+https://observablehq.com/@d3/drag-zoom
