@@ -7,7 +7,7 @@ drawControl = 0;
 var canvas = d3.select("#network"),
 	width = canvas.attr("width"),
 	height = canvas.attr("height"),
-	r = 15,
+	r = 15
 	color = d3.scaleOrdinal(d3.schemeCategory20),
 	ctx = canvas.node().getContext("2d"),
 	simulation = d3.forceSimulation()
@@ -104,15 +104,15 @@ function dragended() {
   d3.event.subject.fy = null;
 }
 
-	var nxt = 0;
-	document.addEventListener('keydown', (event) => {
+var nxt = 0;
+document.addEventListener('keydown', (event) => {
 
-    	// nodes[nxt].visited = "true";
-    	// nxt++; console.log(nxt);
-    	// update();
-    	botStepsKeyboard();
+	// nodes[nxt].visited = "true";
+	// nxt++; console.log(nxt);
+	// update();
+	botStepsKeyboard();
 
-    }, false);
+}, false);
 
     
 
