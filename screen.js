@@ -1,4 +1,4 @@
-structure = generateStructureFrom(scene)
+structure = generateWholeProjectStructure(allScenes)
 nodes = structure[0]
 links = structure[1]
 

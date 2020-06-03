@@ -46,6 +46,7 @@ function getStack()
 	return stack;
 }
 
+var scene = 3;
 function botStepsKeyboard()
 {
 	stack = getStack();
@@ -55,10 +56,13 @@ function botStepsKeyboard()
 		tempNode = stack.pop()
 		tempNode.visited = "true";
 		update();
-		if(tempNode.type == "end")
+		if(scene > 0 && tempNode.type == "end")
 		{
-			console.log("end found");	break;
+			scene--;
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
 		}
+		else if(scene == 0)
+			{console.log("end found");	break;}
 		else if(tempNode.type == "choice" || tempNode.type == "if")
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
