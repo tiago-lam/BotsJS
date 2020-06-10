@@ -81,7 +81,6 @@ function findEndIdx(nodes)
 function findStartIdx(nodes)
 {
 	for(var i = 0; i < nodes.length; i++)
-	{
 		if(nodes[i].type == "start")
 			return nodes[i];
 	return "not_found";
