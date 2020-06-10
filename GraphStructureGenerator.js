@@ -40,7 +40,7 @@ function generateWholeProjectStructure(allScenes)
 	})
 	createVisitedAttribute(allNodes)
 	links = connectLinks(allNodes)
-	return [allNodes, links]
+	return [allNodes, links, allNodeScenes.length]
 }
 
 function redefineSceneIndex(nodes, order)

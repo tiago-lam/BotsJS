@@ -1,6 +1,8 @@
 structure = generateWholeProjectStructure(allScenes)
 nodes = structure[0]
 links = structure[1]
+numberOfScenes = structure[2]
+document.getElementById("title").innerHTML = "Bots for " + title
 
 drawControl = 0;
 
@@ -59,7 +61,7 @@ function drawNode(d)
 	if(d.visited == "true")
 		ctx.fillStyle = "#0000FE";
 	else
-		ctx.fillStyle = color(pickNodeColor(d));
+		ctx.fillStyle = pickNodeColor(d);
 	ctx.moveTo(d.x, d.y);
 	ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 	ctx.fill();

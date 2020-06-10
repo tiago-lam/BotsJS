@@ -46,7 +46,7 @@ function getStack()
 	return stack;
 }
 
-var scene = 3;
+var scene = numberOfScenes
 function botStepsKeyboard()
 {
 	stack = getStack();
