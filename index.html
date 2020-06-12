@@ -3,8 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <style type="text/css" href="layout.css"></style>
     </head>
+
     <body>
+        <div>
+            <div><strong>Node Radius</strong></div>
+            <input id="radius" type="range" name="node radius" value="15" min="1" max="30" oninput="updateRadius(value)">
+        </div>
         <!-- Add your site or application content here -->
         <h1 id="title">Bot<h1>
         <canvas id="network" width="1200" height="740"></canvas>

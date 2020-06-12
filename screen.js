@@ -43,11 +43,15 @@ function update()
 	ctx.strokeStyle = "#0000FE";
 	links.forEach(drawLink);
 	ctx.stroke();
-
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(drawNode);
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
+}
+
+function updateRadius(val) {
+	r = document.querySelector('#radius').value;
+	update()
 }
 
 function dragsubject() 
@@ -60,8 +64,14 @@ function drawNode(d)
 	ctx.beginPath();
 	if(d.visited == "true")
 		ctx.fillStyle = "#0000FE";
+	else if("alpha" in d)
+	{
+		//console.log(d)
+		ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
+	}
 	else
 		ctx.fillStyle = pickNodeColor(d);
+
 	ctx.moveTo(d.x, d.y);
 	ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 	ctx.fill();
