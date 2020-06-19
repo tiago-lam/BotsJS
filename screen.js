@@ -34,6 +34,17 @@ var canvas = d3.select("#network"),
           	.on("drag", dragged)
           	.on("end", dragended));
 
+
+scenePar = [];
+alphaPar = 0.3;
+
+function ctrlUpdate(scn, alpha)
+{
+
+	scenePar = scn; alphaPar = alpha;
+	update();
+}
+
 function update()
 {
 	ctx.clearRect(0,0,width,height);
@@ -44,7 +55,19 @@ function update()
 	links.forEach(drawLink);
 	ctx.stroke();
 	ctx.globalAlpha = 1.0;
-	nodes.forEach(drawNode);
+	nodes.forEach(function(d){
+		ctx.beginPath();
+		if(scenePar.includes(parseInt(d.idx[0])))
+		{
+			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
+		}
+		else
+			ctx.fillStyle = pickNodeColor(d);
+
+		ctx.moveTo(d.x, d.y);
+		ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
+		ctx.fill();
+	});
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
 }
@@ -57,6 +80,21 @@ function updateRadius(val) {
 function dragsubject() 
 {
     return simulation.find(d3.event.x, d3.event.y);
+}
+
+function drawNodeBasedOnScene(d, sceneID, alpha)
+{
+	ctx.beginPath();
+	if(d.idx[0] == scene)
+	{
+		ctx.fillStyle = "rgba(23, 23, 23," + alpha + ")"
+	}
+	else
+		ctx.fillStyle = pickNodeColor(d);
+
+	ctx.moveTo(d.x, d.y);
+	ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
+	ctx.fill();
 }
 
 function drawNode(d)
