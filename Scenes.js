@@ -994,3 +994,4 @@ var scene = {
   "started": false
 }
 
+allScenes = [scene]

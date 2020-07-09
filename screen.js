@@ -2,7 +2,7 @@ structure = generateWholeProjectStructure(allScenes)
 nodes = structure[0]
 links = structure[1]
 numberOfScenes = structure[2]
-document.getElementById("title").innerHTML = "Bots for " + title
+// document.getElementById("title").innerHTML = "Bots for " + title
 
 drawControl = 0;
 
@@ -15,7 +15,7 @@ var canvas = d3.select("#network"),
 	simulation = d3.forceSimulation()
 		.force("x", d3.forceX(width/2))
 		.force("y", d3.forceY(height/2))
-		.force("collide", d3.forceCollide(r+1))
+		.force("collide", d3.forceCollide(r+30))//this is to point to put the nodes apart
 		.force("charge", d3.forceManyBody()
 			.strength(-100))
 		.force("link", d3.forceLink()
@@ -44,7 +44,7 @@ function ctrlUpdate(scn, alpha)
 	scenePar = scn; alphaPar = alpha;
 	update();
 }
-
+var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
 function update()
 {
 	ctx.clearRect(0,0,width,height);
@@ -67,6 +67,13 @@ function update()
 		ctx.moveTo(d.x, d.y);
 		ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 		ctx.fill();
+
+		ctx.font = "12px Arial";
+		ctx.fillStyle = 'black'
+		if(d.idx in mapIdText)
+			ctx.fillText(mapIdText[d.idx], d.x, d.y);
+		else
+			ctx.fillText(d.type, d.x, d.y); 
 	});
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
@@ -112,6 +119,7 @@ function drawNode(d)
 
 	ctx.moveTo(d.x, d.y);
 	ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
+
 	ctx.fill();
 }
 
