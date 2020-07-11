@@ -81,7 +81,7 @@ function botStepsKeyboard()
 	saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
 }
 
-
+experimentVar = 0
 function botStepsMultiple(opts)
 {
 	stack = getStack();
@@ -103,18 +103,40 @@ function botStepsMultiple(opts)
 		{
 			scene--;
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+			experimentVar = 0
+			registerEntry()
+			botReportReset()
 		}
 		else if(scene == 0)
 			{
 			//	console.log("end found");	
 				break;
 			}
-		else if(tempNode.type == "choice" || tempNode.type == "if")
+		else if(tempNode.type == "choice")
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
-			//for(var i = 0; i < choices.length; i++)
-				stack.push(nodes[parseInt(mapIndexes[choices[opts.pop()][0]])])
-				//botChoiceReport(choices[opts.pop()])
+			var content = opts.shift();
+			for(var i = 0; i < choices.length; i++)
+			{
+				if(choices[i][1] == content)
+				{
+					stack.push(nodes[parseInt(mapIndexes[choices[i][0]])])	
+					botChoiceReport(content)
+				}
+			}
+		}
+		else if(tempNode.type == 'variable')
+		{
+			experimentVar++
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+		}
+		else if(tempNode.type == 'if')
+		{
+			if(experimentVar > 3)
+				stack.push(nodes[parseInt(mapIndexes["069"])])//hard code :(
+			else	
+				stack.push(nodes[parseInt(mapIndexes["070"])])//hard code :(
+			botChoiceReport(experimentVar)
 		}
 		else
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
@@ -125,6 +147,7 @@ function botStepsMultiple(opts)
 	//s2ab(file)
 	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
 }
+
 
 function createVisitsKey()
 {
@@ -171,6 +194,12 @@ function howManyRuns(timesToRun, factor)
 	regulateAlpha()
 	update()
 }
+
+ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 
 function visitedBackToFalse()
 {

@@ -9,15 +9,15 @@ var scene = {
     "0": {
       "actionTarget": null,
       "actionName": "",
-      "name": null,
+      "name": "Start",
       "next": "3",
       "tru": "True",
       "idx": "0",
       "posX": "-0.1000638",
       "posY": "14.17315",
       "minimized": "False",
-      "advance_mode": "OnClick",
-      "type": "action"
+      "advance_mode": "Instantly",
+      "type": "start"
     },
     "3": {
       "content": "I know many people are staying at home because of “COVID-19” or “Coronavirus,” but how much do you know about it?",
@@ -239,7 +239,7 @@ var scene = {
       "owner": "Doc",
       "speaking": "True",
       "prompted": "True",
-      "choices": "54~~Fever~~True~~none~~true~-~54~~Shortness of Breath ~~True~~none~~true~-~54~~Dry cough~~True~~none~~true~-~55~~Diarrhea~~True~~none~~true~-~",
+      "choices": "54~~Fever~~True~~none~~true~-~54~~Shortness of Breath~~True~~none~~true~-~54~~Dry cough~~True~~none~~true~-~55~~Diarrhea~~True~~none~~true~-~",
       "variable": null,
       "name": null,
       "next": "-1",
@@ -994,3 +994,4 @@ var scene = {
   "started": false
 }
 
+allScenes = [scene]

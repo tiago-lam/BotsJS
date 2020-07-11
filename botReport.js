@@ -1,7 +1,24 @@
 report = {}
 botPointOfChoice = 0
-
+choiceEntries = []
+entry = 0;
 function botChoiceReport(choice)
 {
-	report[choice[0]] = [choice[1], choice[2], choice[3], choice[4]]
+	console.log("L")
+	choiceEntries.push(choice)
+}
+
+function registerEntry()
+{
+	report[entry++] = choiceEntries;
+}
+
+function botReportReset()
+{
+	choiceEntries = []
+}
+
+function reportResetEntries()
+{
+	entry = 0
 }
