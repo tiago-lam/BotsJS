@@ -1,11 +1,8 @@
 .choice
 {
-	border: 5px solid #B47020FF;
-	margin: auto;
 	margin-left: 1%;
 	margin-top: 1%;
-	border: 5px solid purple;
-	margin: auto;
+	border: 5px solid #c17830;
 	width: 30%;
 	float: left;
 }
@@ -22,7 +19,7 @@
 
 #container
 {
-	border: 5px solid lime;
+	border: 1px solid black;
 	/*width: 100%;
 	height: 100%;*/
 	margin: auto;

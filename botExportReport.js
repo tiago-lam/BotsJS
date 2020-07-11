@@ -6,14 +6,14 @@ function produceReport()
         Title: "Bot Report",
         Subject: "Test",
         Author: "Bot",
-        CreatedDate: new Date(2020,18,5)
+        CreatedDate: new Date(2020,11,7)
     };
 
     var ws_data = []
     wb.SheetNames.push("Bot Log 1");
-    ws_data.push(['choicePoint', 'idx' , 'content', 'bool', 'parent', 'tru']); 
+    ws_data.push(['', '1', '2' , '3', '4', '5', '6', 'Correct Answers']); 
     for (const [key, value] of Object.entries(report)) {
-        botData = [key, value[0], value[1], value[2], value[3]]
+        botData = [key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]]
         ws_data.push(botData)
         //bws = XLSX.utils.aoa_to_sheet(botData);
         //wb.Sheets["Bot Log 1"] = bws;

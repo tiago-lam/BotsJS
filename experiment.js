@@ -123,6 +123,8 @@ function howManyRunsUserChoice(timesToRun)
 	regulateAlpha()
 	update()
 	reportResetEntries()
+	file = produceReport()
+	saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
 }
 
 function getVectorChoice()
