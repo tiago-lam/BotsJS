@@ -1,6 +1,5 @@
 function getValues()
 {
-	
 	var pairs = []
 	var q1 = document.getElementById("q1");
 	var q1Text = q1.options[q1.selectedIndex].text;
@@ -146,7 +145,6 @@ function copyVector(vec)
 	console.log(vecCopy)
 	return vecCopy
 }
-
 
 mapChoiceToBranch = {"083":0, "085":1,"047":0,"046":1,"048":0,"049":1,"054":0,"055":1,
 	"058":0, "059":1, "064":0, "065":1}

@@ -4,6 +4,8 @@
 	margin: auto;
 	margin-left: 1%;
 	margin-top: 1%;
+	border: 5px solid purple;
+	margin: auto;
 	width: 30%;
 	float: left;
 }
@@ -54,5 +56,6 @@
 #runContainer input[type="button"]
 {
 	background-color: #93AAFEFF;
+	color: "black";
 }
 
