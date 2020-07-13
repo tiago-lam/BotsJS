@@ -72,9 +72,16 @@ function update()
 		else
 			ctx.fillStyle = pickNodeColor(d);
 
-		ctx.moveTo(d.x, d.y);
-		ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
-		ctx.fill();
+		if(d.type == 'choice')
+		{
+			drawDiamond(ctx, d.x, d.y, 30, 30);
+		}
+		else
+		{
+			ctx.moveTo(d.x, d.y);
+			ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
+			ctx.fill();
+		}
 
 		ctx.font = "12px Arial";
 		ctx.fillStyle = 'black'
