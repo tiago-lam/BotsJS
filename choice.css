@@ -56,3 +56,23 @@
 	color: "black";
 }
 
+.probInput
+{
+	/*display: inline-block;*/
+	/*border: 1px solid black;*/
+	width: 100%;
+}
+
+.probInput input
+{
+	float: left;
+	width: 20%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.probInput h5
+{
+	float: left;
+}
+
