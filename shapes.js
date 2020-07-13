@@ -1,3 +1,5 @@
+//src - http://www.java2s.com/Tutorials/Javascript/Canvas_How_to/Shape/Draw_Spade_Heart_Club_Diamond.htm
+
 function drawSpade(context, x, y, width, height){
                 context.save();
                 var bottomWidth = width * 0.7;

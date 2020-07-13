@@ -76,6 +76,11 @@ function update()
 		{
 			drawDiamond(ctx, d.x, d.y, 30, 30);
 		}
+		else if(d.type == 'variable')
+		{
+			ctx.rect(d.x, d.y, 20, 20);
+			ctx.fill()
+		}
 		else
 		{
 			ctx.moveTo(d.x, d.y);
