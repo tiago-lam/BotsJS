@@ -3,8 +3,11 @@ nodes = structure[0]
 links = structure[1]
 numberOfScenes = structure[2]
 document.getElementById("title").innerHTML = "Bots for " + title
-
 drawControl = 0;
+nodes.push();
+
+var temp= nodes;
+
 var canvas = d3.select("#network"),
 	width = canvas.attr("width"),
 	height = canvas.attr("height"),
@@ -39,7 +42,31 @@ var canvas = d3.select("#network"),
 		.scaleExtent([1 / 10, 8])
 		.on("zoom", zoomed))
 
+var flag = false;
+$(".filter-btn").on("click", function() {
+	var id = $(this).attr("value");
+	flag =!flag;
+	if(flag){
+	for(var i=0;i<nodes.length;i++){
+		if(nodes[i].name!="Start"){
+			nodes.splice(i, 1);
+		}
+		else{
+			console.log(i);
+		}
+	}
+	links = [];
+	}
 
+	simulation.force("x", d3.forceX(width/2))
+	.force("y", d3.forceY(height/2))
+	update();
+});
+
+
+var clicked = new Boolean(false);
+function click(){
+}
 
 function zoomed() {
 	transform = d3.event.transform;
@@ -65,7 +92,8 @@ function dragsubject()
 
         return node;
       }
-    }
+	}
+
 }
 
 function drawNode(d)
@@ -74,7 +102,8 @@ function drawNode(d)
 	if(d.visited == "true")
 		ctx.fillStyle = "#0000FE";
 	else
-		ctx.fillStyle = pickNodeColor(d);
+		ctx.fillStyle = pickNodeColor(d);	
+
 	ctx.moveTo(d.x, d.y);
 	ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 	ctx.fill();
@@ -104,15 +133,15 @@ function pickNodeColor(node)
 }
 
 function dragstarted() {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart(); 
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart(); 	
   d3.event.subject.fx = transform.invertX(d3.event.x);
   d3.event.subject.fy = transform.invertY(d3.event.y);
-  console.log(d3.event.subject);
 }
 
 function dragged() {
   d3.event.subject.fx = transform.invertX(d3.event.x);
   d3.event.subject.fy = transform.invertY(d3.event.y);
+
 }
 
 function dragended() {
@@ -134,16 +163,14 @@ function update()
 	ctx.strokeStyle = "#0000FE";
 	links.forEach(drawLink);
 	ctx.stroke();
-
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(drawNode);
+
+	//nodes.forEach(drawNode);
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
 	ctx.restore();
 }
-
-
-
 
 
 var nxt = 0;

@@ -226,3 +226,24 @@ function connectLinks(vertices)
 	})
 	return sceneLinks
 }
+
+
+function retrieveAllChoices()
+{
+	var sceneChoicesMap = {}
+	for(var i = 0; i < nodes.length; i++)
+	{
+	     var sceneIndex = nodes[i].idx[0];
+	     if(nodes[i].type == "choice" || nodes[i].type == "if")
+	     {
+		    var chs = getChoiceAtrributes(nodes[i].choices)
+			if(nodes[i].type == "if") 
+				chs = [chs];
+            if(sceneIndex in sceneChoicesMap)                
+               sceneChoicesMap[sceneIndex].push(chs)
+            else
+               sceneChoicesMap[sceneIndex] = chs
+	     }
+	}
+	return sceneChoicesMap
+}
