@@ -16,5 +16,5 @@ xmlhttp.onreadystatechange = function() {
 
 
 
-xmlhttp.open("GET", "http://studycrafter.com/db/request.php?" + user + "&" + title, true);
+xmlhttp.open("GET", "https://studycrafter.com/db/request.php?" + user + "&" + title, true);
 xmlhttp.send();
