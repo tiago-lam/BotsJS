@@ -1,6 +1,4 @@
 var xmlhttp = new XMLHttpRequest();
-var user = "user=" + document.getElementById("user").value//"sepulveda.f"
-var title = "title=" + document.getElementById("projectName").value
 var project;
 
 xmlhttp.onreadystatechange = function() {
@@ -26,6 +24,8 @@ xmlhttp.onreadystatechange = function() {
 
 function sendRequest()
 {
+    var user = "user=" + document.getElementById("user").value//"sepulveda.f"
+    var title = "title=" + document.getElementById("projectName").value
     xmlhttp.open("GET", "https://studycrafter.com/db/request.php?" + user + "&" + title, true);
     xmlhttp.send();
 }
