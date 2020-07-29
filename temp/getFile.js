@@ -1,7 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
-var user = "user=" + "sepulveda.f"
-var title = "title=" + "Playable Scenarios"
-var title = "title=" + "Playable%20Scenarios"
+var user = "user=" + document.getElementById("user").value//"sepulveda.f"
+var title = "title=" + document.getElementById("projectName").value
 var project;
 
 xmlhttp.onreadystatechange = function() {
@@ -13,17 +12,20 @@ xmlhttp.onreadystatechange = function() {
         console.log(obj);
         project = obj;
     }
-    //startSpriteListObserver();
 };
 
-xmlhttp.open("GET", "https://studycrafter.com/db/request.php?" + user + "&" + title, true);
+// try{
+//     xmlhttp.send();
+// }catch(err){
+//     if(e.toString().startsWith("NetworkError")){
+//         console.log(e.toString())
+//     }
+// }
+// 
+// 
 
-try{
+function sendRequest()
+{
+    xmlhttp.open("GET", "https://studycrafter.com/db/request.php?" + user + "&" + title, true);
     xmlhttp.send();
-}catch(err){
-    if(e.toString().startsWith("NetworkError")){
-        console.log(e.toString())
-    }
 }
-xmlhttp.open("GET", "https://studycrafter.com/db/request.php?" + user + "&" + title, true);
-xmlhttp.send();
