@@ -9,6 +9,7 @@ xmlhttp.onreadystatechange = function() {
         var obj = this.responseText;
         console.log(obj);
         project = obj;
+        projectObj = parseProjectFromServer(project)
     }
 };
 
