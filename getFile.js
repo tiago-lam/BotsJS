@@ -14,7 +14,16 @@ xmlhttp.onreadystatechange = function() {
         scns = projectObj.scenes
         parseScenes(scns)
         structure = generateWholeProjectStructure(scns)
-        initializeStructure()
+        
+        var screenScript = document.createElement("script");
+        screenScript.setAttribute("type", "text/javascript");
+        screenScript.setAttribute("src", "screen.js");
+        document.getElementsByTagName("body")[0].appendChild(screenScript);
+
+        var botMoveScript = document.createElement("script");
+        botMoveScript.setAttribute("type", "text/javascript");
+        botMoveScript.setAttribute("src", "screen.js");
+        document.getElementsByTagName("body")[0].appendChild(botMoveScript);
     }
 };
 

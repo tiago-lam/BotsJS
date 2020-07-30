@@ -1,20 +1,10 @@
 //structure = generateWholeProjectStructure(allScenes)
-
+nodes = structure[0]
+links = structure[1]
+numberOfScenes = structure[2]
 // document.getElementById("title").innerHTML = "Bots for " + title
+
 drawControl = 0;
-var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
-
-var node;
-var links;
-var numberOfScenes;
-
-function initializeStructure()
-{
-	nodes = structure[0]
-	links = structure[1]
-	numberOfScenes = structure[2]
-}
-
 
 var canvas = d3.select("#network"),
 	width = canvas.attr("width"),
@@ -55,7 +45,7 @@ function ctrlUpdate(scn, alpha)
 	scenePar = scn; alphaPar = alpha;
 	update();
 }
-
+var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
 function update()
 {
 	ctx.clearRect(0,0,width,height);
