@@ -14,6 +14,7 @@ xmlhttp.onreadystatechange = function() {
         scns = projectObj.scenes
         parseScenes(scns)
         structure = generateWholeProjectStructure(scns)
+        initializeScreen()
     }
 };
 
