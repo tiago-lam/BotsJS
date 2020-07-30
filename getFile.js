@@ -1,5 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
 var project;
+var structure;
 
 xmlhttp.onreadystatechange = function() {
 
