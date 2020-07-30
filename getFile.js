@@ -83,7 +83,7 @@ function parseScenes(scns)
 function createStartNodes(scene)
 {
     Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
-        if(scene["dictNodes"][k]["type"] == "action" && scene["dictNodes"][k]["name"] == null)
+        if(scene["dictNodes"][k]["type"] == "action" && scene["dictNodes"][k]["actionTarget"] == null)
         {
             console.log(scene["dictNodes"][k]["type"]);
             console.log(scene["dictNodes"][k]["name"]);
