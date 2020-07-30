@@ -6,11 +6,14 @@
         <link rel="stylesheet" type="text/css" href="choice.css"></link>
     </head>
     <body>
+    	<input id="user" type="text" name="" placeholder="type user here">
+    	<input id="projectName" type="text" name="" placeholder="type project name here">
+    	<input type="button" name="" value="Load" onclick="sendRequest()">
         <div>
             <div><strong>Node Radius</strong></div>
             <input id="radius" type="range" name="node radius" value="15" min="1" max="30" oninput="updateRadius(value)">
 	    </div>
-	    <div id="container">
+	    <!-- <div id="container">
 	        <div class="choice">
 	        	<h3>1.Coronavirus has this name because:</h3>
 	        	<select id="q1" class="range" name="cars" id="cars">
@@ -21,8 +24,8 @@
 					<h5>Answer Probability</h5>
 					<input id="q1Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div class="choice">
+	    	</div> -->
+	    	<!-- <div class="choice">
 	        	<h3>2.Young adults do not need to worry about coronavirus.</h3>
 	        	<select id="q2" class="range" name="cars" id="cars">
 				  <option value="047">Yes, only babies and old people need to worry.</option>
@@ -32,8 +35,8 @@
 					<h5>Answer Probability</h5>
 					<input id="q2Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div class="choice">
+	    	</div> -->
+	    	<!-- <div class="choice">
 	        	<h3>3.Coronavirus is more severe than common flu.</h3>
 	        	<select id="q3" class="range" name="cars" id="cars">
 				  <option value="048">Yes, it’s much serious.</option>
@@ -43,8 +46,8 @@
 					<h5>Answer Probability</h5>
 					<input id="q3Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div class="choice">
+	    	</div> -->
+	    	<!-- <div class="choice">
 	        	<h3>4.Which of the following is not the most common symptom of COVID-19?</h3>
 	        	<select id="q4" class="range" name="cars" id="cars">
 				  <option value="054">Fever</option>
@@ -56,8 +59,8 @@
 					<h5>Answer Probability</h5>
 					<input id="q4Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div class="choice">
+	    	</div> -->
+	    	<!-- <div class="choice">
 	        	<h3>5.Coronavirus can't spread in the following way:</h3>
 	        	<select id="q5" class="range" name="cars" id="cars">
 				  <option value="058">Small droplets from the nose or mouth</option>
@@ -68,8 +71,8 @@
 					<h5>Answer Probability</h5>
 					<input id="q5Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div class="choice">
+	    	</div> -->
+	    	<!-- <div class="choice">
 	        	<h3>6.If I have no symptoms, I don't have Coronavirus</h3>
 	        	<select id="q6" class="range" name="cars" id="cars">
 				  <option value="064">Of course!</option>
@@ -79,13 +82,13 @@
 					<h5>Answer Probability</h5>
 					<input id="q6Prob" type="number" class="range" step=".1" min="0" max="1" value="0.5" name="">
 				</div>
-	    	</div>
-	    	<div id="runContainer">
+	    	</div> -->
+	    	<!-- <div id="runContainer">
 	    		<h3>Run</h3>
 	    		<input id="runValue" min="1" value="10" max="3000" type="number" name="">
 	    		<h3>Tests</h3>
 	    		<input id="btnRun" type="button" name="Run!" value="Run!" onclick="run()">
-	    	</div>
+	    	</div> -->
 	    </div>
 
         <canvas id="network" width="1200" height="860"></canvas>
@@ -102,12 +105,14 @@
         <script src="https://d3js.org/d3-drag.v1.min.js"></script>
         <script src="https://d3js.org/d3-zoom.v1.min.js"></script>
         <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script type="text/javascript" src="Scenes.js"></script>
+        <!-- <script type="text/javascript" src="Scenes.js"></script> -->
         <script type="text/javascript" src="shapes.js"></script>
         <script type="text/javascript" src="load.js"></script>
         <!-- <script type="text/javascript" src="scenesFullProject.js"></script> -->
         <script type="text/javascript" src="nodeColorMap.js"></script>
         <script type="text/javascript" src="GraphStructureGenerator.js"></script>
+        <script type="text/javascript" src="parseProjectFromServer.js"></script>
+        <script type="text/javascript" src="getFile.js"></script>
         <script type="text/javascript" src="screen.js"></script>
         <script type="text/javascript" src="botReport.js"></script>
         <script type="text/javascript" src="botExportReport.js"></script>

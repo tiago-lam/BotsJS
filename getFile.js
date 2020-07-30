@@ -12,6 +12,7 @@ xmlhttp.onreadystatechange = function() {
         projectObj = parseProjectFromServer(project)
         scns = projectObj.scenes
         parseScenes(scns)
+        structure = generateWholeProjectStructure(scns)
     }
 };
 
