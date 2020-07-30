@@ -22,7 +22,7 @@ xmlhttp.onreadystatechange = function() {
 
         var botMoveScript = document.createElement("script");
         botMoveScript.setAttribute("type", "text/javascript");
-        botMoveScript.setAttribute("src", "screen.js");
+        botMoveScript.setAttribute("src", "botMove.js");
         document.getElementsByTagName("body")[0].appendChild(botMoveScript);
     }
 };
@@ -85,7 +85,11 @@ function createStartNodes(scene)
     Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
         if(scene["dictNodes"][k]["type"] == "action" && scene["dictNodes"][k]["name"] == null)
         {
-            scene["dictNodes"][k]["type"] = "start"; scene["dictNodes"][k]["name"] = "Start"; return;
+            console.log(scene["dictNodes"][k]["type"]);
+            console.log(scene["dictNodes"][k]["name"]);
+            scene["dictNodes"][k]["type"] = "start";
+            scene["dictNodes"][k]["name"] = "Start"; 
+            return;
         }
     })
 }
