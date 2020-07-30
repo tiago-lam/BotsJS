@@ -1,40 +1,42 @@
 //structure = generateWholeProjectStructure(allScenes)
-nodes = structure[0]
-links = structure[1]
-numberOfScenes = structure[2]
 // document.getElementById("title").innerHTML = "Bots for " + title
-
 drawControl = 0;
+var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
 
-var canvas = d3.select("#network"),
-	width = canvas.attr("width"),
-	height = canvas.attr("height"),
-	r = 15
-	color = d3.scaleOrdinal(d3.schemeCategory20),
-	ctx = canvas.node().getContext("2d"),
-	simulation = d3.forceSimulation()
-		.force("x", d3.forceX(width/2))
-		.force("y", d3.forceY(height/2))
-		.force("collide", d3.forceCollide(r+15))//this is to point to put the nodes apart
-		.force("collide", d3.forceCollide(r+30))//this is to point to put the nodes apart
-		.force("charge", d3.forceManyBody()
-			.strength(-300))
-		.force("link", d3.forceLink()
-			.id(function(d) { return d.idx;}))
-		.on("tick", update);
+function initializeScreen()
+{
+	nodes = structure[0]
+	links = structure[1]
+	numberOfScenes = structure[2]
+	var canvas = d3.select("#network"),
+		width = canvas.attr("width"),
+		height = canvas.attr("height"),
+		r = 15
+		color = d3.scaleOrdinal(d3.schemeCategory20),
+		ctx = canvas.node().getContext("2d"),
+		simulation = d3.forceSimulation()
+			.force("x", d3.forceX(width/2))
+			.force("y", d3.forceY(height/2))
+			.force("collide", d3.forceCollide(r+15))//this is to point to put the nodes apart
+			.force("collide", d3.forceCollide(r+30))//this is to point to put the nodes apart
+			.force("charge", d3.forceManyBody()
+				.strength(-300))
+			.force("link", d3.forceLink()
+				.id(function(d) { return d.idx;}))
+			.on("tick", update);
 
-	simulation.nodes(nodes);
-	simulation.force("link")
-		.links(links);
+		simulation.nodes(nodes);
+		simulation.force("link")
+			.links(links);
 
-	canvas
-      	.call(d3.drag()
-          	.container(canvas.node())
-          	.subject(dragsubject)
-          	.on("start", dragstarted)
-          	.on("drag", dragged)
-          	.on("end", dragended));
-
+		canvas
+	      	.call(d3.drag()
+	          	.container(canvas.node())
+	          	.subject(dragsubject)
+	          	.on("start", dragstarted)
+	          	.on("drag", dragged)
+	          	.on("end", dragended));
+ }
 
 scenePar = [];
 alphaPar = 0.3;
@@ -45,7 +47,7 @@ function ctrlUpdate(scn, alpha)
 	scenePar = scn; alphaPar = alpha;
 	update();
 }
-var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
+
 function update()
 {
 	ctx.clearRect(0,0,width,height);
