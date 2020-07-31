@@ -5,7 +5,7 @@ numberOfScenes = structure[2]
 document.getElementById("title").innerHTML = "Bots for " + title
 
 drawControl = 0;
-var transform = d3.zoomIdentity;
+
 var canvas = d3.select("#network"),
 	width = canvas.attr("width"),
 	height = canvas.attr("height"),
@@ -25,7 +25,6 @@ var canvas = d3.select("#network"),
 	simulation.nodes(nodes);
 	simulation.force("link")
 		.links(links);
-	
 
 	canvas
       	.call(d3.drag()
@@ -33,17 +32,12 @@ var canvas = d3.select("#network"),
           	.subject(dragsubject)
           	.on("start", dragstarted)
           	.on("drag", dragged)
-          	.on("end", dragended))
-		.call(d3.zoom()
-			.scaleExtent([1 / 10, 8])
-			.on("zoom", zoomed));
+          	.on("end", dragended));
 
 function update()
 {
-	ctx.save();
 	ctx.clearRect(0,0,width,height);
-	ctx.translate(transform.x, transform.y);
-	ctx.scale(transform.k, transform.k);
+
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
 	ctx.strokeStyle = "#0000FE";
@@ -53,7 +47,6 @@ function update()
 	nodes.forEach(drawNode);
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
-	ctx.restore();
 }
 
 function updateRadius(val) {
@@ -61,31 +54,9 @@ function updateRadius(val) {
 	update()
 }
 
-function zoomed() {
-	transform = d3.event.transform;
-	update();
-}
-
 function dragsubject() 
 {
-	var i,
-    x = transform.invertX(d3.event.x),
-    y = transform.invertY(d3.event.y),
-    dx,
-    dy;
-    for (i = nodes.length - 1; i >= 0; --i) {
-      node = nodes[i];
-      dx = x - node.x;
-      dy = y - node.y;
-
-      if (dx * dx + dy * dy < 20 * 20) {
-
-        node.x = transform.applyX(node.x);
-        node.y = transform.applyY(node.y);
-
-        return node;
-      }
-	}
+    return simulation.find(d3.event.x, d3.event.y);
 }
 
 function drawNode(d)
