@@ -48,7 +48,7 @@ function redefineSceneIndex(nodes, order)
 	//nodes = getArrayNodeFrom(nodes['dictNodes'])
 	for(var i = 0; i < nodes.length; i++)
   	{
-  		nodes["idx"] = nodes["index"]
+  		nodes[i]["idx"] = nodes[i]["index"]
   		if(nodes[i].type == "choice" || nodes[i].type == "if")
   		{
   			var choices = getChoiceAtrributes(nodes[i].choices)
