@@ -52,7 +52,8 @@ function redefineSceneIndex(nodes, order)
   		{
   			var choices = getChoiceAtrributes(nodes[i].choices)
 			choices.forEach(function(e){
-  				e[0] = order + e[0]
+				if(e[0] != "-1")
+  					e[0] = order + e[0]
 			})
 			nodes[i].choices = fromArrayChoiceToStringChoice(choices)
   		}
