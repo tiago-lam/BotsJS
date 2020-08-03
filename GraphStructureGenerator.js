@@ -54,6 +54,7 @@ function redefineSceneIndex(nodes, order)
 			choices.forEach(function(e){
 				if(e[0] != "-1")
   					e[0] = order + e[0]
+  				else continue;
 			})
 			nodes[i].choices = fromArrayChoiceToStringChoice(choices)
   		}
