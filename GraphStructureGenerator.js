@@ -208,7 +208,11 @@ function connectLinks(vertices)
 {
 	sceneLinks = []
 	Object.entries(vertices).forEach(([k,v]) => {
-		if(v["type"] == "choice" || v["type"] == "if")
+		if(v["type"] == "choice" && v["choiceType"] == "open_response")
+		{
+			sceneLinks.push({"source": v["idx"], "target": v["next"]})
+		}
+		else if(v["type"] == "choice" && v["choiceType"] != "open_response" || v["type"] == "if")
     		{
     			att = getChoiceAtrributes(v["choices"]);
     			nextNodes = getNextNodesFromChoiceAttributes(att);
