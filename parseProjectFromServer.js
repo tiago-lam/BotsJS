@@ -2,6 +2,10 @@ function parseProjectFromServer(project)
 {
 	var projectObj = {};
 	var projectArr = project.split("!!!!!!")
+	if(projectArr[0].includes("not found:"))
+	{
+		alert("Project not found!"); return;
+	}
 	projectObj['project_id'] = projectArr[0]
 	projectObj['project_title'] = projectArr[1]
 	projectObj['user_name'] = projectArr[2]
