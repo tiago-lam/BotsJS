@@ -220,7 +220,7 @@ function connectLinks(vertices)
     			att = getChoiceAtrributes(v["choices"]);
     			nextNodes = getNextNodesFromChoiceAttributes(att);
     			for(var i = 0; i < nextNodes.length; i++)
-    				if(nextNodes[i][0] != "-1")
+    				if(nextNodes[i] != "-1")
     					sceneLinks.push({"source": v["idx"], "target": nextNodes[i]})
     			nextNodes = []
     				//console.log(v["index"] + " : " + nextNodes[i])
