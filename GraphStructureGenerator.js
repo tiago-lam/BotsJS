@@ -51,11 +51,12 @@ function redefineSceneIndex(nodes, order)
   		if(nodes[i].type == "choice" || nodes[i].type == "if")
   		{
   			var choices = getChoiceAtrributes(nodes[i].choices)
-			choices.forEach(function(e){
-				if(e[0] != "-1")
-  					e[0] = order + e[0]
+  			for(var j = 0; j < choices.length; j++)
+  			{
+  				if(choices[j][0] != "-1")
+  					choices[j][0] = order + choices[j][0];
   				else continue;
-			})
+  			}
 			nodes[i].choices = fromArrayChoiceToStringChoice(choices)
   		}
     	var temp = order + nodes[i]["idx"]
