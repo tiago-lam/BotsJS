@@ -73,7 +73,7 @@ function parseScenes(scns)
     for(var i = 0; i < scns.length; i++)
     {
         var scene = scns[i]["scene_json"]
-        scene = scene.replace(/index":"/g,'idx":"')
+        //scene = scene.replace(/index":"/g,'idx":"')
         scene = JSON.parse(scene)
         createStartNodes(scene)
         scns[i] = scene
