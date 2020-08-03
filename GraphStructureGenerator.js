@@ -19,7 +19,6 @@ function generateSceneNodes(allScenes)
 function generateWholeProjectStructure(allScenes)
 {
 	allNodeScenes = generateSceneNodes(allScenes)
-	relabellingIndexForNodeConnection(allNodeScenes)
 	var order = 0;
 	allNodeScenes.forEach(function(e)
 	{
@@ -49,6 +48,7 @@ function redefineSceneIndex(nodes, order)
 	//nodes = getArrayNodeFrom(nodes['dictNodes'])
 	for(var i = 0; i < nodes.length; i++)
   	{
+  		nodes["idx"] = nodes["index"]
   		if(nodes[i].type == "choice" || nodes[i].type == "if")
   		{
   			var choices = getChoiceAtrributes(nodes[i].choices)
@@ -259,7 +259,8 @@ function relabellingIndexForNodeConnection(allNodeScenes)
 {
 	allNodeScenes.forEach(function(e) {
 		sceneNodes = e;
-		e.forEach(function(someNode) 
+		e.forEach(function(someNode) {
 			someNode['idx'] = someNode['index']
+		})
 	})
 }
