@@ -19,6 +19,7 @@ function generateSceneNodes(allScenes)
 function generateWholeProjectStructure(allScenes)
 {
 	allNodeScenes = generateSceneNodes(allScenes)
+	relabellingIndexForNodeConnection(allNodeScenes)
 	var order = 0;
 	allNodeScenes.forEach(function(e)
 	{
@@ -252,4 +253,13 @@ function retrieveAllChoices()
 	     }
 	}
 	return sceneChoicesMap
+}
+
+function relabellingIndexForNodeConnection(allNodeScenes)
+{
+	allNodeScenes.forEach(function(e) {
+		sceneNodes = e;
+		e.forEach(function(someNode) 
+			someNode['idx'] = someNode['index']
+	})
 }
