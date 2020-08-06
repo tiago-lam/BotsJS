@@ -222,14 +222,9 @@ document.addEventListener('keydown', (event) => {
 
 }, false);
 
-var mouseDown = 0;
-document.body.onmousedown = function() { 
-    mouseDown = 1;
-}
-document.body.onmouseup = function() {
-    mouseDown = 0;
+function getKey(e)
+{
+    window.alert("The key code is: " + e.keyCode);
 }
 
-if (mouseDown == 1) {
- console.log("HHHHHHHHHHH")
-}
+document.onkeyup = getKey;
