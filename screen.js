@@ -34,7 +34,7 @@ var canvas = d3.select("#network"),
           	.subject(dragsubject)
           	.on("start", dragstarted)
           	.on("drag", dragged)
-          	.on("end", dragended));
+          	.on("end", dragended))
       		.call(d3.zoom()
 			.scaleExtent([1 / 10, 8])
 			.on("zoom", zoomed));
