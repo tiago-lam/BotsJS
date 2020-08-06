@@ -227,19 +227,20 @@ document.addEventListener('keydown', (event) => {
 
 }, false);
 
-// function getKey(e)
-// {
-//     if(e.keyCode == 91)
-//     	console.log("LIT")
-// }
 
-// document.onkeyup = getKey;
 var dragScreen = true;
 document.addEventListener("keypress", function(event) {
 		console.log(event.keyCode)
 		if (event.keyCode == 32) {
 			dragScreen = false
 		}
-		else
-			dragScreen = true;
+		
 });
+
+function getKey(e)
+{
+    if(e.keyCode == 32)
+    	dragScreen = true;
+}
+
+document.onkeyup = getKey;
