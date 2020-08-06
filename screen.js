@@ -222,16 +222,18 @@ document.addEventListener('keydown', (event) => {
 
 }, false);
 
-function getKey(e)
-{
-    if(e.keyCode == 91)
-    	console.log("LIT")
-}
+// function getKey(e)
+// {
+//     if(e.keyCode == 91)
+//     	console.log("LIT")
+// }
 
-document.onkeyup = getKey;
+// document.onkeyup = getKey;
 
 document.addEventListener("keypress", function(event) {
 		if (event.keyCode == 91) {
 			console.log('Hello world');
 		}
+		else
+			console.log("ff")
 });
