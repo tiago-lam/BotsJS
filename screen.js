@@ -224,7 +224,8 @@ document.addEventListener('keydown', (event) => {
 
 function getKey(e)
 {
-    window.alert("The key code is: " + e.keyCode);
+    if(e.keyCode == 91)
+    	console.log("LIT")
 }
 
 document.onkeyup = getKey;
