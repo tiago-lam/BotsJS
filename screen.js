@@ -231,6 +231,7 @@ document.addEventListener('keydown', (event) => {
 // document.onkeyup = getKey;
 
 document.addEventListener("keypress", function(event) {
+		console.log(event.keyCode)
 		if (event.keyCode == 91) {
 			console.log('Hello world');
 		}
