@@ -228,4 +228,4 @@ function getKey(e)
     	console.log("LIT")
 }
 
-document.onkeyup = getKey;
+document.onkedown = getKey;
