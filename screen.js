@@ -119,7 +119,7 @@ function updateRadius(val) {
 function dragsubject() 
 {
     //return simulation.find(d3.event.x, d3.event.y);
-    	var i,
+    var i,
     x = transform.invertX(d3.event.x),
     y = transform.invertY(d3.event.y),
     dx,
@@ -221,3 +221,15 @@ document.addEventListener('keydown', (event) => {
 	//botStepsKeyboard();
 
 }, false);
+
+var mouseDown = 0;
+document.body.onmousedown = function() { 
+    mouseDown = 1;
+}
+document.body.onmouseup = function() {
+    mouseDown = 0;
+}
+
+if (mouseDown == 1) {
+ console.log("HHHHHHHHHHH")
+}
