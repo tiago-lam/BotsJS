@@ -118,9 +118,6 @@ function updateRadius(val) {
 
 function dragsubject() 
 {
-    
-    if(dragScreen)
-    {
     	var i,
 	    x = transform.invertX(d3.event.x),
 	    y = transform.invertY(d3.event.y),
@@ -139,9 +136,9 @@ function dragsubject()
 	        return node;
 	      }
 		}	
-    }
-    else
-    	return simulation.find(d3.event.x, d3.event.y);
+    
+    
+    //return simulation.find(d3.event.x, d3.event.y);
 }
 
 function drawNodeBasedOnScene(d, sceneID, alpha)
@@ -228,19 +225,19 @@ document.addEventListener('keydown', (event) => {
 }, false);
 
 
-var dragScreen = true;
-document.addEventListener("keypress", function(event) {
-		console.log(event.keyCode)
-		if (event.keyCode == 32) {
-			dragScreen = false
-		}
+// var dragScreen = true;
+// document.addEventListener("keypress", function(event) {
+// 		console.log(event.keyCode)
+// 		if (event.keyCode == 32) {
+// 			dragScreen = false
+// 		}
 		
-});
+// });
 
-function getKey(e)
-{
-    if(e.keyCode == 32)
-    	dragScreen = true;
-}
+// function getKey(e)
+// {
+//     if(e.keyCode == 32)
+//     	dragScreen = true;
+// }
 
-document.onkeyup = getKey;
+// document.onkeyup = getKey;
