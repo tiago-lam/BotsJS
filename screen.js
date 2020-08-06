@@ -6,6 +6,7 @@ numberOfScenes = structure[2]
 
 drawControl = 0;
 
+var transform = d3.zoomIdentity;	
 var canvas = d3.select("#network"),
 	width = canvas.attr("width"),
 	height = canvas.attr("height"),
@@ -34,6 +35,9 @@ var canvas = d3.select("#network"),
           	.on("start", dragstarted)
           	.on("drag", dragged)
           	.on("end", dragended));
+      		.call(d3.zoom()
+			.scaleExtent([1 / 10, 8])
+			.on("zoom", zoomed));
 
 
 scenePar = [];
@@ -48,8 +52,10 @@ function ctrlUpdate(scn, alpha)
 var mapIdText = {"039" : "1", "043" : "2", "051" : "3", "053" : "4", "057" : "5", "063" : "6"}
 function update()
 {
+	ctx.save();
 	ctx.clearRect(0,0,width,height);
-
+	ctx.translate(transform.x, transform.y);
+	ctx.scale(transform.k, transform.k);
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
 	ctx.strokeStyle = "#0000FE";
@@ -97,6 +103,12 @@ function update()
 	});
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
+	ctx.restore();
+}
+
+function zoomed() {
+	transform = d3.event.transform;
+	update();
 }
 
 function updateRadius(val) {
@@ -106,7 +118,25 @@ function updateRadius(val) {
 
 function dragsubject() 
 {
-    return simulation.find(d3.event.x, d3.event.y);
+    //return simulation.find(d3.event.x, d3.event.y);
+    	var i,
+    x = transform.invertX(d3.event.x),
+    y = transform.invertY(d3.event.y),
+    dx,
+    dy;
+    for (i = nodes.length - 1; i >= 0; --i) {
+      node = nodes[i];
+      dx = x - node.x;
+      dy = y - node.y;
+
+      if (dx * dx + dy * dy < 20 * 20) {
+
+        node.x = transform.applyX(node.x);
+        node.y = transform.applyY(node.y);
+
+        return node;
+      }
+	}
 }
 
 function drawNodeBasedOnScene(d, sceneID, alpha)
