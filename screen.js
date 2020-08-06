@@ -228,4 +228,10 @@ function getKey(e)
     	console.log("LIT")
 }
 
-document.onkedown = getKey;
+document.onkeyup = getKey;
+
+document.addEventListener("keypress", function(event) {
+		if (event.keyCode == 91) {
+			console.log('Hello world');
+		}
+});
