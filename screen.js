@@ -28,20 +28,32 @@ var canvas = d3.select("#network"),
 	simulation.force("link")
 		.links(links);
 
+    if(dragScreen)
+    {
+		dragCtrl(pan)
+    }
+    else
+    {
+    	dragCtrl(dragSubject)
+    }
+
+
+scenePar = [];
+alphaPar = 0.3;
+
+function dragCtrl(functionToUse)
+{
 	canvas
       	.call(d3.drag()
           	.container(canvas.node())
-          	.subject(dragsubject)
+          	.subject(functionToUse)
           	.on("start", dragstarted)
           	.on("drag", dragged)
           	.on("end", dragended))
       		.call(d3.zoom()
 			.scaleExtent([1 / 10, 8])
 			.on("zoom", zoomed));
-
-
-scenePar = [];
-alphaPar = 0.3;
+}
 
 function ctrlUpdate(scn, alpha)
 {
@@ -116,7 +128,7 @@ function updateRadius(val) {
 	update()
 }
 
-function dragsubject() 
+function pan() 
 {
     	var i,
 	    x = transform.invertX(d3.event.x),
@@ -136,9 +148,11 @@ function dragsubject()
 	        return node;
 	      }
 		}	
-    
-    
-    //return simulation.find(d3.event.x, d3.event.y);
+}
+
+function dragSubject()
+{
+	return simulation.find(d3.event.x, d3.event.y);
 }
 
 function drawNodeBasedOnScene(d, sceneID, alpha)
@@ -225,19 +239,19 @@ document.addEventListener('keydown', (event) => {
 }, false);
 
 
-// var dragScreen = true;
-// document.addEventListener("keypress", function(event) {
-// 		console.log(event.keyCode)
-// 		if (event.keyCode == 32) {
-// 			dragScreen = false
-// 		}
+var dragScreen = true;
+document.addEventListener("keypress", function(event) {
+		console.log(event.keyCode)
+		if (event.keyCode == 32) {
+			dragScreen = false
+		}
 		
-// });
+});
 
-// function getKey(e)
-// {
-//     if(e.keyCode == 32)
-//     	dragScreen = true;
-// }
+function getKey(e)
+{
+    if(e.keyCode == 32)
+    	dragScreen = true;
+}
 
-// document.onkeyup = getKey;
+document.onkeyup = getKey;
