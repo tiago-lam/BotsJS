@@ -28,32 +28,20 @@ var canvas = d3.select("#network"),
 	simulation.force("link")
 		.links(links);
 
-    if(dragScreen)
-    {
-		dragCtrl(pan)
-    }
-    else
-    {
-    	dragCtrl(dragSubject)
-    }
-
-
-scenePar = [];
-alphaPar = 0.3;
-
-function dragCtrl(functionToUse)
-{
 	canvas
       	.call(d3.drag()
           	.container(canvas.node())
-          	.subject(functionToUse)
+          	.subject(dragsubject)
           	.on("start", dragstarted)
           	.on("drag", dragged)
           	.on("end", dragended))
       		.call(d3.zoom()
 			.scaleExtent([1 / 10, 8])
 			.on("zoom", zoomed));
-}
+
+
+scenePar = [];
+alphaPar = 0.3;
 
 function ctrlUpdate(scn, alpha)
 {
@@ -128,8 +116,10 @@ function updateRadius(val) {
 	update()
 }
 
-function pan() 
+function dragsubject() 
 {
+	if(dragScreen)
+	{
     	var i,
 	    x = transform.invertX(d3.event.x),
 	    y = transform.invertY(d3.event.y),
@@ -147,12 +137,10 @@ function pan()
 
 	        return node;
 	      }
-		}	
-}
-
-function dragSubject()
-{
-	return simulation.find(d3.event.x, d3.event.y);
+		}
+	}	
+    else
+    	return simulation.find(d3.event.x, d3.event.y);
 }
 
 function drawNodeBasedOnScene(d, sceneID, alpha)
