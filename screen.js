@@ -70,7 +70,7 @@ function update()
 		{
 			ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
 		}
-		else if(!scenePar.includes(parseInt(d.idx[0])))
+		else if(!scenePar.includes(parseInt(d.sceneGroup)))
 		{
 			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
 		}

@@ -62,6 +62,7 @@ function redefineSceneIndex(nodes, order)
   		}
     	var temp = order + nodes[i]["idx"]
     	nodes[i].idx = temp
+    	nodes[i]["sceneGroup"] = order
     	if(nodes[i]["next"] != "-1")
     		nodes[i]["next"] = order + nodes[i]["next"]
   	}
