@@ -64,7 +64,7 @@ function update()
 	nodes.forEach(function(d){
 		ctx.beginPath();
 		if(d.visited == "true")
-		ctx.fillStyle = "#0000FE";
+			ctx.fillStyle = "#0000FE";
 		else if("alpha" in d)
 		{
 			ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
@@ -190,7 +190,7 @@ function drawLink(l)
 	if(!scenePar.includes(parseInt(l.scene)))
 		ctx.strokeStyle = "rgba(23, 23, 23," + alphaPar + ")"
 	else
-		ctx.strokeStyle = "#0000FE";
+		ctx.strokeStyle = "rgba(255, 0, 0)";
 	ctx.moveTo(l.source.x, l.source.y);
 	ctx.lineTo(l.target.x, l.target.y);
 }
