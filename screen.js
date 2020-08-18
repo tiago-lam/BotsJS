@@ -59,7 +59,6 @@ function update()
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
 	links.forEach(drawLink);
-	ctx.stroke();
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(function(d){
 		ctx.beginPath();
@@ -193,6 +192,7 @@ function drawLink(l)
 		ctx.lineWidth = 15;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
+		ctx.stroke();
 	}
 	else
 	{
@@ -200,6 +200,7 @@ function drawLink(l)
 		ctx.lineWidth = 0;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
+		ctx.stroke();
 	}
 	
 }
