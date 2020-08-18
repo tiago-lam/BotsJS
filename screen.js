@@ -58,13 +58,7 @@ function update()
 	ctx.scale(transform.k, transform.k);
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
-	
-	
-	for(var i = 0; i < links.length; i++)
-	{
-		drawLink(links[i])
-	}
-
+	links.forEach(drawLink)
 	ctx.stroke();
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(function(d){
