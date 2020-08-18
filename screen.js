@@ -74,7 +74,7 @@ function update()
 			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
 		}
 		else
-			ctx.fillStyle = pickNodeColor(d);
+			ctx.fillStyle = hexToRGB(pickNodeColor(d), 1.0);
 
 		if(d.type == 'choice')
 		{
