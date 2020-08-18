@@ -120,8 +120,8 @@ function updateRadius(val) {
 
 function dragsubject() 
 {
-	if(dragScreen)
-	{
+	// if(dragScreen)
+	// {
     	var i,
 	    x = transform.invertX(d3.event.x),
 	    y = transform.invertY(d3.event.y),
@@ -140,9 +140,9 @@ function dragsubject()
 	        return node;
 	      }
 		}
-	}	
-    else
-    	return simulation.find(d3.event.x, d3.event.y);
+	//}	
+    // else
+    // 	return simulation.find(d3.event.x, d3.event.y);
 }
 
 function drawNodeBasedOnScene(d, sceneID, alpha)
