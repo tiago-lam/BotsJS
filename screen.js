@@ -191,14 +191,17 @@ function drawLink(l)
 	{
 		ctx.strokeStyle = "rgba(23, 23, 23," + Math.abs(alphaPar - 1.0) + ")"
 		ctx.lineWidth = 15;
+		ctx.moveTo(l.source.x, l.source.y);
+		ctx.lineTo(l.target.x, l.target.y);
 	}
 	else
 	{
 		ctx.strokeStyle = "rgba(255, 0, 0, 0.0)";
 		ctx.lineWidth = 0;
+		ctx.moveTo(l.source.x, l.source.y);
+		ctx.lineTo(l.target.x, l.target.y);
 	}
-	ctx.moveTo(l.source.x, l.source.y);
-	ctx.lineTo(l.target.x, l.target.y);
+	
 }
 
 function pickNodeColor(node)
