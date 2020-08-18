@@ -58,7 +58,11 @@ function update()
 	ctx.scale(transform.k, transform.k);
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
-	links.forEach(drawLink);
+	for(var i = 0; i < links.length; i++)
+	{
+		drawLink(links[i])
+	}
+	ctx.stroke();
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(function(d){
 		ctx.beginPath();
@@ -200,7 +204,6 @@ function drawLink(l)
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
 	}
-	ctx.stroke();
 }
 
 function pickNodeColor(node)
