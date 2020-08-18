@@ -146,7 +146,7 @@ function drawNodeBasedOnScene(d, sceneID, alpha)
 	ctx.beginPath();
 	if(d.idx[0] == scene)
 	{
-		ctx.fillStyle = "rgba(23, 23, 23," + alpha + ")"
+		ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
 	}
 	else
 		ctx.fillStyle = pickNodeColor(d);
