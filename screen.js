@@ -58,13 +58,18 @@ function update()
 	ctx.scale(transform.k, transform.k);
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
-	links.forEach(drawLink);
+	
+	
+	for(var i = 0; i < links.length; i++)
+	{
+		drawLink(l[i])
+	}
+
 	ctx.stroke();
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(function(d){
 		ctx.beginPath();
 		if(d.visited == "true")
-		ctx.fillStyle = "#0000FE";
 		else if("alpha" in d)
 		{
 			ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
@@ -163,7 +168,6 @@ function drawNode(d)
 		ctx.fillStyle = "#0000FE";
 	else if("alpha" in d)
 	{
-		//console.log(d)
 		ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
 	}
 	else
@@ -177,7 +181,6 @@ function drawNode(d)
 
 function drawNodeWithColor(d, c)
 {
-	//alert('hit')
 	ctx.beginPath();
 	ctx.fillStyle = color(c);
 	ctx.moveTo(d.x, d.y);
