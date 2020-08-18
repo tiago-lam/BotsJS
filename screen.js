@@ -62,7 +62,7 @@ function update()
 	
 	for(var i = 0; i < links.length; i++)
 	{
-		drawLink(l[i])
+		drawLink(links[i])
 	}
 
 	ctx.stroke();
