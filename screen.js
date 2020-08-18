@@ -187,7 +187,7 @@ function drawNodeWithColor(d, c)
 
 function drawLink(l)
 {
-	if(!scenePar.includes(parseInt(l.sceneGroup))
+	if(!scenePar.includes(parseInt(l.sceneGroup)))
 		ctx.strokeStyle = "rgba(23, 23, 23," + alphaPar + ")";
 	else
 		ctx.strokeStyle = "#0000FE";
