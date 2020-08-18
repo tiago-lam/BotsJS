@@ -193,14 +193,14 @@ function drawLink(l)
 {
 	if(!scenePar.includes(parseInt(l.scene)))
 	{
-		ctx.strokeStyle = "rgba(23, 23, 23," + Math.abs(alphaPar - 1.0) + ")"
+		ctx.strokeStyle = "rgba(23, 23, 23," + alphaPar + ")"
 		ctx.lineWidth = 0;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
 	}
 	else
 	{
-		ctx.strokeStyle = "rgba(255, 0, 0, 0.0)";
+		ctx.strokeStyle = "rgba(255, 0, 0, 1.0)";
 		ctx.lineWidth = 7;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
