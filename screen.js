@@ -188,9 +188,15 @@ function drawNodeWithColor(d, c)
 function drawLink(l)
 {
 	if(!scenePar.includes(parseInt(l.scene)))
+	{
 		ctx.strokeStyle = "rgba(23, 23, 23," + Math.abs(alphaPar - 1.0) + ")"
+		ctx.lineWidth = 15;
+	}
 	else
+	{
 		ctx.strokeStyle = "rgba(255, 0, 0, 0.0)";
+		ctx.lineWidth = 0;
+	}
 	ctx.moveTo(l.source.x, l.source.y);
 	ctx.lineTo(l.target.x, l.target.y);
 }
