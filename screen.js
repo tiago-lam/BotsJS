@@ -192,7 +192,6 @@ function drawLink(l)
 		ctx.lineWidth = 15;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
-		ctx.stroke();
 	}
 	else
 	{
@@ -200,9 +199,8 @@ function drawLink(l)
 		ctx.lineWidth = 0;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
-		ctx.stroke();
 	}
-	
+	ctx.stroke();
 }
 
 function pickNodeColor(node)
