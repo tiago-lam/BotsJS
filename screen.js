@@ -68,10 +68,9 @@ function update()
 		ctx.fillStyle = "#0000FE";
 		else if("alpha" in d)
 		{
-			//console.log(d)
 			ctx.fillStyle = "rgba(221, 23, 23," + parseFloat(d.alpha) + ")"
 		}
-		else if(scenePar.includes(parseInt(d.idx[0])))
+		else if(!scenePar.includes(parseInt(d.idx[0])))
 		{
 			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
 		}
