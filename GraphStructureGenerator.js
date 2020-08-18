@@ -215,7 +215,7 @@ function connectLinks(vertices)
 	Object.entries(vertices).forEach(([k,v]) => {
 		if(v["type"] == "choice" && v["choiceType"] == "open_response")
 		{
-			sceneLinks.push({"source": v["idx"], "target": v["next"]})
+			sceneLinks.push({"source": v["idx"], "target": v["next"], "scene": v["sceneGroup"]})
 		}
 		else if(v["type"] == "choice" && v["choiceType"] != "open_response" || v["type"] == "if")
     		{
@@ -223,14 +223,14 @@ function connectLinks(vertices)
     			nextNodes = getNextNodesFromChoiceAttributes(att);
     			for(var i = 0; i < nextNodes.length; i++)
     				if(nextNodes[i] != "-1")
-    					sceneLinks.push({"source": v["idx"], "target": nextNodes[i]})
+    					sceneLinks.push({"source": v["idx"], "target": nextNodes[i], "scene": v["sceneGroup"]})
     			nextNodes = []
     				//console.log(v["index"] + " : " + nextNodes[i])
     		}
     	else
     		{
     			if(v["next"] != -1)
-    				sceneLinks.push({"source": v["idx"], "target": v["next"]})
+    				sceneLinks.push({"source": v["idx"], "target": v["next"], "scene": v["sceneGroup"]})
     				//console.log(v["index"] + " : " + v["next"])
     		}
 	})
