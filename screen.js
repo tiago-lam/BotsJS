@@ -58,7 +58,6 @@ function update()
 	ctx.scale(transform.k, transform.k);
 	ctx.beginPath();
 	ctx.globalAlpha = 0.5;
-	ctx.strokeStyle = "#0000FE";
 	links.forEach(drawLink);
 	ctx.stroke();
 	ctx.globalAlpha = 1.0;
@@ -188,6 +187,7 @@ function drawNodeWithColor(d, c)
 
 function drawLink(l)
 {
+	ctx.strokeStyle = "#0000FE";
 	ctx.moveTo(l.source.x, l.source.y);
 	ctx.lineTo(l.target.x, l.target.y);
 }
