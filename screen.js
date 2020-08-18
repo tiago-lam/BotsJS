@@ -56,13 +56,14 @@ function update()
 	ctx.clearRect(0,0,width,height);
 	ctx.translate(transform.x, transform.y);
 	ctx.scale(transform.k, transform.k);
-	ctx.beginPath();
+	
 	ctx.globalAlpha = 0.5;
 	for(var i = 0; i < links.length; i++)
 	{
+		ctx.beginPath();
 		drawLink(links[i])
+		ctx.stroke();
 	}
-	ctx.stroke();
 	ctx.globalAlpha = 1.0;
 	nodes.forEach(function(d){
 		ctx.beginPath();
