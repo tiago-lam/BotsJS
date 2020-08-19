@@ -45,7 +45,6 @@ alphaPar = 0.3;
 
 function ctrlUpdate(scn, alpha)
 {
-
 	scenePar = scn; alphaPar = alpha;
 	update();
 }
@@ -116,7 +115,7 @@ function zoomed() {
 function updateRadius(val) {
 	//r = document.querySelector('#radius').value;
 	scns = []
-	for(int i = 0; i < val; i++)
+	for(var i = 0; i < val; i++)
 	{
 		scns.push(i);
 	}
