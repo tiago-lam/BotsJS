@@ -115,6 +115,7 @@ function zoomed() {
 function updateRadius(val) {
 	rangeBar = document.querySelector('#radius')
 	curr = document.querySelector('#currentScene')
+	check = document.querySelector('#cont')
 	rangeBar.max = numberOfScenes
 	scns = []
 	for(var i = 0; i < val; i++)
@@ -122,7 +123,10 @@ function updateRadius(val) {
 		scns.push(i);
 	}
 	curr.innerHTML = "current scene: " + val
-	ctrlUpdate(scns, 0.0)
+	if(check.checked)
+		ctrlUpdate(scns, 0.0)
+	else
+		ctrlUpdate([val], 0.0)
 	update()
 }
 
