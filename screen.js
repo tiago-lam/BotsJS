@@ -196,7 +196,7 @@ function drawLink(l)
 	}
 	else
 	{
-		ctx.strokeStyle = "rgba(255, 0, 0, 1.0)";
+		ctx.strokeStyle = "rgba(127, 127, 193, 1.0)";
 		ctx.lineWidth = 7;
 		ctx.moveTo(l.source.x, l.source.y);
 		ctx.lineTo(l.target.x, l.target.y);
