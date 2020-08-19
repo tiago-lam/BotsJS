@@ -114,7 +114,13 @@ function zoomed() {
 }
 
 function updateRadius(val) {
-	r = document.querySelector('#radius').value;
+	//r = document.querySelector('#radius').value;
+	scns = []
+	for(int i = 0; i < val; i++)
+	{
+		scns.push(i);
+	}
+	ctrlUpdate(scns, 0.0)
 	update()
 }
 
