@@ -92,6 +92,7 @@ function update()
 		{
 			ctx.moveTo(d.x, d.y);
 			ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
+			ctx.fillStyle = "rgba(255, 255, 255,1.0)"
 			ctx.stroke()
 		}
 		else
