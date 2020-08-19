@@ -245,8 +245,19 @@ function botMarathon(opts)
 		{
 			if(tempNode.owner in mapVar)
 			{
-				mapVar[tempNode.owner] = 
-				eval(tempNode.newValue.replace(tempNode.owner, mapVar[tempNode.owner]));
+				var val;
+				try
+				{
+					val = 
+					eval(tempNode.newValue.replace(tempNode.owner, mapVar[tempNode.owner]));
+					mapVar[tempNode.owner] += val
+				}
+				catch(e)
+				{
+					val = tempNode.newValue
+					console.log(e)
+					mapVar[tempNode.owner] = val
+				}				
 			}
 			else
 				mapVar[tempNode.owner] = mapVar.newValue;
