@@ -264,7 +264,7 @@ function botMarathon(opts)
 			stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
 					//botChoiceReport(content)
 				// }
-			}
+			//}
 			// if(experimentVar > 3)
 			// 	stack.push(nodes[parseInt(mapIndexes["069"])])//hard code :(
 			// else	
