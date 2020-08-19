@@ -127,7 +127,7 @@ function updateRadius(val) {
 		ctrlUpdate(scns, 0.0)
 	else
 	{
-		tempScn = []; tempScn.push(val)
+		tempScn = []; tempScn.push(parseInt(val))
 		ctrlUpdate(tempScn, 0.0)
 	}
 	update()
