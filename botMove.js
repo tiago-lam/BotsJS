@@ -93,10 +93,14 @@ function botStepsMultiple(opts)
 		//console.log(tempNode)
 		tempNode.visited = "true";
 		
-		var visits = parseInt(tempNode.visits)
-		visits+=1
-		tempNode.visits = visits.toString()
-		
+		if("visits" in tempNode)
+		{
+			var visits = parseInt(tempNode.visits)
+			visits+=1
+			tempNode.visits = visits.toString()
+		}
+		else
+			tempNode["visits"] = 1
 		
 		//update();
 		if(scene > 0 && tempNode.type == "end")
