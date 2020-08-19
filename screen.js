@@ -120,24 +120,24 @@ function updateRadius(val) {
 
 function dragsubject() 
 {
-	var i,
-    x = transform.invertX(d3.event.x),
-    y = transform.invertY(d3.event.y),
-    dx,
-    dy;
-    for (i = nodes.length - 1; i >= 0; --i) {
-      node = nodes[i];
-      dx = x - node.x;
-      dy = y - node.y;
+	// var i,
+ //    x = transform.invertX(d3.event.x),
+ //    y = transform.invertY(d3.event.y),
+ //    dx,
+ //    dy;
+ //    for (i = nodes.length - 1; i >= 0; --i) {
+ //      node = nodes[i];
+ //      dx = x - node.x;
+ //      dy = y - node.y;
 
-      if (dx * dx + dy * dy < 20 * 20) {
+ //      if (dx * dx + dy * dy < 20 * 20) {
 
-        node.x = transform.applyX(node.x);
-        node.y = transform.applyY(node.y);
+ //        node.x = transform.applyX(node.x);
+ //        node.y = transform.applyY(node.y);
 
-        return node;
-      }
-	}
+ //        return node;
+ //      }
+	// }
     //return simulation.find(d3.event.x, d3.event.y);
 }
 
