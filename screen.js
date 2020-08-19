@@ -113,7 +113,8 @@ function zoomed() {
 }
 
 function updateRadius(val) {
-	//r = document.querySelector('#radius').value;
+	rangeBar = document.querySelector('#radius')
+	rangeBar.max = numberOfScenes
 	scns = []
 	for(var i = 0; i < val; i++)
 	{
