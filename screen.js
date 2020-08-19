@@ -92,7 +92,7 @@ function update()
 		{
 			ctx.moveTo(d.x, d.y);
 			ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
-			ctx.fillStyle = hexToRGB(pickNodeColor(d), .5);
+			ctx.fillStyle = hexToRGB(pickNodeColor(d), .25);
 			ctx.fill()
 			ctx.stroke()
 		}
