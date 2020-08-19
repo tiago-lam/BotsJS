@@ -93,14 +93,11 @@ function botStepsMultiple(opts)
 		//console.log(tempNode)
 		tempNode.visited = "true";
 		
-		if("visits" in tempNode)
-		{
-			var visits = parseInt(tempNode.visits)
-			visits+=1
-			tempNode.visits = visits.toString()
-		}
-		else
-			tempNode["visits"] = 1
+		
+		var visits = parseInt(tempNode.visits)
+		visits+=1
+		tempNode.visits = visits.toString()
+		
 		
 		//update();
 		if(scene > 0 && tempNode.type == "end")
@@ -212,9 +209,14 @@ function botMarathon(opts)
 		//console.log(tempNode)
 		tempNode.visited = "true";
 		
-		var visits = parseInt(tempNode.visits)
-		visits+=1
-		tempNode.visits = visits.toString()
+		if("visits" in tempNode)
+		{
+			var visits = parseInt(tempNode.visits)
+			visits+=1
+			tempNode.visits = visits.toString()
+		}
+		else
+			tempNode["visits"] = 1
 		
 		//update();
 		if(scene > 0 && tempNode.type == "end")
