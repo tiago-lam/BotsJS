@@ -7,10 +7,26 @@
 {
 	width: 50%;
 	padding-top: 7px;
-	float: centerß;
+	float: center;
 }
 
 #sceneNavigation
 {
 	width: 50%;
+}
+
+#contWrapper
+{
+	float: right;
+	width: 25%
+}
+
+#contWrapper input
+{
+	float: right;
+}
+
+#contWrapper label
+{
+	float: left;
 }
