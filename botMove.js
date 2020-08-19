@@ -195,6 +195,89 @@ function howManyRuns(timesToRun, factor)
 	update()
 }
 
+
+mapVar = {}
+function botMarathon(opts)
+{
+	stack = getStack();
+	mapIndexes = getMapIndexes()
+	while(stack.length > 0)
+	{
+		tempNode = stack.pop()
+		if(tempNode == undefined) break
+		//console.log(tempNode)
+		tempNode.visited = "true";
+		
+		var visits = parseInt(tempNode.visits)
+		visits+=1
+		tempNode.visits = visits.toString()
+		
+		//update();
+		if(scene > 0 && tempNode.type == "end")
+		{
+			scene--;
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+			//registerEntry()
+			//botReportReset()
+		}
+		else if(scene == 0)
+			{
+			//	console.log("end found");	
+				break;
+			}
+		else if(tempNode.type == "choice")
+		{
+			choices = getChoiceAtrributes(tempNode.choices)
+			choiceToDo = randomValueFromArray(choices);
+			for(var i = 0; i < choices.length; i++)
+			{
+				if(choices[i][1] == content)
+				{
+					stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
+					//botChoiceReport(content)
+				}
+			}
+		}
+		else if(tempNode.type == 'variable')
+		{
+			if(tempNode.owner in mapVar)
+			{
+				mapVar[tempNode.owner] = 
+				eval(tempNode.newValue.replace(tempNode.owner, mapVar[tempNode.owner]));
+			}
+			else
+				mapVar[tempNode.owner] = mapVar.newValue;
+
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+		}
+		else if(tempNode.type == 'if')
+		{
+			choices = getChoiceAtrributes(tempNode.choices)
+			choiceToDo = randomValueFromArray(choices);
+			for(var i = 0; i < choices.length; i++)
+			{
+				if(choices[i][1] == content)
+				{
+					stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
+					//botChoiceReport(content)
+				}
+			}
+			// if(experimentVar > 3)
+			// 	stack.push(nodes[parseInt(mapIndexes["069"])])//hard code :(
+			// else	
+			// 	stack.push(nodes[parseInt(mapIndexes["070"])])//hard code :(
+			// botChoiceReport(experimentVar)
+		}
+		else
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+		//console.log("end cycle");
+	}
+	console.log("stack empty")
+	//file = produceReport()
+	//s2ab(file)
+	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
+}
+
  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 
 
@@ -228,3 +311,5 @@ function regulateAlpha()
 		e["alpha"] = alpha.toString()
 	})
 }
+
+
