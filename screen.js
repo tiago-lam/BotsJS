@@ -90,6 +90,8 @@ function update()
 		}
 		else if(d.type == 'start' && d.sceneGroup == scenePar[scenePar.length-1] + 1)
 		{
+			ctx.moveTo(d.x, d.y);
+			ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 			ctx.stroke()
 		}
 		else
