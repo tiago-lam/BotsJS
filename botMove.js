@@ -257,13 +257,13 @@ function botMarathon(opts)
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
 			choiceToDo = randomValueFromArray(choices);
-			for(var i = 0; i < choices.length; i++)
-			{
-				if(choices[i][1] == content)
-				{
-					stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
+			// for(var i = 0; i < choices.length; i++)
+			// {
+			// 	if(choices[i][1] == content)
+			// 	{
+			stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
 					//botChoiceReport(content)
-				}
+				// }
 			}
 			// if(experimentVar > 3)
 			// 	stack.push(nodes[parseInt(mapIndexes["069"])])//hard code :(
