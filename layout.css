@@ -1,3 +1,16 @@
-div{
-	margin: auto;
+#currentScene
+{
+	float: right;
+}
+
+#sceneNavigation input
+{
+	width: 50%;
+	padding-top: 7px;
+	float: centerß;
+}
+
+#sceneNavigation
+{
+	width: 50%;
 }
