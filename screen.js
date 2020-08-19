@@ -126,7 +126,10 @@ function updateRadius(val) {
 	if(check.checked)
 		ctrlUpdate(scns, 0.0)
 	else
-		ctrlUpdate([val], 0.0)
+	{
+		tempScn = []; tempScn.push(val)
+		ctrlUpdate(tempScn, 0.0)
+	}
 	update()
 }
 
