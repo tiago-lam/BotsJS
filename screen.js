@@ -74,7 +74,10 @@ function update()
 		}
 		else if(!scenePar.includes(parseInt(d.sceneGroup)))
 		{
-			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
+			if(d.type != "end")
+				ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
+			else
+				ctx.stroke()
 		}
 		else
 			ctx.fillStyle = hexToRGB(pickNodeColor(d), 1.0);
