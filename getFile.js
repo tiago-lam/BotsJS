@@ -27,15 +27,6 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 
-// try{
-//     xmlhttp.send();
-// }catch(err){
-//     if(e.toString().startsWith("NetworkError")){
-//         console.log(e.toString())
-//     }
-// }
-// 
-// 
 
 function sendRequest()
 {
@@ -45,29 +36,6 @@ function sendRequest()
     xmlhttp.send();
 }
 
-
-
-//scns = projectObj.scenes
-//
-//for(var i = 0; i < scns.length; i++)
-//{
-//    scns[i] = scns[i]["scene_json"]
-//    scns[i] = scns[i].replace(/index":"/g,'idx":"')
-//}
-//
-//t = temp.replace(/index":"/g,'idx":"')
-//
-//Object.entries(t["dictNodes"]).forEach(([k,v]) => {
-//        if(t["dictNodes"][k]["type"] == "action" && t["dictNodes"][k]["name"] == null)
-//        {
-//            t["dictNodes"][k]["type"] = "start"; t["dictNodes"][k]["name"] = "Start"; break;
-//        }
-//    })
-//
-//
-//
-//
-//
 function parseScenes(scns)
 {
     for(var i = 0; i < scns.length; i++)
@@ -83,7 +51,8 @@ function parseScenes(scns)
 function createStartNodes(scene)
 {
     Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
-        if(scene["dictNodes"][k]["type"] == "action" && scene["dictNodes"][k]["actionTarget"] == null)
+        if(scene["dictNodes"][k]["type"] == "action" && 
+            (scene["dictNodes"][k]["actionTarget"] == null || scene["dictNodes"][k]["actionTarget"] == "None")
         {
             console.log(scene["dictNodes"][k]["type"]);
             console.log(scene["dictNodes"][k]["name"]);
