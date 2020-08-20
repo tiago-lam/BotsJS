@@ -265,3 +265,12 @@ function relabellingIndexForNodeConnection(allNodeScenes)
 		})
 	})
 }
+
+
+function evaluateExpression(exp)
+{
+	Object.entries(maps).forEach(([k,v]) => {
+		exp = exp.replace(k,v)
+	})
+	return exp	
+}

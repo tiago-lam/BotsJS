@@ -198,7 +198,7 @@ function howManyRuns(timesToRun, factor)
 
 
 mapVar = {}
-function botMarathon(opts)
+function botMarathon()
 {
 	stack = getStack();
 	mapIndexes = getMapIndexes()
@@ -245,19 +245,11 @@ function botMarathon(opts)
 		{
 			if(tempNode.owner in mapVar)
 			{
-				var val;
-				try
+				if(checkBooleanArithmeticValues(tempNode.newValue))
 				{
-					val = 
-					eval(tempNode.newValue.replace(tempNode.owner, mapVar[tempNode.owner]));
-					mapVar[tempNode.owner] += val
+					var exp = putMapValuesInExpression(mapVar, tempNode.newValue)
+					mapVar[tempNode.owner] = eval(exp)
 				}
-				catch(e)
-				{
-					val = tempNode.newValue
-					console.log(e)
-					mapVar[tempNode.owner] = val
-				}				
 			}
 			else
 				mapVar[tempNode.owner] = mapVar.newValue;
@@ -290,6 +282,12 @@ function botMarathon(opts)
 	//file = produceReport()
 	//s2ab(file)
 	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
+}
+
+function checkBooleanArithmeticValues(exp)
+{
+	return (exp.includes("-") || exp.includes("+") || exp.includes("*") || exp.includes("/")
+	|| exp.includes("=") || exp.includes(">") || exp.includes("<") || exp.includes("!"))
 }
 
  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
