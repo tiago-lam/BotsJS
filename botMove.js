@@ -246,11 +246,8 @@ function botMarathon()
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
 			choiceToDo = randomValueFromArray(choices);
-			for(var i = 0; i < choices.length; i++)
-			{
-				stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
-				//botChoiceReport(content)
-			}
+			stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
+			//botChoiceReport(content)
 		}
 		else if(tempNode.type == 'variable')
 		{
