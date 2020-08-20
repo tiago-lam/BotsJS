@@ -197,9 +197,9 @@ function howManyRuns(timesToRun, factor)
 }
 
 
-mapVar = {}
 function botMarathon()
 {
+	mapVar = {}
 	stack = getStack();
 	mapIndexes = getMapIndexes()
 	while(stack.length > 0)
