@@ -50,16 +50,18 @@ function parseScenes(scns)
 
 function createStartNodes(scene)
 {
-    Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
-        if(scene["dictNodes"][k]["type"] == "action" && 
-            (scene["dictNodes"][k]["actionTarget"] == null 
-                || scene["dictNodes"][k]["actionTarget"] == "None"))
-        {
-            console.log(scene["dictNodes"][k]["type"]);
-            console.log(scene["dictNodes"][k]["name"]);
-            scene["dictNodes"][k]["type"] = "start";
-            scene["dictNodes"][k]["name"] = "Start"; 
-            return;
-        }
-    })
+    // Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
+    //     if(scene["dictNodes"][k]["type"] == "action" && 
+    //         (scene["dictNodes"][k]["actionTarget"] == null 
+    //             || scene["dictNodes"][k]["actionTarget"] == "None"))
+    //     {
+    //         console.log(scene["dictNodes"][k]["type"]);
+    //         console.log(scene["dictNodes"][k]["name"]);
+    //         scene["dictNodes"][]["type"] = "start";
+    //         scene["dictNodes"][k]["name"] = "Start"; 
+    //         return;
+    //     }
+    // })
+    scene["dictNodes"]["0"]["type"] = "start";
+    scene["dictNodes"]["0"]["name"] = "Start"; 
 }
