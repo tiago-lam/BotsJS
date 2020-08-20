@@ -46,7 +46,7 @@ function getStack()
 	return stack;
 }
 
-var scene = numberOfScenes
+var scene = structure[2]
 function botStepsKeyboard()
 {
 	stack = getStack();
@@ -196,6 +196,17 @@ function howManyRuns(timesToRun, factor)
 	update()
 }
 
+function runMarathon()
+{
+	for(var i = 0; i < 1000; i++)
+	{
+		scene = structure[2]
+		botMarathon()
+	}
+	visitedBackToFalse()
+	regulateAlpha()
+	update()
+}
 
 function botMarathon()
 {
@@ -279,6 +290,7 @@ function botMarathon()
 		//console.log("end cycle");
 	}
 	console.log("stack empty")
+	console.log(mapVar)
 	//file = produceReport()
 	//s2ab(file)
 	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
