@@ -290,7 +290,7 @@ function botMarathon()
 		//console.log("end cycle");
 	}
 	console.log("stack empty")
-	console.log(mapVar)
+	//console.log(mapVar)
 	//file = produceReport()
 	//s2ab(file)
 	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
