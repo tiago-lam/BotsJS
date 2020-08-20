@@ -202,6 +202,7 @@ function runMarathon()
 	{
 		scene = structure[2]
 		botMarathon()
+		stack = []
 	}
 	visitedBackToFalse()
 	regulateAlpha()
