@@ -52,7 +52,8 @@ function createStartNodes(scene)
 {
     Object.entries(scene["dictNodes"]).forEach(([k,v]) => {
         if(scene["dictNodes"][k]["type"] == "action" && 
-            (scene["dictNodes"][k]["actionTarget"] == null || scene["dictNodes"][k]["actionTarget"] == "None"))
+            (scene["dictNodes"][k]["actionTarget"] == null 
+                || scene["dictNodes"][k]["actionTarget"] == "None"))
         {
             console.log(scene["dictNodes"][k]["type"]);
             console.log(scene["dictNodes"][k]["name"]);
