@@ -243,6 +243,10 @@ function botMarathon()
 			//	console.log("end found");	
 				break;
 			}
+		else if(tempNode.type == "choice" && tempNode["choiceType"] == "open_response")
+		{
+			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
+		}
 		else if(tempNode.type == "choice")
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
