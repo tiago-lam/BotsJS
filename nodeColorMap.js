@@ -11,7 +11,7 @@ colorMap = {
 	"end" : "#4981CF",
 	"event" : "#9B565E",
 	"sound" : "#F7B509",
-	"makefunction" : "#4F72FF"
+	"makefunction" : "#4F72FF",
 	"customfunction" : "#4F72FF"
 } 
 
