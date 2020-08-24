@@ -15,5 +15,5 @@ function resetReport()
 
 function exportToJsonFile(jsonData) {
     var json = jsonData;
-	saveAs(new Blob([s2ab(json)],{type:"application/octet-stream"}), 'botReport.json');
+	saveAs(new Blob([s2ab(json)],{type:"application/json;charset=utf-8"}), 'botReport.json');
 }
