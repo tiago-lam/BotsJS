@@ -3,11 +3,22 @@
 	float: right;
 }
 
+#sceneNavigation 
+{
+	width: 50%
+	float:left;
+}
+
 #sceneNavigation input
 {
 	width: 50%;
 	padding-top: 7px;
 	float: center;
+}
+
+#sim
+{
+	float: right;
 }
 
 #sceneNavigation
