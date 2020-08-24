@@ -14,13 +14,7 @@ function resetReport()
 }
 
 function exportToJsonFile(jsonData) {
-    let dataStr = JSON.stringify(jsonData);
-    let dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-
-    let exportFileDefaultName = 'data.json';
-
-    let linkElement = document.createElement('a');
-    linkElement.setAttribute('href', dataUri);
-    linkElement.setAttribute('botReport', exportFileDefaultName);
-    linkElement.click();
+    var json = jsonData;
+	var blob = new Blob([json], {type:"application/json;charset=utf-8"});
+	FileSaver.saveAs(blob, "BotReport.json");
 }
