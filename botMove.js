@@ -209,7 +209,6 @@ function runMarathon()
 	regulateAlpha()
 	update()
 	exportToJsonFile(jsonFile)
-	resetReport()
 }
 
 function botMarathon()
