@@ -86,6 +86,7 @@ function botStepsMultiple(opts)
 {
 	stack = getStack();
 	mapIndexes = getMapIndexes()
+	jsonEntry = []
 	while(stack.length > 0)
 	{
 		tempNode = stack.pop()
@@ -207,6 +208,8 @@ function runMarathon()
 	visitedBackToFalse()
 	regulateAlpha()
 	update()
+	exportToJsonFile(jsonFile)
+	resetReport()
 }
 
 function botMarathon()
@@ -214,11 +217,12 @@ function botMarathon()
 	mapVar = {}
 	stack = getStack();
 	mapIndexes = getMapIndexes()
+	jsonEntry = []
 	while(stack.length > 0)
 	{
 		tempNode = stack.pop()
 		if(tempNode == undefined) break
-		//console.log(tempNode)
+		jsonEntry.push(tempNode)
 		tempNode.visited = "true";
 		
 		if("visits" in tempNode)
@@ -230,19 +234,13 @@ function botMarathon()
 		else
 			tempNode["visits"] = 1
 		
-		//update();
 		if(scene > 0 && tempNode.type == "end")
 		{
 			scene--;
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
-			//registerEntry()
-			//botReportReset()
 		}
 		else if(scene == 0)
-			{
-			//	console.log("end found");	
-				break;
-			}
+			break;
 		else if(tempNode.type == "choice" && tempNode["choiceType"] == "open_response")
 		{
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
@@ -252,7 +250,6 @@ function botMarathon()
 			choices = getChoiceAtrributes(tempNode.choices)
 			choiceToDo = randomValueFromArray(choices);
 			stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
-			//botChoiceReport(content)
 		}
 		else if(tempNode.type == 'variable')
 		{
@@ -273,24 +270,13 @@ function botMarathon()
 		{
 			choices = getChoiceAtrributes(tempNode.choices)
 			choiceToDo = randomValueFromArray(choices);
-			// for(var i = 0; i < choices.length; i++)
-			// {
-			// 	if(choices[i][1] == content)
-			// 	{
 			stack.push(nodes[parseInt(mapIndexes[choiceToDo[0]])])	
-					//botChoiceReport(content)
-				// }
-			//}
-			// if(experimentVar > 3)
-			// 	stack.push(nodes[parseInt(mapIndexes["069"])])//hard code :(
-			// else	
-			// 	stack.push(nodes[parseInt(mapIndexes["070"])])//hard code :(
-			// botChoiceReport(experimentVar)
 		}
 		else
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
 		//console.log("end cycle");
 	}
+	jsonReport(jsonEntry)
 	console.log("stack empty")
 	//console.log(mapVar)
 	//file = produceReport()
