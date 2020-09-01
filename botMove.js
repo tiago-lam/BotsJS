@@ -199,7 +199,8 @@ function howManyRuns(timesToRun, factor)
 
 function runMarathon()
 {
-	for(var i = 0; i < 1000; i++)
+	laps = document.getElementById("laps")
+	for(var i = 0; i < laps; i++)
 	{
 		scene = structure[2]
 		botMarathon()

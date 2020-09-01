@@ -9,11 +9,31 @@
 	float:left;
 }
 
+#uploadArea
+{
+	float: right;
+}
+
+/*#selectFiles
+{
+	float: right;
+}
+
+#import
+{
+	float: right;
+}*/
+
 #sceneNavigation input
 {
 	width: 50%;
 	padding-top: 7px;
 	float: center;
+}
+
+select 
+{
+	float: right;
 }
 
 #sim
@@ -40,4 +60,20 @@
 #contWrapper label
 {
 	float: left;
+}
+
+#sceneNAvigationArea
+{
+	float: right;
+}
+
+#runSimulationArea
+{
+	width: 20%;
+	float: right;
+}
+
+#laps
+{
+	width:20%;
 }
