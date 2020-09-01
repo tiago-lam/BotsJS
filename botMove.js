@@ -267,8 +267,9 @@ function botMarathon()
 			{
 				if(tempNode.newValue[0] == "{")
 				{
-					tempValue = tempNode.replace(tempNode.owner, "0")
-					mapVar[tempNode.owner] = tempValue;	
+					tempValue = tempNode.newValue
+					tempValue = tempValue.replace(tempNode.owner, "0")
+					mapVar[tempNode.owner] = eval(tempValue);	
 				}
 				else
 				{
