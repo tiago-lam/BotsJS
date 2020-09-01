@@ -199,7 +199,7 @@ function howManyRuns(timesToRun, factor)
 
 function runMarathon()
 {
-	laps = document.getElementById("laps")
+	laps = document.getElementById("laps").value
 	for(var i = 0; i < laps; i++)
 	{
 		scene = structure[2]
