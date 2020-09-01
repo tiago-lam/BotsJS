@@ -264,7 +264,7 @@ function botMarathon()
 				}
 			}
 			else
-				mapVar[tempNode.owner] = mapVar.newValue;
+				mapVar[tempNode.owner] = tempNode.newValue;
 
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
 		}
