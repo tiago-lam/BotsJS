@@ -213,6 +213,7 @@ function runMarathon()
 	resetReport()
 }
 
+allMapVar = []
 function botMarathon()
 {
 	mapVar = {}
@@ -278,11 +279,8 @@ function botMarathon()
 		//console.log("end cycle");
 	}
 	jsonReport(jsonEntry)
+	allMapVar.push(mapVar)
 	console.log("stack empty")
-	//console.log(mapVar)
-	//file = produceReport()
-	//s2ab(file)
-	//saveAs(new Blob([s2ab(file)],{type:"application/octet-stream"}), 'botReport.xlsx');
 }
 
 function checkBooleanArithmeticValues(exp)
