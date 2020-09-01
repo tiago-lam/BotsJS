@@ -264,8 +264,17 @@ function botMarathon()
 				}
 			}
 			else
-				mapVar[tempNode.owner] = tempNode.newValue;
-
+			{
+				if(tempNode.newValue[0] == "{")
+				{
+					tempValue = tempNode.replace(tempNode.owner, "0")
+					mapVar[tempNode.owner] = tempValue;	
+				}
+				else
+				{
+					mapVar[tempNode.owner] = tempNode.newValue;	
+				}
+			}
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
 		}
 		else if(tempNode.type == 'if')

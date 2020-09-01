@@ -10,3 +10,9 @@ function putMapValuesInExpression(map, exp)
 	})
 	return exp	
 }
+
+function checkAlphaNumeric(exp){
+    var reg = /[^A-Za-z0-9 ]/;
+    a = reg.test(exp).val();    
+    console.log(a);
+}
