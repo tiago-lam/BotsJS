@@ -305,10 +305,11 @@ function storingValuesInTheMaps(allMapVar, mapVar, mapTable)
 	{
 		player = allMapVar[i];
 		Object.entries(mapTable).forEach(([k,v]) => {
-			if(k in player)
-				mapTable[k].push(player[k])
-			else
-				mapTable[k].push("none")
+			mapTable[k].push("none")
+		})
+
+		Object.entries(player).forEach(([k,v]) => {
+			mapTable[k].push(player[k])
 		})
 	}
 }
