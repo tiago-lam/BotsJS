@@ -213,6 +213,7 @@ function runMarathon()
 	resetReport()
 }
 
+mapTable = {}
 allMapVar = []
 function botMarathon()
 {
@@ -275,6 +276,10 @@ function botMarathon()
 				{
 					mapVar[tempNode.owner] = tempNode.newValue;	
 				}
+				if(!(tempNode.owner in mapTable))
+				{
+					mapTable[tempNode.owner] = []
+				}
 			}
 			stack.push(nodes[parseInt(mapIndexes[tempNode.next])])
 		}
@@ -289,8 +294,20 @@ function botMarathon()
 		//console.log("end cycle");
 	}
 	jsonReport(jsonEntry)
-	allMapVar.push(mapVar)
+	storingValuesInTheMaps(allMapVar, mapVar, mapTable)
 	console.log("stack empty")
+}
+
+function storingValuesInTheMaps(allMapVar, mapVar, mapTable)
+{
+	allMapVar.push(mapVar)
+	for(var i = 0; i < allMapVar.length; i++)
+	{
+		player = allMapVar[i];
+		Object.entries(player).forEach(([k,v]) => {
+			mapTable[k].push(v)
+		})
+	}
 }
 
 function checkBooleanArithmeticValues(exp)
@@ -332,5 +349,3 @@ function regulateAlpha()
 		e["alpha"] = alpha.toString()
 	})
 }
-
-
