@@ -311,9 +311,9 @@ function storingValuesInTheMaps(allMapVar, mapVar, mapTable)
 		Object.entries(player).forEach(([k,v]) => {
 			temp = mapTable[k]
 			if(temp[temp.length-1] == "none")
-				mapTable[k][temp.length-1] = (player[k])
+				mapTable[k][temp.length-1] = v
 			else
-				mapTable[k].push(player[k]) 
+				mapTable[k].push(v) 
 		})
 	}
 }
