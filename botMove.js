@@ -209,6 +209,7 @@ function runMarathon()
 	visitedBackToFalse()
 	regulateAlpha()
 	update()
+	storingValuesInTheMaps(allMapVar, mapTable)
 	exportToJsonFile(jsonFile)
 	resetReport()
 }
@@ -294,20 +295,15 @@ function botMarathon()
 		//console.log("end cycle");
 	}
 	jsonReport(jsonEntry)
-	storingValuesInTheMaps(allMapVar, mapVar, mapTable)
+	allMapVar.push(mapVar)
 	console.log("stack empty")
 }
 
-function storingValuesInTheMaps(allMapVar, mapVar, mapTable)
+function storingValuesInTheMaps(allMapVar, mapTable)
 {
-	allMapVar.push(mapVar)
 	for(var i = 0; i < allMapVar.length; i++)
 	{
 		player = allMapVar[i];
-		Object.entries(mapTable).forEach(([k,v]) => {
-			mapTable[k].push("none")
-		})
-
 		Object.entries(player).forEach(([k,v]) => {
 			temp = mapTable[k]
 			if(temp[temp.length-1] == "none")
