@@ -309,7 +309,11 @@ function storingValuesInTheMaps(allMapVar, mapVar, mapTable)
 		})
 
 		Object.entries(player).forEach(([k,v]) => {
-			mapTable[k].push(player[k])
+			temp = mapTable[k]
+			if(temp[temp.length-1] == "none")
+				mapTable[k][temp.length-1] = push(player[k])
+			else
+				mapTable[k].push(player[k]) 
 		})
 	}
 }
