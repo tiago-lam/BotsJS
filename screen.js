@@ -76,7 +76,15 @@ function update()
 			ctx.fillStyle = "rgba(23, 23, 23," + alphaPar + ")"
 		}
 		else
+		{
 			ctx.fillStyle = hexToRGB(pickNodeColor(d), 1.0);
+			ctx.font = "12px Arial";
+			ctx.fillStyle = 'black'
+			if(d.idx in mapIdText)
+				ctx.fillText(mapIdText[d.idx], d.x, d.y);
+			else
+				ctx.fillText("Type: " + d.type + " IDX: " + d.idx, d.x, d.y); 
+		}
 
 		if(d.type == 'choice')
 		{
@@ -101,13 +109,6 @@ function update()
 			ctx.arc(d.x, d.y, r, 0, 2 * Math.PI);
 			ctx.fill();
 		}
-
-		ctx.font = "12px Arial";
-		ctx.fillStyle = 'black'
-		if(d.idx in mapIdText)
-			ctx.fillText(mapIdText[d.idx], d.x, d.y);
-		else
-			ctx.fillText("Type: " + d.type + " IDX: " + d.idx, d.x, d.y); 
 	});
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
