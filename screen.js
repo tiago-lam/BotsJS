@@ -107,7 +107,7 @@ function update()
 		if(d.idx in mapIdText)
 			ctx.fillText(mapIdText[d.idx], d.x, d.y);
 		else
-			ctx.fillText(d.type, d.x, d.y); 
+			ctx.fillText("Type: " + d.type + " IDX: " + d.idx, d.x, d.y); 
 	});
 	//botSteps()
 	//drawNodeWithColor(nodes[2], "#0000FE");
