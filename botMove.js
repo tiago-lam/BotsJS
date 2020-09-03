@@ -312,9 +312,9 @@ function storingValuesInTheMaps(allMapVar, mapTable)
 		Object.entries(player).forEach(([k,v]) => {
 			temp = mapTable[k]
 			if(temp[temp.length-1] == 0)
-				mapTable[k][temp.length-1] = v
+				mapTable[k][temp.length-1] = parseInt(v)
 			else
-				mapTable[k].push(v) 
+				mapTable[k].push(parseInt(v)) 
 		})
 	}
 }
